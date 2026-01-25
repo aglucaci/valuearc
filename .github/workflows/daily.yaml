@@ -15,7 +15,6 @@ concurrency:
 jobs:
   run-notebook:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,24 +23,22 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-          cache: "pip"
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          # If you have a requirements.txt, prefer that:
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-          # Ensure notebook execution tools exist:
+          # Notebook execution tooling:
           pip install nbconvert ipykernel jupyter
+          # Add anything your notebook imports here, OR create requirements.txt later.
+          # pip install pandas yfinance finvizfinance matplotlib ...
 
       - name: Prepare output folders
         run: |
           mkdir -p outputs/notebooks
           mkdir -p outputs/artifacts
 
-      - name: Execute notebook (and save executed copy)
+      - name: Execute notebook (save executed copy)
         env:
-          # Optional: make output paths deterministic inside the notebook if you use this env var.
           LONGARC_OUTPUT_DIR: outputs/artifacts
         run: |
           jupyter nbconvert \
@@ -51,12 +48,11 @@ jobs:
             --ExecutePreprocessor.timeout=7200 \
             --ExecutePreprocessor.kernel_name=python3
 
-      - name: Upload all outputs as an artifact
+      - name: Upload outputs as artifact
         uses: actions/upload-artifact@v4
         with:
           name: longarc-notebook-outputs
-          path: |
-            outputs/
+          path: outputs/
           if-no-files-found: error
           retention-days: 14
 
@@ -64,7 +60,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git add outputs/notebooks/LONGARC_SCREENER.executed.ipynb outputs || true
+          git add outputs/ || true
           if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0
