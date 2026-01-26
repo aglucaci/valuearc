@@ -32,19 +32,16 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # --- THIS IS THE IMPORTANT PART ---
-      - name: Install Playwright browser (Chromium)
+      # IMPORTANT: installs Chromium + Linux deps Playwright needs on ubuntu-latest
+      - name: Install Playwright browsers
         run: |
-          playwright install chromium
+          python -m playwright install --with-deps chromium
 
       - name: Prepare output directory
         run: |
           mkdir -p outputs
 
       - name: Run LONGARC screener
-        env:
-          # Prevent Playwright from trying to use system sandboxing
-          PLAYWRIGHT_BROWSERS_PATH: 0
         run: |
           python longarc_screener.py
 
