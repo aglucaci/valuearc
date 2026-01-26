@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>LONGARC — Filtered Screener</title>
+  <meta name="theme-color" content="#0b1020" />
+  <style>
+    :root{
+      --bg0:#070a14; --bg1:#0b1020;
+      --panel:#121a33; --panel2:#0f1730;
+      --fg:#e9eefc; --muted:#9fb0da;
+      --line:#263155; --chip:#1b2750;
+      --accent:#7aa2ff; --good:#4ade80; --bad:#fb7185;
+      --shadow: 0 12px 34px rgba(0,0,0,.45);
+      --r:16px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:
+        radial-gradient(900px 500px at 20% -10%, rgba(122,162,255,.20), transparent 60%),
+        radial-gradient(900px 500px at 80% 0%, rgba(251,113,133,.16), transparent 55%),
+        linear-gradient(180deg, var(--bg0), var(--bg1) 35%, var(--bg0));
+      color:var(--fg);
+      -webkit-font-smoothing:antialiased;
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+    .wrap{max-width:1200px;margin:18px auto;padding:0 14px 22px;}
+    header{
+      display:flex; align-items:flex-start; justify-content:space-between; gap:12px;
+      margin:8px 0 14px;
+    }
+    .titleblock{min-width:0}
+    h1{
+      margin:0;
+      font-size:20px;
+      letter-spacing:.3px;
+      line-height:1.2;
+    }
+    .muted{color:var(--muted); font-size:12.5px; line-height:1.35; margin-top:6px}
+    .pillrow{
+      display:flex; gap:8px; flex-wrap:wrap; align-items:center;
+      margin-top:10px;
+    }
+    .chip{
+      padding:7px 10px;
+      border:1px solid var(--line);
+      background:linear-gradient(180deg, rgba(27,39,80,.65), rgba(27,39,80,.35));
+      border-radius:999px;
+      font-size:12px;
+      color:var(--muted);
+      display:inline-flex; gap:8px; align-items:center;
+      backdrop-filter: blur(8px);
+    }
+    .chip strong{color:var(--fg); font-weight:600}
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    /* Controls */
+    .controls{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin:12px 0 12px;
+    }
+    .search{
+      display:flex; align-items:center; gap:10px;
+      padding:10px 12px;
+      border-radius:var(--r);
+      border:1px solid var(--line);
+      background:rgba(18,26,51,.78);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+    .search input{
+      width:100%;
+      border:0; outline:0;
+      background:transparent;
+      color:var(--fg);
+      font-size:14px;
+    }
+    .search .icon{opacity:.85; font-size:14px}
+    .btnrow{display:flex; gap:10px; flex-wrap:wrap}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:8px;
+      padding:10px 12px;
+      border-radius:var(--r);
+      border:1px solid var(--line);
+      background:rgba(27,39,80,.55);
+      color:var(--fg);
+      font-size:13px;
+      cursor:pointer;
+      user-select:none;
+      backdrop-filter: blur(10px);
+    }
+    .btn:hover{background:rgba(27,39,80,.85)}
+    .btn:active{transform: translateY(1px)}
+    .btn.secondary{background:rgba(18,26,51,.55)}
+    .btn.small{padding:8px 10px; border-radius:12px; font-size:12px}
+
+    /* Card & Table */
+    .card{
+      border:1px solid var(--line);
+      border-radius:var(--r);
+      overflow:hidden;
+      background:rgba(18,26,51,.70);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+    .tablewrap{
+      overflow:auto;
+      -webkit-overflow-scrolling:touch;
+      max-height: 72vh; /* mobile-friendly */
+    }
+    table{width:100%; border-collapse:separate; border-spacing:0; min-width:820px;}
+    thead th{
+      position:sticky; top:0; z-index:2;
+      background:rgba(15,23,48,.98);
+      border-bottom:1px solid var(--line);
+      padding:10px 10px;
+      font-size:12px; color:var(--muted);
+      text-align:left;
+      cursor:pointer;
+      user-select:none;
+      white-space:nowrap;
+    }
+    thead th .arrow{opacity:.55; margin-left:6px}
+    tbody td{
+      border-bottom:1px solid rgba(38,49,85,.65);
+      padding:10px 10px;
+      font-size:13px;
+      vertical-align:top;
+      white-space:nowrap;
+    }
+    tbody tr:nth-child(2n){background:rgba(9,13,28,.28)}
+    tbody tr:hover{background:rgba(122,162,255,.08)}
+    code{
+      background:rgba(255,255,255,.07);
+      border:1px solid rgba(255,255,255,.10);
+      padding:2px 6px;border-radius:8px;font-size:12px
+    }
+
+    /* Mobile “cards” mode */
+    .cards{
+      display:none;
+      padding:12px;
+      gap:10px;
+    }
+    .rowcard{
+      border:1px solid rgba(38,49,85,.75);
+      background:rgba(9,13,28,.35);
+      border-radius:14px;
+      padding:12px;
+    }
+    .rowtop{
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+      margin-bottom:8px;
+    }
+    .ticker{
+      font-weight:800;
+      letter-spacing:.6px;
+      font-size:14px;
+    }
+    .kpi{
+      display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end;
+      font-size:12px; color:var(--muted);
+    }
+    .badge{
+      border:1px solid rgba(38,49,85,.9);
+      background:rgba(27,39,80,.40);
+      padding:5px 8px;
+      border-radius:999px;
+      display:inline-flex; gap:6px; align-items:center;
+    }
+    .pos{color:var(--good)}
+    .neg{color:var(--bad)}
+    .kv{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:6px;
+      margin-top:8px;
+      color:var(--muted);
+      font-size:12px;
+    }
+    .kv div{display:flex; justify-content:space-between; gap:10px}
+    .kv b{color:var(--fg); font-weight:600; max-width:60%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+    .kv span{max-width:60%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; text-align:right}
+
+    /* Footer status */
+    .status{margin:12px 0 0 0}
+    .small{font-size:12px;color:var(--muted); line-height:1.35}
+
+    /* Responsive */
+    @media (max-width: 860px){
+      .wrap{margin:14px auto}
+      header{flex-direction:column}
+      table{min-width: 760px;}
+    }
+    @media (max-width: 720px){
+      table{min-width: 920px;} /* encourage horizontal scroll in table mode */
+      .tablewrap{max-height: 58vh;}
+      .controls{gap:10px}
+    }
+    @media (max-width: 560px){
+      /* Default to cards on small screens */
+      .tablewrap{display:none}
+      .cards{display:grid}
+      .btnrow{justify-content:space-between}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="titleblock">
+        <h1>LONGARC — Filtered Screener</h1>
+        <div class="muted">
+          Mobile-first viewer for a CSV in your repo. Use <code>?csv=...</code> to load a different run.
+          Example: <code>?csv=https://raw.githubusercontent.com/.../outputs/longarc_filtered_TODAY.csv</code>
+        </div>
+        <div class="pillrow">
+          <span class="chip" id="meta">Loading…</span>
+          <span class="chip" id="hint"><strong>Tip</strong> swipe table →</span>
+        </div>
+      </div>
+
+      <div class="btnrow">
+        <a class="btn" id="csvLink" href="#" target="_blank" rel="noopener">⬇ Open CSV</a>
+        <button class="btn secondary" id="toggleView" type="button">📱 Cards</button>
+        <button class="btn secondary" id="reset" type="button">↺ Reset</button>
+      </div>
+    </header>
+
+    <div class="controls">
+      <div class="search">
+        <span class="icon">⌕</span>
+        <input id="q" type="search" inputmode="search" autocomplete="off"
+               placeholder="Search ticker, sector, MOS, CAGR, anything…" />
+        <button class="btn small" id="clear" type="button">Clear</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <!-- Table mode -->
+      <div class="tablewrap" id="tablewrap">
+        <table id="tbl">
+          <thead><tr id="hdr"></tr></thead>
+          <tbody id="body"></tbody>
+        </table>
+      </div>
+
+      <!-- Cards mode (better for mobile) -->
+      <div class="cards" id="cards"></div>
+    </div>
+
+    <div class="status small" id="status"></div>
+  </div>
+
+<script>
+  // ---- Config: default CSV path ----
+  const DEFAULT_CSV = "https://raw.githubusercontent.com/aglucaci/longarc/refs/heads/main/outputs/longarc_filtered_TODAY.csv";
+
+  // ---- CSV parser (quotes/commas/newlines) ----
+  function parseCSV(text) {
+    const rows = [];
+    let row = [];
+    let i = 0, field = "", inQuotes = false;
+
+    while (i < text.length) {
+      const c = text[i];
+
+      if (inQuotes) {
+        if (c === '"') {
+          const next = text[i + 1];
+          if (next === '"') { field += '"'; i += 2; continue; }
+          inQuotes = false; i++; continue;
+        } else {
+          field += c; i++; continue;
+        }
+      } else {
+        if (c === '"') { inQuotes = true; i++; continue; }
+        if (c === ',') { row.push(field); field = ""; i++; continue; }
+        if (c === '\r') { i++; continue; }
+        if (c === '\n') {
+          row.push(field); rows.push(row);
+          row = []; field = ""; i++; continue;
+        }
+        field += c; i++; continue;
+      }
+    }
+    if (field.length > 0 || row.length > 0) { row.push(field); rows.push(row); }
+    while (rows.length && rows[rows.length - 1].every(x => (x ?? "").trim() === "")) rows.pop();
+    return rows;
+  }
+
+  function getCsvPath() {
+    const u = new URL(window.location.href);
+    return u.searchParams.get("csv") || DEFAULT_CSV;
+  }
+
+  function isNumericLike(x) {
+    if (x == null) return false;
+    const s = String(x).trim();
+    if (s === "") return false;
+    const t = s.replace(/[%,$]/g, "").replace(/,/g, "");
+    return t !== "" && !isNaN(Number(t));
+  }
+
+  function toNumberSmart(x) {
+    const s = String(x ?? "").trim().replace(/[%,$]/g, "").replace(/,/g, "");
+    const v = Number(s);
+    return isNaN(v) ? null : v;
+  }
+
+  function makeLinkIfUrl(val) {
+    const s = String(val ?? "").trim();
+    if (/^https?:\/\//i.test(s)) {
+      const a = document.createElement("a");
+      a.href = s;
+      a.target = "_blank";
+      a.rel = "noopener";
+      a.textContent = s.length > 48 ? s.slice(0,48) + "…" : s;
+      return a;
+    }
+    return document.createTextNode(s);
+  }
+
+  function fmtPct(x) {
+    const n = toNumberSmart(x);
+    if (n == null) return null;
+    return (Math.round(n * 100) / 100).toFixed(2) + "%";
+  }
+
+  let headers = [];
+  let data = [];
+  let filtered = [];
+  let sortState = { col: null, dir: 1 };
+  let viewMode = "table"; // or "cards"
+
+  function renderMeta(rowsCount) {
+    document.getElementById("meta").textContent = `${rowsCount.toLocaleString()} rows • ${headers.length} cols`;
+  }
+
+  function renderTable(rows) {
+    const tbody = document.getElementById("body");
+    tbody.innerHTML = "";
+
+    for (const r of rows) {
+      const tr = document.createElement("tr");
+      for (let c = 0; c < headers.length; c++) {
+        const td = document.createElement("td");
+        const v = r[headers[c]];
+        td.appendChild(makeLinkIfUrl(v));
+        tr.appendChild(td);
+      }
+      tbody.appendChild(tr);
+    }
+    renderMeta(rows.length);
+  }
+
+  function pickCol(possibles) {
+    const lower = new Set(headers.map(h => h.toLowerCase()));
+    for (const p of possibles) {
+      if (lower.has(p.toLowerCase())) return headers.find(h => h.toLowerCase() === p.toLowerCase());
+    }
+    return null;
+  }
+
+  function renderCards(rows) {
+    const cards = document.getElementById("cards");
+    cards.innerHTML = "";
+
+    // smart column picks
+    const colTicker = pickCol(["Ticker", "Symbol"]);
+    const colCompany = pickCol(["Company", "Name"]);
+    const colCagr = pickCol(["10yr_CAGR", "CAGR", "10Y CAGR"]);
+    const colMos = pickCol(["DCF_Margin_of_Safety_%", "Margin of Safety", "MOS", "MoS"]);
+    const colSector = pickCol(["Sector"]);
+    const colIndustry = pickCol(["Industry"]);
+
+    for (const r of rows) {
+      const wrap = document.createElement("div");
+      wrap.className = "rowcard";
+
+      const top = document.createElement("div");
+      top.className = "rowtop";
+
+      const left = document.createElement("div");
+      const ticker = document.createElement("div");
+      ticker.className = "ticker";
+      ticker.textContent = colTicker ? (r[colTicker] || "—") : "—";
+      left.appendChild(ticker);
+
+      if (colCompany && r[colCompany]) {
+        const comp = document.createElement("div");
+        comp.className = "small";
+        comp.style.marginTop = "2px";
+        comp.style.color = "var(--muted)";
+        comp.textContent = r[colCompany];
+        left.appendChild(comp);
+      }
+
+      const kpi = document.createElement("div");
+      kpi.className = "kpi";
+
+      if (colCagr) {
+        const b = document.createElement("span");
+        b.className = "badge";
+        b.innerHTML = `CAGR <span class="pos"><b>${fmtPct(r[colCagr]) ?? "—"}</b></span>`;
+        kpi.appendChild(b);
+      }
+
+      if (colMos) {
+        const n = toNumberSmart(r[colMos]);
+        const cls = (n != null && n < 0) ? "neg" : "pos";
+        const b = document.createElement("span");
+        b.className = "badge";
+        b.innerHTML = `MOS <span class="${cls}"><b>${fmtPct(r[colMos]) ?? "—"}</b></span>`;
+        kpi.appendChild(b);
+      }
+
+      top.appendChild(left);
+      top.appendChild(kpi);
+
+      const kv = document.createElement("div");
+      kv.className = "kv";
+
+      if (colSector && r[colSector]) {
+        const d = document.createElement("div");
+        d.innerHTML = `<b>Sector</b><span>${r[colSector]}</span>`;
+        kv.appendChild(d);
+      }
+      if (colIndustry && r[colIndustry]) {
+        const d = document.createElement("div");
+        d.innerHTML = `<b>Industry</b><span>${r[colIndustry]}</span>`;
+        kv.appendChild(d);
+      }
+
+      // show up to 3 extra fields that exist (but avoid huge columns)
+      const avoid = new Set([colTicker, colCompany, colCagr, colMos, colSector, colIndustry].filter(Boolean));
+      const extras = headers.filter(h => !avoid.has(h)).slice(0, 3);
+      for (const h of extras) {
+        const v = (r[h] ?? "").toString().trim();
+        if (!v) continue;
+        const d = document.createElement("div");
+        d.innerHTML = `<b>${h}</b><span>${v}</span>`;
+        kv.appendChild(d);
+      }
+
+      wrap.appendChild(top);
+      if (kv.childNodes.length) wrap.appendChild(kv);
+      cards.appendChild(wrap);
+    }
+
+    renderMeta(rows.length);
+  }
+
+  function renderHeader() {
+    const hdr = document.getElementById("hdr");
+    hdr.innerHTML = "";
+
+    headers.forEach((h) => {
+      const th = document.createElement("th");
+      th.textContent = h;
+
+      const arrow = document.createElement("span");
+      arrow.className = "arrow";
+      arrow.textContent = (sortState.col === h) ? (sortState.dir === 1 ? "▲" : "▼") : "↕";
+      th.appendChild(arrow);
+
+      th.addEventListener("click", () => {
+        if (sortState.col === h) sortState.dir *= -1;
+        else { sortState.col = h; sortState.dir = 1; }
+        applySortAndRender();
+      });
+
+      hdr.appendChild(th);
+    });
+  }
+
+  function applySortAndRender() {
+    if (sortState.col) {
+      const col = sortState.col;
+      const dir = sortState.dir;
+      const numeric = filtered.some(r => isNumericLike(r[col]));
+      filtered.sort((a,b) => {
+        const av = a[col], bv = b[col];
+        if (numeric) {
+          const an = toNumberSmart(av), bn = toNumberSmart(bv);
+          if (an == null && bn == null) return 0;
+          if (an == null) return 1;
+          if (bn == null) return -1;
+          return dir * (an - bn);
+        } else {
+          const as = String(av ?? "").toLowerCase();
+          const bs = String(bv ?? "").toLowerCase();
+          if (as < bs) return -dir;
+          if (as > bs) return dir;
+          return 0;
+        }
+      });
+    }
+    renderHeader();
+    if (viewMode === "cards") renderCards(filtered);
+    else renderTable(filtered);
+  }
+
+  function applySearch() {
+    const q = document.getElementById("q").value.trim().toLowerCase();
+    if (!q) filtered = data.slice();
+    else {
+      filtered = data.filter(r => headers.some(h => String(r[h] ?? "").toLowerCase().includes(q)));
+    }
+    applySortAndRender();
+  }
+
+  function setView(mode) {
+    viewMode = mode;
+    const tw = document.getElementById("tablewrap");
+    const cards = document.getElementById("cards");
+    const btn = document.getElementById("toggleView");
+
+    if (mode === "cards") {
+      tw.style.display = "none";
+      cards.style.display = "grid";
+      btn.textContent = "📊 Table";
+    } else {
+      tw.style.display = "block";
+      cards.style.display = "none";
+      btn.textContent = "📱 Cards";
+    }
+    applySortAndRender();
+  }
+
+  async function load() {
+    const csvPath = getCsvPath();
+    document.getElementById("csvLink").href = csvPath;
+    const status = document.getElementById("status");
+    status.textContent = `Loading: ${csvPath}`;
+
+    try {
+      const res = await fetch(csvPath, { cache: "no-store" });
+      if (!res.ok) throw new Error(`HTTP ${res.status} — ${res.statusText}`);
+      const text = await res.text();
+
+      const rows = parseCSV(text);
+      if (!rows.length) throw new Error("CSV appears empty.");
+
+      headers = rows[0].map(x => String(x || "").trim());
+      data = rows.slice(1).map(cols => {
+        const obj = {};
+        headers.forEach((h, i) => obj[h] = cols[i] ?? "");
+        return obj;
+      });
+
+      filtered = data.slice();
+      sortState = { col: null, dir: 1 };
+
+      // default view: cards on small screens, table otherwise
+      const small = window.matchMedia("(max-width: 560px)").matches;
+      setView(small ? "cards" : "table");
+
+      status.textContent = `Loaded ${data.length.toLocaleString()} rows. Tap headers to sort (table) or use search (cards).`;
+    } catch (err) {
+      console.error(err);
+      document.getElementById("meta").textContent = "Load failed";
+      status.innerHTML = `❌ Failed to load CSV.<br/>
+        <span class="small">
+          This page must be served over HTTP (GitHub Pages). If opened locally, <code>fetch()</code> may be blocked.<br/>
+          Error: <code>${String(err.message || err)}</code>
+        </span>`;
+    }
+  }
+
+  // Wire up UI
+  document.getElementById("q").addEventListener("input", applySearch);
+  document.getElementById("clear").addEventListener("click", () => {
+    document.getElementById("q").value = "";
+    applySearch();
+  });
+  document.getElementById("reset").addEventListener("click", () => {
+    document.getElementById("q").value = "";
+    sortState = { col: null, dir: 1 };
+    filtered = data.slice();
+    applySortAndRender();
+  });
+  document.getElementById("toggleView").addEventListener("click", () => {
+    setView(viewMode === "cards" ? "table" : "cards");
+  });
+
+  load();
+</script>
+</body>
+</html>
