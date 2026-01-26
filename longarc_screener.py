@@ -258,6 +258,10 @@ def main() -> int:
     df_flt = df_flt.sort_values("10yr_CAGR", ascending=False)
 
     flt_path = write_csv(df_flt, outdir, "longarc_filtered", stamp)
+  
+    # Write today
+    flt_path_today = write_csv(df_flt, outdir, "longarc_filtered_TODAY", "")
+  
     log(f"Wrote filtered CSV (CAGR > {args.cagr_threshold}%): {flt_path} ({len(df_flt)} rows)")
 
     if not df_flt.empty:
