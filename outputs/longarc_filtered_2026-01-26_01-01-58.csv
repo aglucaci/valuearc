@@ -1,0 +1,12 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR,DCF_Margin_of_Safety_%
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,5000000000.0,36.12,169.52,-0.0152,211788.0,20.9,-61.42
+CRVL,Corvel Corp,Financial,Insurance Brokers,USA,3580000000.0,34.44,69.88,-0.0165,124190.0,16.47,-52.01
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,77160000000.0,41.71,192.96,-0.0006,1403970.0,25.81,-56.67
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1210000000.0,15.02,48.32,-0.0183,133171.0,20.01,24.63
+NFLX,Netflix Inc,Communication Services,Entertainment,USA,393520000000.0,34.08,86.12,0.030899999999999997,61151803.0,25.09,-8.93
+PAYC,Paycom Software Inc,Technology,Software - Application,USA,8570000000.0,18.93,152.29,-0.0018,775155.0,17.82,46.56
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,7930000000.0,36.51,145.86,-0.0105,387755.0,16.71,35.71
+PGR,Progressive Corp,Financial,Insurance - Property & Casualty,USA,120820000000.0,11.29,206.03,-0.0043,3944546.0,24.5,50.43
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,60230000000.0,34.19,338.53,0.0029,870246.0,24.86,-13.83
+TTD,Trade Desk Inc,Communication Services,Advertising Agencies,USA,17680000000.0,41.7,36.55,-0.0073,6154555.0,28.36,34.3
+V,Visa Inc,Financial,Credit Services,USA,623730000000.0,32.29,326.18,-0.0006,5653797.0,16.73,-19.02
