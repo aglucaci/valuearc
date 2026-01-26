@@ -121,10 +121,12 @@ def main() -> int:
     stamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     full_path = f"outputs/longarc_full_{stamp}.csv"
     flt_path = f"outputs/longarc_filtered_{stamp}.csv"
-
+    flt_path_today = f"outputs/longarc_filtered_TODAY.csv"
+  
     df.to_csv(full_path, index=False)
     df_flt.to_csv(flt_path, index=False)
-
+    df_flt.to_csv(flt_path_today, index=False)
+  
     print(f"✅ Wrote: {full_path}")
     print(f"✅ Wrote: {flt_path}")
 
