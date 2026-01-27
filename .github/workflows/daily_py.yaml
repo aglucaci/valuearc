@@ -3,7 +3,7 @@ name: LONGARC Screener (with GuruFocus MOS)
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 15 * * 1-5" # 10:00 AM ET (15:00 UTC), Mon–Fri
+    - cron: "0 16 * * 1-5" # 10:00 AM ET (15:00 UTC), Mon–Fri
 
 permissions:
   contents: write
