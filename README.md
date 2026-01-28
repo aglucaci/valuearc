@@ -6,6 +6,10 @@ The system runs end-to-end in **GitHub Actions**, producing timestamped CSV outp
 
 ---
 
+## Live Dashboard
+
+https://aglucaci.github.io/longarc/
+
 ## What LONGARC Does
 
 LONGARC combines multiple layers of analysis:
