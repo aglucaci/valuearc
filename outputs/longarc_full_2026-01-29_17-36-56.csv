@@ -1,0 +1,19 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+ADSK,Autodesk Inc,Technology,Software - Application,USA,53990000000.0,49.44,254.68,-0.0509,1738573.0,18.87
+APPF,Appfolio Inc,Technology,Software - Application,USA,7420000000.0,37.07,206.52,-0.0527,215874.0,32.44
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4179999999.9999995,29.59,141.73,-0.031400000000000004,386383.0,19.22
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,38750000000.0,24.56,40.03,-0.0144,1556756.0,25.5
+CRVL,Corvel Corp,Financial,Insurance Brokers,USA,3520000000.0,33.89,68.77,0.025,74236.0,15.94
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,76080000000.0,41.12,190.26,0.0058,429623.0,25.54
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,7260000000.0,30.75,38.56,-0.0045000000000000005,1300008.0,-3.09
+EXLS,ExlService Holdings Inc,Technology,Information Technology Services,USA,6180000000.0,26.36,38.92,-0.0216,474540.0,16.22
+FUBO,fuboTV Inc,Communication Services,Broadcasting,USA,806310000.0,6.37,2.29,-0.0189,5506771.0,-13.55
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1190000000.0,14.7,47.29,-0.008199999999999999,15280.0,20.59
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,9120000000.0,41.96,151.31,-0.061,360123.0,10.99
+NFLX,Netflix Inc,Communication Services,Entertainment,USA,350180000000.0,32.82,82.94,-0.020099999999999996,21727623.0,24.57
+ODD,ODDITY Tech Ltd,Consumer Defensive,Household & Personal Products,Israel,1950000000.0,19.0,33.98,0.0154,202237.0,-3.45
+OSPN,OneSpan Inc,Technology,Software - Infrastructure,USA,433510000.0,7.73,11.4,-0.024,132071.0,-2.45
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,60380000000.0,34.27,339.37,0.0177,286738.0,24.62
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5260000000.0,13.13,57.31,0.005699999999999999,179631.0,10.07
+TGLS,Tecnoglass Inc,Basic Materials,Building Materials,Colombia,2260000000.0,12.64,48.58,-0.0068000000000000005,90021.0,19.01
+YELP,Yelp Inc,Communication Services,Internet Content & Information,USA,1690000000.0,12.11,27.45,-0.0017000000000000001,280224.0,2.7
