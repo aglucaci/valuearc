@@ -1,0 +1,22 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+ADSK,Autodesk Inc,Technology,Software - Application,USA,53310000000.0,48.81,251.45,-0.0165,471626.0,18.74
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4260000000.0,30.18,144.56,0.001,148466.0,19.06
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,38790000000.0,24.58,40.08,-0.0051,1313649.0,25.55
+CRVL,Corvel Corp,Financial,Insurance Brokers,USA,3480000000.0,33.49,67.96,-0.0127,43671.0,16.11
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,75800000000.0,40.97,189.56,-0.0005,513272.0,25.7
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,7130000000.0,30.23,37.89,-0.019,593893.0,-3.11
+EXLS,ExlService Holdings Inc,Technology,Information Technology Services,USA,6100000000.0,26.02,38.42,-0.0048,451431.0,15.89
+FUBO,fuboTV Inc,Communication Services,Broadcasting,USA,800660000.0,6.33,2.27,-0.0173,3637985.0,-13.62
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1210000000.0,14.94,48.08,-0.0009,23549.0,20.81
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,21270000000.0,12.12,173.71,0.0068000000000000005,918410.0,10.78
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,9110000000.0,41.93,151.2,-0.029300000000000003,223694.0,10.9
+NFLX,Netflix Inc,Communication Services,Entertainment,USA,351680000000.0,32.96,83.29,0.0016,16527007.0,24.7
+ODD,ODDITY Tech Ltd,Consumer Defensive,Household & Personal Products,Israel,1910000000.0,18.63,33.31,-0.0095,113711.0,-3.4
+OSPN,OneSpan Inc,Technology,Software - Infrastructure,USA,441500000.0,7.87,11.61,-0.0034000000000000002,92325.0,-2.28
+PAYC,Paycom Software Inc,Technology,Software - Application,USA,7510000000.0,16.59,133.43,-0.0068000000000000005,436073.0,16.06
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,7200000000.0,33.16,132.45,0.0022,177279.0,15.2
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,59190000000.0,33.6,332.7,-0.017,210523.0,26.47
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5320000000.0,13.27,57.93,0.0012,235547.0,10.41
+TGLS,Tecnoglass Inc,Basic Materials,Building Materials,Colombia,2250000000.0,12.56,48.26,-0.010700000000000001,53145.0,19.19
+V,Visa Inc,Financial,Credit Services,USA,617330000000.0,31.46,322.83,-0.027000000000000003,4594012.0,17.1
+YELP,Yelp Inc,Communication Services,Internet Content & Information,USA,1680000000.0,12.04,27.3,-0.0074,214364.0,3.22
