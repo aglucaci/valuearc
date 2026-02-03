@@ -1,0 +1,12 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+ADSK,Autodesk Inc,Technology,Software - Application,USA,50680000000.0,46.41,239.04,-0.0647,1386467.0,19.39
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4280000000.0000005,30.32,145.22,-0.0435,191706.0,18.18
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,37810000000.0,23.95,39.06,-0.0158,3496538.0,25.21
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,75660000000.0,40.9,189.21,-0.0089,944256.0,26.17
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1180000000.0,14.65,47.13,-0.0397,49107.0,21.36
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,14300000000.0,6.74,75.25,-0.0137,247920.0,-1.65
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,21360000000.0,12.18,174.48,-0.025699999999999997,970816.0,11.94
+OSPN,OneSpan Inc,Technology,Software - Infrastructure,USA,423240000.0,7.54,11.13,-0.0663,314407.0,-1.5
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,58940000000.0,33.46,331.3,-0.015,254439.0,26.04
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5470000000.0,13.63,59.51,0.0131,189741.0,10.6
+TGLS,Tecnoglass Inc,Basic Materials,Building Materials,Colombia,2250000000.0,12.54,48.21,-0.0039000000000000003,162782.0,19.66
