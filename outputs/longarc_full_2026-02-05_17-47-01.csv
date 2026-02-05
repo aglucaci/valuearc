@@ -1,0 +1,19 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+ADSK,Autodesk Inc,Technology,Software - Application,USA,51720000000.0,47.36,243.94,0.0022,1256802.0,18.81
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4410000000.0,31.24,149.65,0.0229,261256.0,17.74
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,38760000000.0,24.56,40.04,-0.003,3096061.0,25.36
+CRVL,Corvel Corp,Financial,Insurance Brokers,USA,2490000000.0,23.78,48.54,-0.0109,144668.0,13.24
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,78040000000.0,42.18,195.16,0.0132,541586.0,26.28
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,6450000000.0,27.31,34.24,-0.0286,2142671.0,-4.0
+EXLS,ExlService Holdings Inc,Technology,Information Technology Services,USA,5130000000.0,21.9,32.34,-0.0037,1479380.0,13.91
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1230000000.0,15.29,49.18,0.008100000000000001,31373.0,21.29
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,14200000000.0,6.69,74.73,-0.0194,246425.0,-1.67
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,21210000000.0,12.09,173.24,-0.0268,878390.0,11.87
+NFLX,Netflix Inc,Communication Services,Entertainment,USA,345820000000.0,32.41,81.9,0.0218,32196032.0,25.41
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,150140000000.0,12.85,44.57,-0.0555,33914668.0,9.51
+OSPN,OneSpan Inc,Technology,Software - Infrastructure,USA,421720000.0,7.52,11.09,-0.0018,600843.0,-2.19
+PAYC,Paycom Software Inc,Technology,Software - Application,USA,7450000000.0,16.45,132.36,0.0194,585308.0,18.51
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,6940000000.0,31.97,127.69,0.0083,377688.0,17.1
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,60080000000.0,34.1,337.68,-0.0049,255219.0,26.15
+TTD,Trade Desk Inc,Communication Services,Advertising Agencies,USA,13140000000.0,31.0,27.17,-0.0037,10409525.0,24.66
+YELP,Yelp Inc,Communication Services,Internet Content & Information,USA,1490000000.0,10.71,24.27,0.0008,519731.0,4.21
