@@ -262,7 +262,7 @@
 
 <script>
   // ---- Config: default CSV path ----
-  const DEFAULT_CSV = "https://raw.githubusercontent.com/aglucaci/longarc/refs/heads/main/outputs/longarc_filtered_TODAY.csv";
+  const DEFAULT_CSV = "outputs/longarc_filtered_TODAY.csv";
 
   // ---- CSV parser (quotes/commas/newlines) ----
   function parseCSV(text) {
@@ -614,13 +614,26 @@
   }
 
   async function load() {
-    const csvPath = getCsvPath();
+    const csvPath = "https://raw.githubusercontent.com/aglucaci/longarc/refs/heads/main/outputs/longarc_filtered_TODAY.csv";
     document.getElementById("csvLink").href = csvPath;
     const status = document.getElementById("status");
     status.textContent = `Loading: ${csvPath}`;
 
+
+    // If opened as a local file (file://), many browsers block fetch() for local CSVs.
+    if (location.protocol === "file:") {
+      status.innerHTML = `❌ This page is opened via <code>file://</code>, so <code>fetch()</code> may be blocked.<br/>
+      <span class="small">Fix: run <code>python -m http.server 8000</code> in this folder, then open
+      <code>http://localhost:8000/</code>.</span>`;
+      document.getElementById("meta").textContent = "Load blocked (file://)";
+      return;
+    }
+
     try {
-      const res = await fetch(csvPath, { cache: "no-store" });
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 12000);
+      const res = await fetch(csvPath, { cache: "no-store", signal: controller.signal });
+      clearTimeout(timeout);
       if (!res.ok) throw new Error(`HTTP ${res.status} — ${res.statusText}`);
       const text = await res.text();
 
