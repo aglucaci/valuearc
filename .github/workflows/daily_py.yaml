@@ -43,7 +43,7 @@ jobs:
 
       - name: Run LONGARC screener
         run: |
-          python longarc_screener.py
+          python longarc_screener_mos_recommended.py
 
       - name: Upload outputs as artifact
         uses: actions/upload-artifact@v4

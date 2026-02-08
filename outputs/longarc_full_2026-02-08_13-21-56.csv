@@ -1,0 +1,16 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+ADSK,Autodesk Inc,Technology,Software - Application,USA,50960000000.0,46.67,240.4,0.0098,2138965.0,18.71
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4460000000.0,31.57,151.23,0.036699999999999997,481704.0,18.21
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,39070000000.0,24.75,40.36,0.012,8326281.0,25.13
+CRVL,Corvel Corp,Financial,Insurance Brokers,USA,2490000000.0,23.84,48.67,-0.0012,364069.0,13.07
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,78330000000.0,42.33,195.87,0.0091,1689201.0,26.57
+EXLS,ExlService Holdings Inc,Technology,Information Technology Services,USA,5030000000.0,21.47,31.7,0.016,2870065.0,13.71
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1210000000.0,15.0,48.26,-0.0045000000000000005,108422.0,21.1
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,14020000000.0,6.61,73.79,-0.005,580607.0,-1.98
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,21160000000.0,12.06,172.85,0.016200000000000003,1951307.0,11.69
+NFLX,Netflix Inc,Communication Services,Entertainment,USA,347060000000.0,32.53,82.2,0.016399999999999998,45847617.0,25.27
+ODD,ODDITY Tech Ltd,Consumer Defensive,Household & Personal Products,Israel,1730000000.0,16.81,30.07,0.0452,719988.0,-4.48
+PAYC,Paycom Software Inc,Technology,Software - Application,USA,7370000000.0,16.28,130.97,-0.004699999999999999,1898644.0,18.56
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,59390000000.0,33.71,333.79,-0.0029,731850.0,27.42
+TTD,Trade Desk Inc,Communication Services,Advertising Agencies,USA,13080000000.0,30.85,27.04,0.0305,13570149.0,24.55
+YELP,Yelp Inc,Communication Services,Internet Content & Information,USA,1500000000.0,10.77,24.42,0.0158,1547561.0,4.83
