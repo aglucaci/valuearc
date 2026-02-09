@@ -1,0 +1,18 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+ADSK,Autodesk Inc,Technology,Software - Application,USA,50770000000.0,46.49,239.47,-0.0039000000000000003,275622.0,18.26
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4440000000.0,31.46,150.7,-0.0034999999999999996,45423.0,18.12
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,38690000000.0,24.51,39.97,-0.0098,1103970.0,24.92
+CRVL,Corvel Corp,Financial,Insurance Brokers,USA,2410000000.0,23.12,47.19,-0.0304,38909.0,13.25
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,78180000000.0,42.25,195.49,-0.0019,237332.0,26.44
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1220000000.0,15.07,48.49,0.004699999999999999,13157.0,20.95
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,14140000000.0,6.66,74.43,0.0087,192344.0,-1.98
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,21360000000.0,12.18,174.5,0.0095,368589.0,11.38
+NFLX,Netflix Inc,Communication Services,Entertainment,USA,339710000000.0,31.84,80.46,-0.0212,13818419.0,25.12
+ODD,ODDITY Tech Ltd,Consumer Defensive,Household & Personal Products,Israel,1710000000.0,16.64,29.76,-0.0103,142628.0,-4.48
+PAYC,Paycom Software Inc,Technology,Software - Application,USA,7260000000.0,16.04,129.01,-0.015,202104.0,18.57
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,6290000000.0,27.22,115.69,-0.0183,95891.0,16.66
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,60150000000.0,34.14,338.08,0.0128,162527.0,26.6
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5600000000.0,13.96,60.93,-0.0128,40113.0,10.88
+TTD,Trade Desk Inc,Communication Services,Advertising Agencies,USA,13060000000.0,30.82,27.01,-0.0009,1930612.0,24.55
+V,Visa Inc,Financial,Credit Services,USA,625750000000.0,31.11,328.28,-0.01,1243749.0,17.58
+YELP,Yelp Inc,Communication Services,Internet Content & Information,USA,1470000000.0,10.55,23.93,-0.0202,248391.0,4.61
