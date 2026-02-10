@@ -1,0 +1,15 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+ADSK,Autodesk Inc,Technology,Software - Application,USA,51540000000.0,47.2,243.11,0.0024,876937.0,18.38
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,39370000000.0,24.94,40.67,0.0091,2006363.0,24.68
+CRVL,Corvel Corp,Financial,Insurance Brokers,USA,2400000000.0,23.0,46.94,0.0204,132766.0,12.43
+EXLS,ExlService Holdings Inc,Technology,Information Technology Services,USA,4980000000.0,21.25,31.37,0.0087,1078760.0,13.21
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1240000000.0,15.4,49.54,0.0275,41881.0,20.97
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,14660000000.0,6.91,77.15,0.0104,59343.0,-1.65
+NFLX,Netflix Inc,Communication Services,Entertainment,USA,349850000000.0,32.79,82.86,0.0171,22807584.0,24.78
+ODD,ODDITY Tech Ltd,Consumer Defensive,Household & Personal Products,Israel,1770000000.0,17.27,30.88,0.0397,308537.0,-4.59
+PAYC,Paycom Software Inc,Technology,Software - Application,USA,7220000000.0,15.96,128.4,-0.0079,415550.0,17.63
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,6230000000.0,27.2,115.63,0.0296,465183.0,15.32
+QLYS,Qualys Inc,Technology,Software - Infrastructure,USA,4090000000.0,20.93,113.94,0.043899999999999995,203795.0,17.37
+TTD,Trade Desk Inc,Communication Services,Advertising Agencies,USA,13780000000.0,32.52,28.5,0.054000000000000006,6029168.0,24.55
+V,Visa Inc,Financial,Credit Services,USA,626800000000.0,31.16,328.85,0.0101,2421477.0,17.25
+YELP,Yelp Inc,Communication Services,Internet Content & Information,USA,1500000000.0,10.75,24.36,0.0108,288669.0,3.72
