@@ -1,0 +1,12 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,38660000000.0,24.49,39.94,-0.0103,2874524.0,24.69
+CRAI,CRA International Inc,Industrials,Consulting Services,USA,1060000000.0,19.38,161.19,-0.0731,35963.0,27.93
+CRVL,Corvel Corp,Financial,Insurance Brokers,USA,2350000000.0,22.51,45.95,-0.0139,61517.0,12.58
+EXLS,ExlService Holdings Inc,Technology,Information Technology Services,USA,4890000000.0,20.88,30.83,-0.015300000000000001,736256.0,13.29
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1210000000.0,15.03,48.35,-0.0138,18350.0,21.17
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,14200000000.0,6.69,74.75,-0.0218,303904.0,-1.64
+NFLX,Netflix Inc,Communication Services,Entertainment,USA,336370000000.0,31.53,79.67,-0.030899999999999997,20439114.0,24.89
+ODD,ODDITY Tech Ltd,Consumer Defensive,Household & Personal Products,Israel,1670000000.0,16.24,29.04,-0.042199999999999994,494046.0,-4.4
+OSPN,OneSpan Inc,Technology,Software - Infrastructure,USA,421900000.0,7.52,11.09,-0.041100000000000005,611505.0,-1.67
+QLYS,Qualys Inc,Technology,Software - Infrastructure,USA,3920000000.0,20.1,109.41,-0.0351,250023.0,17.82
+TTD,Trade Desk Inc,Communication Services,Advertising Agencies,USA,13120000000.0,30.95,27.13,-0.0356,4827619.0,25.04
