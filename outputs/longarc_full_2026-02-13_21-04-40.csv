@@ -1,0 +1,20 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+ADSK,Autodesk Inc,Technology,Software - Application,USA,49040000000.0,44.9,231.31,0.035,1942668.0,17.41
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,36200000000.0,22.94,37.4,0.0184,5982590.0,23.52
+CRAI,CRA International Inc,Industrials,Consulting Services,USA,1020000000.0,18.62,154.88,0.0161,52512.0,26.25
+CRVL,Corvel Corp,Financial,Insurance Brokers,USA,2520000000.0,24.1,49.2,0.0407,186120.0,12.74
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,77000000000.0,41.62,192.56,-0.018000000000000002,956987.0,26.31
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4610000000.0,20.94,24.94,0.009300000000000001,2670822.0,-7.35
+EXLS,ExlService Holdings Inc,Technology,Information Technology Services,USA,4750000000.0,20.29,29.96,0.0089,2373128.0,12.68
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,6860000000.0,22.07,123.04,-0.0003,271612.0,23.23
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1220000000.0,15.09,48.56,0.0168,109362.0,20.85
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8590000000.0,17.04,369.17,-0.0794,793505.0,36.55
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13890000000.0,6.54,73.09,0.0023,333735.0,-2.1
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,8400000000.0,38.95,140.32,0.021,632862.0,10.36
+NFLX,Netflix Inc,Communication Services,Entertainment,USA,322590000000.0,30.23,76.4,0.0072,29510117.0,23.89
+ODD,ODDITY Tech Ltd,Consumer Defensive,Household & Personal Products,Israel,1620000000.0,15.77,28.2,0.0215,1614893.0,-5.29
+OSPN,OneSpan Inc,Technology,Software - Infrastructure,USA,424570000.0,7.57,11.16,0.0338,305476.0,-2.35
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5780000000.0,25.26,107.36,0.030299999999999997,1328328.0,14.45
+PRI,Primerica Inc,Financial,Insurance - Life,USA,8010000000.0,10.95,251.09,0.0042,166155.0,21.17
+QLYS,Qualys Inc,Technology,Software - Infrastructure,USA,3760000000.0,19.27,104.93,0.0013,898860.0,16.89
+V,Visa Inc,Financial,Credit Services,USA,598390000000.0,29.75,313.95,-0.0316,8787475.0,17.23
