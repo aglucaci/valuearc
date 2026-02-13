@@ -1,0 +1,18 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+ADSK,Autodesk Inc,Technology,Software - Application,USA,49070000000.0,44.94,231.48,0.0358,915987.0,17.41
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,36560000000.0,23.16,37.76,0.028399999999999998,3235281.0,23.52
+CRAI,CRA International Inc,Industrials,Consulting Services,USA,1030000000.0,18.9,157.15,0.031,32161.0,26.25
+CRVL,Corvel Corp,Financial,Insurance Brokers,USA,2520000000.0,24.15,49.28,0.0426,89993.0,12.74
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,77880000000.0,42.09,194.76,-0.0069,468400.0,26.31
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4660000000.0,21.17,25.22,0.0204,1510708.0,-7.35
+EXLS,ExlService Holdings Inc,Technology,Information Technology Services,USA,4780000000.0,20.42,30.15,0.0155,1331086.0,12.68
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1220000000.0,15.12,48.64,0.018500000000000003,26690.0,20.85
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8500000000.0,16.87,365.4,-0.0888,534761.0,36.55
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13910000000.0,6.55,73.18,0.0036,214298.0,-2.1
+NFLX,Netflix Inc,Communication Services,Entertainment,USA,324760000000.0,30.44,76.92,0.013999999999999999,19276247.0,23.89
+ODD,ODDITY Tech Ltd,Consumer Defensive,Household & Personal Products,Israel,1640000000.0,15.95,28.52,0.032799999999999996,1231158.0,-5.29
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5790000000.0,25.29,107.49,0.0316,746899.0,14.45
+PRI,Primerica Inc,Financial,Insurance - Life,USA,8010000000.0,10.95,251.06,0.0040999999999999995,64524.0,21.17
+QLYS,Qualys Inc,Technology,Software - Infrastructure,USA,3850000000.0,19.71,107.29,0.023799999999999998,469189.0,16.89
+TTD,Trade Desk Inc,Communication Services,Advertising Agencies,USA,12650000000.0,29.85,26.16,0.0007000000000000001,5975409.0,24.13
+V,Visa Inc,Financial,Credit Services,USA,607680000000.0,30.21,318.83,-0.0165,4806891.0,17.23
