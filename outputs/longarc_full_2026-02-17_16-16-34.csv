@@ -1,0 +1,22 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+ADSK,Autodesk Inc,Technology,Software - Application,USA,47520000000.0,43.51,224.13,-0.030699999999999998,911184.0,16.47
+CLBT,Cellebrite DI Ltd,Technology,Software - Infrastructure,Israel,3390000000.0,45.18,14.16,-0.0329,487836.0,4.25
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,35890000000.0,22.74,37.08,-0.0111,1597318.0,23.54
+CRAI,CRA International Inc,Industrials,Consulting Services,USA,1010000000.0,18.58,154.49,-0.004699999999999999,15291.0,25.08
+CRVL,Corvel Corp,Financial,Insurance Brokers,USA,2500000000.0,23.92,48.83,-0.0075,31547.0,13.2
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,77610000000.0,41.95,194.09,0.0033,283697.0,26.06
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4500000000.0,20.47,24.38,-0.0256,902882.0,-7.23
+EXLS,ExlService Holdings Inc,Technology,Information Technology Services,USA,4760000000.0,20.33,30.01,-0.001,509813.0,12.76
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,6700000000.0,21.56,120.19,-0.0209,88135.0,23.19
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1240000000.0,15.37,49.44,0.0139,8580.0,20.75
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8620000000.0,17.1,370.33,-0.0027,126079.0,35.5
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13660000000.0,6.44,71.9,-0.019,217633.0,-2.05
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,21150000000.0,12.06,172.76,-0.0208,416634.0,11.3
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,8380000000.000001,38.86,140.02,-0.0031,209400.0,9.71
+NFLX,Netflix Inc,Communication Services,Entertainment,USA,321540000000.0,30.14,76.15,-0.009300000000000001,15771722.0,23.66
+ODD,ODDITY Tech Ltd,Consumer Defensive,Household & Personal Products,Israel,1590000000.0,15.5,27.72,-0.0128,194985.0,-5.13
+OSPN,OneSpan Inc,Technology,Software - Infrastructure,USA,418290000.0,7.46,11.0,-0.021400000000000002,71363.0,-1.65
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5700000000.0,24.89,105.82,-0.0123,154985.0,14.09
+PRI,Primerica Inc,Financial,Insurance - Life,USA,8060000000.000001,11.01,252.55,0.0066,25905.0,20.56
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5600000000.0,13.97,61.0,-0.0101,214814.0,10.59
+V,Visa Inc,Financial,Credit Services,USA,609030000000.0,30.28,319.53,0.0174,2524969.0,16.52
