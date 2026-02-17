@@ -1,0 +1,17 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+ADSK,Autodesk Inc,Technology,Software - Application,USA,47880000000.0,43.84,225.84,-0.0233,1629338.0,16.47
+CLBT,Cellebrite DI Ltd,Technology,Software - Infrastructure,Israel,3410000000.0,45.5,14.26,-0.026000000000000002,1210145.0,4.25
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,36060000000.0,22.85,37.25,-0.0064,4879598.0,23.54
+CRAI,CRA International Inc,Industrials,Consulting Services,USA,1050000000.0,19.18,159.5,0.0275,66181.0,25.08
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,78020000000.0,42.17,195.11,0.0087,772746.0,26.06
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4590000000.0,20.85,24.83,-0.0074,2921895.0,-7.23
+EXLS,ExlService Holdings Inc,Technology,Information Technology Services,USA,4800000000.0,20.5,30.26,0.0075,1362442.0,12.76
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,6740000000.0,21.69,120.89,-0.0152,221799.0,23.19
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1240000000.0,15.33,49.32,0.0115,77887.0,20.75
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13750000000.0,6.48,72.38,-0.0125,409734.0,-2.05
+NFLX,Netflix Inc,Communication Services,Entertainment,USA,325640000000.0,30.52,77.13,0.0033,26424327.0,23.66
+ODD,ODDITY Tech Ltd,Consumer Defensive,Household & Personal Products,Israel,1620000000.0,15.77,28.2,0.0043,479141.0,-5.13
+OSPN,OneSpan Inc,Technology,Software - Infrastructure,USA,423240000.0,7.54,11.13,-0.0098,192694.0,-1.65
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5760000000.0,25.15,106.92,-0.002,456234.0,14.09
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5580000000.0,13.91,60.72,-0.0147,725035.0,10.59
+V,Visa Inc,Financial,Credit Services,USA,609420000000.0,30.3,319.74,0.018000000000000002,5687856.0,16.52
