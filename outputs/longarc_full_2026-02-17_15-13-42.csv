@@ -1,0 +1,18 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+ADSK,Autodesk Inc,Technology,Software - Application,USA,47340000000.0,43.35,223.3,-0.0342,389012.0,16.47
+CLBT,Cellebrite DI Ltd,Technology,Software - Infrastructure,Israel,3360000000.0,44.74,14.02,-0.042300000000000004,217716.0,4.25
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,36170000000.0,22.92,37.37,-0.0032,605193.0,23.54
+CRAI,CRA International Inc,Industrials,Consulting Services,USA,1020000000.0,18.7,155.52,0.0019,3385.0,25.08
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,78560000000.0,42.46,196.45,0.015600000000000001,109359.0,26.06
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4640000000.0,21.09,25.12,0.004,366456.0,-7.23
+EXLS,ExlService Holdings Inc,Technology,Information Technology Services,USA,4780000000.0,20.42,30.15,0.0037,127327.0,12.76
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,6830000000.0,21.96,122.39,-0.003,57286.0,23.19
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1220000000.0,15.09,48.56,-0.0040999999999999995,2781.0,20.75
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13750000000.0,6.48,72.36,-0.0129,63601.0,-2.05
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,21440000000.0,12.22,175.15,-0.0072,154805.0,11.3
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,8320000000.0,38.57,138.97,-0.0105,62561.0,9.71
+NFLX,Netflix Inc,Communication Services,Entertainment,USA,318390000000.0,29.84,75.41,-0.019,8927614.0,23.66
+ODD,ODDITY Tech Ltd,Consumer Defensive,Household & Personal Products,Israel,1610000000.0,15.68,28.04,-0.0014000000000000002,81408.0,-5.13
+OSPN,OneSpan Inc,Technology,Software - Infrastructure,USA,419050000.0,7.47,11.02,-0.0196,34882.0,-1.65
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5730000000.0,25.03,106.39,-0.0069,35128.0,14.09
+V,Visa Inc,Financial,Credit Services,USA,607250000000.0,30.19,318.6,0.0144,1355401.0,16.52
