@@ -1,0 +1,19 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+ADSK,Autodesk Inc,Technology,Software - Application,USA,47710000000.0,43.69,225.06,-0.026600000000000002,1230620.0,16.47
+CLBT,Cellebrite DI Ltd,Technology,Software - Infrastructure,Israel,3420000000.0,45.53,14.27,-0.0253,891735.0,4.25
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,35790000000.0,22.68,36.97,-0.0139,2981919.0,23.54
+CRAI,CRA International Inc,Industrials,Consulting Services,USA,1030000000.0,18.83,156.59,0.0088,24556.0,25.08
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,78350000000.0,42.35,195.92,0.0128,474845.0,26.06
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4510000000.0,20.5,24.41,-0.024399999999999998,1891603.0,-7.23
+EXLS,ExlService Holdings Inc,Technology,Information Technology Services,USA,4780000000.0,20.4,30.11,0.0025,883640.0,12.76
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,6770000000.0,21.77,121.36,-0.011399999999999999,149257.0,23.19
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1220000000.0,15.18,48.84,0.0017000000000000001,27028.0,20.75
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8660000000.0,17.18,372.08,0.0021,217907.0,35.5
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13850000000.0,6.53,72.89,-0.005600000000000001,291108.0,-2.05
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,21390000000.0,12.19,174.72,-0.0096,734943.0,11.3
+NFLX,Netflix Inc,Communication Services,Entertainment,USA,322680000000.0,30.24,76.43,-0.0058,21324094.0,23.66
+ODD,ODDITY Tech Ltd,Consumer Defensive,Household & Personal Products,Israel,1610000000.0,15.71,28.09,0.0004,329543.0,-5.13
+OSPN,OneSpan Inc,Technology,Software - Infrastructure,USA,422860000.0,7.54,11.12,-0.010700000000000001,125252.0,-1.65
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5660000000.0,24.73,105.13,-0.0187,306772.0,14.09
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5630000000.0,14.05,61.32,-0.0048,438194.0,10.59
+V,Visa Inc,Financial,Credit Services,USA,609600000000.0,30.31,319.83,0.0183,4031670.0,16.52
