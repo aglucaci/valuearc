@@ -1,0 +1,17 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+ADSK,Autodesk Inc,Technology,Software - Application,USA,48360000000.0,44.29,228.13,0.0125,641079.0,16.17
+CLBT,Cellebrite DI Ltd,Technology,Software - Infrastructure,Israel,3400000000.0,45.28,14.19,-0.0077,672054.0,4.0
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,36110000000.0,22.88,37.31,-0.005699999999999999,6823200.0,23.55
+CRAI,CRA International Inc,Industrials,Consulting Services,USA,1070000000.0000001,19.58,162.82,0.0236,69231.0,25.39
+CRVL,Corvel Corp,Financial,Insurance Brokers,USA,2450000000.0,23.49,47.96,-0.031200000000000002,126138.0,13.27
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,77910000000.0,42.11,194.82,-0.0005,260216.0,26.16
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4700000000.0,21.35,25.42,0.0342,919979.0,-7.4
+EXLS,ExlService Holdings Inc,Technology,Information Technology Services,USA,4880000000.0,20.82,30.74,0.0175,544478.0,12.83
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,6820000000.0,21.95,122.35,0.019799999999999998,179541.0,22.91
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1210000000.0,15.05,48.41,-0.0070999999999999995,33391.0,20.75
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,14220000000.0,6.7,74.82,0.0377,159566.0,-2.21
+NFLX,Netflix Inc,Communication Services,Entertainment,USA,329350000000.0,30.87,78.0,0.0131,12997582.0,23.68
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5870000000.0,25.64,108.98,0.0124,279697.0,14.14
+QLYS,Qualys Inc,Technology,Software - Infrastructure,USA,3730000000.0,19.1,103.97,0.0006,249490.0,16.11
+TTD,Trade Desk Inc,Communication Services,Advertising Agencies,USA,12480000000.0,29.44,25.8,0.021400000000000002,6254119.0,23.7
+V,Visa Inc,Financial,Credit Services,USA,610790000000.0,30.37,320.45,0.003,2755270.0,16.71
