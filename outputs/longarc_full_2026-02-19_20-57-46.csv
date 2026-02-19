@@ -1,0 +1,17 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+ADSK,Autodesk Inc,Technology,Software - Application,USA,48520000000.0,44.43,228.85,-0.0039000000000000003,938435.0,16.39
+CLBT,Cellebrite DI Ltd,Technology,Software - Infrastructure,Israel,3290000000.0,43.86,13.74,-0.021,829567.0,3.81
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,36350000000.0,23.03,37.55,-0.0053,8053865.0,23.63
+CRAI,CRA International Inc,Industrials,Consulting Services,USA,1070000000.0000001,19.62,163.16,0.0095,59720.0,25.59
+CRVL,Corvel Corp,Financial,Insurance Brokers,USA,2470000000.0,23.63,48.24,-0.0037,156062.0,13.02
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,79080000000.0,42.74,197.75,0.0068000000000000005,536306.0,26.26
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4640000000.0,21.1,25.13,-0.0126,1775463.0,-7.07
+EXLS,ExlService Holdings Inc,Technology,Information Technology Services,USA,4840000000.0,20.68,30.53,-0.0121,1421072.0,13.08
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,6310000000.0,20.28,113.05,-0.0823,1124360.0,23.24
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13980000000.0,6.59,73.56,-0.0141,215981.0,-1.87
+NFLX,Netflix Inc,Communication Services,Entertainment,USA,324880000000.0,30.45,76.95,-0.0134,21945921.0,23.84
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5830000000.0,25.45,108.16,-0.0108,404984.0,14.32
+QLYS,Qualys Inc,Technology,Software - Infrastructure,USA,3700000000.0,18.96,103.25,-0.0109,341842.0,16.16
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5570000000.0,13.9,60.7,0.0045000000000000005,388873.0,10.37
+TTD,Trade Desk Inc,Communication Services,Advertising Agencies,USA,12210000000.0,28.8,25.25,-0.01,15732013.0,23.82
+V,Visa Inc,Financial,Credit Services,USA,607060000000.0,30.18,318.5,-0.005600000000000001,4559468.0,16.74
