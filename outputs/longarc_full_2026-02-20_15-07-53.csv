@@ -1,0 +1,18 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+ADSK,Autodesk Inc,Technology,Software - Application,USA,48360000000.0,44.29,228.12,-0.0043,129271.0,16.51
+CLBT,Cellebrite DI Ltd,Technology,Software - Infrastructure,Israel,3280000000.0,43.69,13.69,-0.0063,93057.0,3.62
+CRAI,CRA International Inc,Industrials,Consulting Services,USA,1070000000.0000001,19.64,163.32,-0.0079,11750.0,25.89
+CRVL,Corvel Corp,Financial,Insurance Brokers,USA,2480000000.0,23.74,48.45,0.005,12108.0,12.92
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,79060000000.0,42.73,197.7,-0.0014000000000000002,111370.0,26.46
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4650000000.0,21.16,25.19,-0.0014000000000000002,133784.0,-7.15
+EXLS,ExlService Holdings Inc,Technology,Information Technology Services,USA,4820000000.0,20.59,30.4,-0.0003,81196.0,12.09
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1230000000.0,15.27,49.13,-0.008199999999999999,5205.0,21.03
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8670000000.0,17.2,372.65,-0.0036,13062.0,35.6
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13830000000.0,6.51,72.76,-0.0152,39190.0,-1.97
+NFLX,Netflix Inc,Communication Services,Entertainment,USA,324810000000.0,30.44,76.93,-0.0009,3576688.0,24.07
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,158990000000.0,13.61,47.19,-0.026000000000000002,1824513.0,8.72
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5840000000.0,25.49,108.34,0.0011,22926.0,14.73
+QLYS,Qualys Inc,Technology,Software - Infrastructure,USA,3720000000.0,19.07,103.82,0.006,28605.0,16.1
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5580000000.0,13.92,60.76,-0.0008,20897.0,10.48
+TTD,Trade Desk Inc,Communication Services,Advertising Agencies,USA,12220000000.0,28.82,25.26,0.001,1290382.0,23.7
+V,Visa Inc,Financial,Credit Services,USA,607630000000.0,30.21,318.79,-0.0004,690154.0,16.84
