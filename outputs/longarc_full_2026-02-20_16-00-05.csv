@@ -1,0 +1,18 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+ADSK,Autodesk Inc,Technology,Software - Application,USA,48410000000.0,44.33,228.36,-0.0032,351706.0,16.51
+CLBT,Cellebrite DI Ltd,Technology,Software - Infrastructure,Israel,3280000000.0,43.71,13.7,-0.0058,205813.0,3.62
+CRAI,CRA International Inc,Industrials,Consulting Services,USA,1080000000.0,19.81,164.7,0.0005,63504.0,25.89
+CRVL,Corvel Corp,Financial,Insurance Brokers,USA,2470000000.0,23.68,48.33,0.0025,41267.0,12.92
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,79010000000.0,42.71,197.59,-0.0019,185498.0,26.46
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4700000000.0,21.36,25.43,0.008100000000000001,423325.0,-7.15
+EXLS,ExlService Holdings Inc,Technology,Information Technology Services,USA,4760000000.0,20.31,29.99,-0.0138,427333.0,12.09
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,6040000000.0,19.44,108.37,-0.040999999999999995,387075.0,22.18
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1230000000.0,15.3,49.21,-0.006500000000000001,13363.0,21.03
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8640000000.0,17.15,371.58,-0.006500000000000001,39182.0,35.6
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13820000000.0,6.51,72.75,-0.0154,99840.0,-1.97
+NFLX,Netflix Inc,Communication Services,Entertainment,USA,327760000000.0,30.72,77.63,0.008199999999999999,7590112.0,24.07
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5740000000.0,25.07,106.57,-0.0152,75492.0,14.73
+QLYS,Qualys Inc,Technology,Software - Infrastructure,USA,3700000000.0,18.97,103.28,0.0007000000000000001,84688.0,16.1
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5540000000.0,13.81,60.28,-0.0088,51511.0,10.48
+TTD,Trade Desk Inc,Communication Services,Advertising Agencies,USA,12270000000.0,28.96,25.38,0.005600000000000001,5892087.0,23.7
+V,Visa Inc,Financial,Credit Services,USA,610590000000.0,30.36,320.35,0.0045000000000000005,1431064.0,16.84
