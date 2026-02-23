@@ -1,0 +1,19 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+ADSK,Autodesk Inc,Technology,Software - Application,USA,46230000000.0,42.34,218.09,-0.0392,1441315.0,16.06
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,34110000000.0,22.1,35.24,-0.034,10780435.0,22.45
+CRAI,CRA International Inc,Industrials,Consulting Services,USA,1050000000.0,19.27,160.25,-0.0381,119442.0,25.57
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,79180000000.0,42.8,198.02,-0.01,772667.0,26.45
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4380000000.0,19.89,23.69,-0.0728,2704366.0,-7.04
+FTNT,Fortinet Inc,Technology,Software - Infrastructure,USA,56070000000.0,31.07,75.4,-0.0575,6508329.0,30.41
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1240000000.0,15.34,49.35,-0.0055000000000000005,69611.0,20.67
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8680000000.0,17.23,373.25,-0.0004,224473.0,35.58
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13610000000.0,6.41,71.65,-0.0212,495932.0,-2.06
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,7800000000.0,36.15,130.26,-0.0971,732550.0,9.98
+NFLX,Netflix Inc,Communication Services,Entertainment,USA,320670000000.0,30.05,75.95,-0.0346,31531145.0,23.57
+OSPN,OneSpan Inc,Technology,Software - Infrastructure,USA,407240000.0,7.26,10.71,-0.059000000000000004,309594.0,-2.05
+PAYC,Paycom Software Inc,Technology,Software - Application,USA,6170000000.0,14.04,113.59,-0.0098,2299714.0,13.9
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5480000000.0,23.93,101.72,-0.0373,495944.0,13.3
+PRI,Primerica Inc,Financial,Insurance - Life,USA,8080000000.0,11.03,253.04,-0.0313,199267.0,21.21
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,63300000000.0,35.34,357.08,-0.0269,407981.0,26.29
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5530000000.0,13.8,60.23,-0.0105,335309.0,10.41
+V,Visa Inc,Financial,Credit Services,USA,581290000000.0,28.9,304.98,-0.049800000000000004,10408808.0,16.82
