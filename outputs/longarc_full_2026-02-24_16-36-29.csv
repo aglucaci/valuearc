@@ -1,0 +1,23 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+ADSK,Autodesk Inc,Technology,Software - Application,USA,46830000000.0,42.88,220.9,0.0103,592528.0,15.5
+CLBT,Cellebrite DI Ltd,Technology,Software - Infrastructure,Israel,2990000000.0,39.84,12.48,0.045599999999999995,786478.0,2.14
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,34159999999.999996,22.14,35.29,-0.0019,3160729.0,22.31
+CRAI,CRA International Inc,Industrials,Consulting Services,USA,1050000000.0,19.29,160.39,0.009899999999999999,33191.0,24.89
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,79200000000.0,42.81,198.05,-0.0014000000000000002,282737.0,26.48
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4380000000.0,19.91,23.72,-0.0019,644535.0,-7.71
+EXLS,ExlService Holdings Inc,Technology,Information Technology Services,USA,4600000000.0,19.64,28.99,0.0169,580761.0,11.71
+FTNT,Fortinet Inc,Technology,Software - Infrastructure,USA,56310000000.0,31.21,75.72,0.0016,2841693.0,29.54
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5590000000.0,17.99,100.29,-0.0083,214107.0,20.83
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1230000000.0,15.24,49.02,-0.0022,11158.0,19.9
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8610000000.0,17.17,371.92,-0.0021,50833.0,35.55
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13730000000.0,6.47,72.25,0.006999999999999999,117951.0,-2.26
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,7930000000.0,36.77,132.5,0.0184,133355.0,8.94
+NFLX,Netflix Inc,Communication Services,Entertainment,USA,323540000000.0,30.32,76.63,0.008,10525571.0,23.33
+ODD,ODDITY Tech Ltd,Consumer Defensive,Household & Personal Products,Israel,1690000000.0,16.46,29.44,-0.0155,523034.0,-4.53
+OSPN,OneSpan Inc,Technology,Software - Infrastructure,USA,414490000.0,7.39,10.9,0.013999999999999999,95388.0,-2.12
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5560000000.0,24.28,103.2,0.0123,445718.0,13.16
+PRI,Primerica Inc,Financial,Insurance - Life,USA,8020000000.0,10.96,251.37,-0.0068000000000000005,24506.0,21.09
+QLYS,Qualys Inc,Technology,Software - Infrastructure,USA,3090000000.0,15.89,86.53,-0.0014000000000000002,186063.0,13.25
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5520000000.0,13.75,60.04,0.0002,84665.0,10.35
+TTD,Trade Desk Inc,Communication Services,Advertising Agencies,USA,11890000000.0,28.05,24.59,0.0174,4013728.0,23.16
+V,Visa Inc,Financial,Credit Services,USA,579200000000.0,28.8,303.88,-0.0086,3014446.0,16.34
