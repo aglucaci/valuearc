@@ -1,6 +1,6 @@
-# LongArc — Quant Value Screener & Dashboard
+# ValueArc
 
-LongArc is a systematic equity research pipeline designed to identify asymmetric opportunities using a conservative Margin of Safety (MOS) model, automated screening, and a live dark-mode quant dashboard.
+ValueArc is a systematic equity research pipeline designed to identify asymmetric opportunities using a conservative Margin of Safety (MOS) model, automated screening, and a live dark-mode quant dashboard.
 
 The platform integrates:
 
@@ -82,14 +82,6 @@ outputs/
 ```
 
 ---
-
-# Quant Dashboard
-
-The dashboard is a static HTML application that loads data directly from GitHub Raw:
-
-```
-https://aglucaci.github.io/longarc/
-```
 
 ## Features
 
