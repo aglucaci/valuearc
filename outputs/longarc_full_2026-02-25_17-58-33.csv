@@ -1,0 +1,21 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+ADSK,Autodesk Inc,Technology,Software - Application,USA,47490000000.0,43.49,224.0,0.013999999999999999,499745.0,15.62
+CLMB,Climb Global Solutions Inc,Technology,Electronics & Computer Distribution,USA,435370000.0,20.32,94.37,-0.0541,43859.0,22.91
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,34450000000.0,22.32,35.58,0.0086,4034248.0,22.28
+CRAI,CRA International Inc,Industrials,Consulting Services,USA,1050000000.0,19.23,159.89,0.0187,33607.0,24.74
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,78760000000.0,42.57,196.96,-0.008,307567.0,26.49
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4480000000.0,20.36,24.25,0.0074,1152354.0,-7.59
+EXLS,ExlService Holdings Inc,Technology,Information Technology Services,USA,4450000000.0,19.01,28.07,-0.023700000000000002,1414100.0,11.81
+FTNT,Fortinet Inc,Technology,Software - Infrastructure,USA,57100000000.0,31.64,76.78,0.0206,2387839.0,29.48
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5790000000.0,18.61,103.75,0.0197,663119.0,20.9
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8610000000.0,17.18,372.03,-0.0229,134171.0,35.84
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13650000000.0,6.43,71.86,-0.0019,278636.0,-2.22
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,8010000000.0,37.15,133.85,0.0038,148895.0,9.21
+NFLX,Netflix Inc,Communication Services,Entertainment,USA,346650000000.0,32.49,82.1,0.0521,34738836.0,23.65
+OSPN,OneSpan Inc,Technology,Software - Infrastructure,USA,419230000.0,7.47,11.02,0.017,99208.0,-2.04
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5580000000.0,24.36,103.55,0.004,211180.0,13.29
+QLYS,Qualys Inc,Technology,Software - Infrastructure,USA,3200000000.0,16.45,89.57,0.0316,353101.0,13.27
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5630000000.0,14.02,61.22,0.0019,120701.0,10.55
+TGLS,Tecnoglass Inc,Basic Materials,Building Materials,Colombia,2260000000.0,12.63,48.54,-0.028399999999999998,131603.0,19.43
+TTD,Trade Desk Inc,Communication Services,Advertising Agencies,USA,12150000000.0,28.66,25.12,0.0072,7625134.0,23.55
+V,Visa Inc,Financial,Credit Services,USA,596500000000.0,29.66,312.96,0.0187,3823655.0,16.37
