@@ -1,0 +1,14 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+ADSK,Autodesk Inc,Technology,Software - Application,USA,49090000000.0,44.95,231.55,0.03,1917390.0,15.82
+CLMB,Climb Global Solutions Inc,Technology,Electronics & Computer Distribution,USA,412160000.0,19.23,89.34,-0.0393,76650.0,22.05
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,35900000000.0,23.26,37.08,0.0347,7209533.0,22.48
+CRAI,CRA International Inc,Industrials,Consulting Services,USA,1050000000.0,19.22,159.86,-0.0025,74909.0,25.0
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,79270000000.0,42.85,198.24,0.0074,1083705.0,26.38
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4650000000.0,21.13,25.16,0.0311,1669288.0,-7.46
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,6000000000.0,19.29,107.52,0.012199999999999999,615813.0,21.42
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13560000000.0,6.39,71.36,-0.0172,358929.0,-2.14
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,8279999999.999999,38.38,138.28,0.022000000000000002,412268.0,9.37
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,127100000000.0,10.88,37.72,-0.011399999999999999,27759823.0,6.26
+ODD,ODDITY Tech Ltd,Consumer Defensive,Household & Personal Products,Israel,788960000.0,7.64,13.74,-0.0681,8883935.0,-11.05
+TGLS,Tecnoglass Inc,Basic Materials,Building Materials,Colombia,2160000000.0,12.06,46.37,-0.0556,475506.0,19.22
+V,Visa Inc,Financial,Credit Services,USA,603180000000.0,29.99,316.46,0.0111,4800537.0,16.58
