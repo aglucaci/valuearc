@@ -1,0 +1,12 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4440000000.0,31.77,152.16,-0.0256,141172.0,17.76
+CRAI,CRA International Inc,Industrials,Consulting Services,USA,1080000000.0,19.76,164.34,-0.0183,182768.0,25.47
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4520000000.0,20.57,24.5,-0.0241,832884.0,-7.2
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5740000000.0,18.47,102.97,-0.0475,248872.0,21.64
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,8050000000.000001,37.35,134.56,-0.0361,232819.0,9.1
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,126430000000.0,10.82,37.53,-0.0025,12011781.0,5.75
+OSPN,OneSpan Inc,Technology,Software - Infrastructure,USA,418110000.0,7.45,10.99,-0.033,246178.0,-1.77
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5700000000.0,24.87,105.72,-0.0613,319258.0,14.06
+QLYS,Qualys Inc,Technology,Software - Infrastructure,USA,3270000000.0,16.82,91.57,-0.0225,222795.0,13.43
+TGLS,Tecnoglass Inc,Basic Materials,Building Materials,Colombia,2069999999.9999998,11.58,44.51,-0.0326,229016.0,18.45
+V,Visa Inc,Financial,Credit Services,USA,605630000000.0,30.11,317.75,0.0033,2889173.0,16.36
