@@ -1,0 +1,13 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4440000000.0,31.75,152.08,-0.0262,124448.0,17.76
+CRAI,CRA International Inc,Industrials,Consulting Services,USA,1080000000.0,19.78,164.5,-0.0173,180783.0,25.47
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4540000000.0,20.66,24.6,-0.019799999999999998,705969.0,-7.2
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5750000000.0,18.49,103.04,-0.046900000000000004,197942.0,21.64
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13510000000.0,6.37,71.11,-0.0025,187000.0,-2.32
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,8029999999.999999,37.24,134.16,-0.039,196437.0,9.1
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,126260000000.0,10.81,37.47,-0.0039000000000000003,11067484.0,5.75
+OSPN,OneSpan Inc,Technology,Software - Infrastructure,USA,421720000.0,7.52,11.09,-0.0246,205274.0,-1.77
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5730000000.0,25.01,106.29,-0.0562,288779.0,14.06
+QLYS,Qualys Inc,Technology,Software - Infrastructure,USA,3270000000.0,16.84,91.72,-0.021,184010.0,13.43
+TGLS,Tecnoglass Inc,Basic Materials,Building Materials,Colombia,2089999999.9999998,11.65,44.78,-0.0268,167874.0,18.45
+V,Visa Inc,Financial,Credit Services,USA,606080000000.0,30.13,317.98,0.004,2535899.0,16.36
