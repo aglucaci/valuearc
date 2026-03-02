@@ -1,0 +1,9 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4410000000.0,31.57,151.2,-0.008100000000000001,193464.0,17.29
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4610000000.0,20.94,24.94,0.0167,1202018.0,-7.41
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5960000000.0,19.19,106.94,0.0191,215900.0,21.28
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,8289999999.999999,38.46,138.58,0.0233,208851.0,8.77
+ODD,ODDITY Tech Ltd,Consumer Defensive,Household & Personal Products,Israel,701050000.0,6.79,12.2,0.037000000000000005,3129505.0,-13.03
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5750000000.0,25.11,106.73,0.0022,301856.0,12.93
+TGLS,Tecnoglass Inc,Basic Materials,Building Materials,Colombia,2100000000.0,13.21,45.08,-0.0105,111262.0,17.53
+V,Visa Inc,Financial,Credit Services,USA,608530000000.0,30.25,319.27,-0.0027,2656259.0,16.6
