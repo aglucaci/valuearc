@@ -1,0 +1,9 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4370000000.0,31.24,149.62,-0.0184,138310.0,17.29
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4660000000.0,21.17,25.22,0.0279,579467.0,-7.41
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5950000000.0,19.13,106.62,0.016,71998.0,21.28
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,14320000000.0,6.75,75.35,0.0674,342447.0,-2.42
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,8250000000.0,38.27,137.87,0.018000000000000002,87128.0,8.77
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5780000000.0,25.24,107.31,0.0077,150804.0,12.93
+TGLS,Tecnoglass Inc,Basic Materials,Building Materials,Colombia,2109999999.9999998,13.28,45.31,-0.0055000000000000005,56061.0,17.53
+V,Visa Inc,Financial,Credit Services,USA,605540000000.0,30.11,317.7,-0.0076,1601089.0,16.6
