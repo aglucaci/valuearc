@@ -1,0 +1,8 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4230000000.0000005,30.23,144.81,-0.028900000000000002,165723.0,16.99
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,14050000000.0,6.62,73.95,0.011399999999999999,633159.0,-2.07
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,20920000000.0,11.93,170.88,-0.013500000000000002,1273688.0,10.82
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,130590000000.0,11.18,38.76,0.0068000000000000005,15171858.0,5.22
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,62790000000.0,35.06,354.17,-0.029900000000000003,304626.0,25.54
+TGLS,Tecnoglass Inc,Basic Materials,Building Materials,Colombia,1960000000.0,12.84,43.8,-0.0412,538205.0,17.15
+V,Visa Inc,Financial,Credit Services,USA,605730000000.0,30.12,317.8,-0.0083,4221563.0,16.93
