@@ -1,0 +1,12 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4280000000.0000005,30.65,146.82,0.005600000000000001,211741.0,16.87
+CLMB,Climb Global Solutions Inc,Technology,Electronics & Computer Distribution,USA,404510000.0,18.94,87.83,-0.0212,63665.0,21.99
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4710000000.0,21.42,25.51,-0.0215,1339883.0,-6.85
+HLI,Houlihan Lokey Inc,Financial,Capital Markets,USA,10580000000.0,23.28,151.57,-0.0364,257504.0,23.54
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5940000000.0,19.11,106.51,-0.0319,622875.0,21.85
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8660000000.0,17.27,373.97,-0.011899999999999999,91458.0,35.77
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,14120000000.0,6.65,74.29,-0.004699999999999999,671688.0,-1.87
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,20800000000.0,11.86,169.88,-0.0191,2138146.0,10.78
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,129680000000.0,11.1,38.49,-0.0148,12508069.0,5.54
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,62140000000.0,34.69,350.49,-0.021,378104.0,25.11
+V,Visa Inc,Financial,Credit Services,USA,602830000000.0,29.97,316.28,-0.011000000000000001,4213093.0,17.12
