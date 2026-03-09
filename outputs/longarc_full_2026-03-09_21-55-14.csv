@@ -1,0 +1,14 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4360000000.0,31.22,149.54,0.0046,353702.0,17.12
+CLMB,Climb Global Solutions Inc,Technology,Electronics & Computer Distribution,USA,387160000.0,18.13,84.06,-0.0351,51910.0,21.71
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4710000000.0,21.4,25.49,0.0059,2013597.0,-7.11
+HLI,Houlihan Lokey Inc,Financial,Capital Markets,USA,10240000000.0,22.54,146.79,-0.0286,907091.0,21.91
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5890000000.0,18.94,105.57,-0.009399999999999999,763968.0,21.46
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8390000000.000001,16.73,362.44,-0.0258,226128.0,35.54
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13890000000.0,6.54,73.1,-0.0148,861782.0,-1.93
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,20780000000.0,11.85,169.76,-0.0022,2706195.0,10.2
+PRI,Primerica Inc,Financial,Insurance - Life,USA,8000000000.0,11.02,252.77,-0.0176,232780.0,20.63
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,61440000000.0,34.31,346.58,-0.01,763248.0,24.37
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5610000000.0,13.98,61.03,-0.0109,642338.0,10.22
+TGLS,Tecnoglass Inc,Basic Materials,Building Materials,Colombia,1900000000.0,12.44,42.45,0.0204,1103715.0,15.87
+V,Visa Inc,Financial,Credit Services,USA,602240000000.0,29.94,315.97,-0.0044,8378011.0,16.87
