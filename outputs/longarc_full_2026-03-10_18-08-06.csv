@@ -1,0 +1,16 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4330000000.0,30.95,148.26,-0.0085,60546.0,17.3
+CLMB,Climb Global Solutions Inc,Technology,Electronics & Computer Distribution,USA,395000000.0,18.49,85.76,0.0203,72411.0,21.1
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,35430000000.0,23.07,36.78,-0.021,2616852.0,22.19
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,78990000000.0,42.69,197.53,-0.016200000000000003,752146.0,25.83
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4570000000.0,20.77,24.73,-0.0298,1361306.0,-7.06
+HLI,Houlihan Lokey Inc,Financial,Capital Markets,USA,10360000000.0,22.8,148.48,0.0115,266293.0,21.85
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5880000000.0,18.93,105.5,-0.0006,187208.0,21.35
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8300000000.000001,16.55,358.45,-0.011000000000000001,182182.0,35.19
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,14220000000.0,6.7,74.86,0.0241,517491.0,-2.07
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,20750000000.0,11.83,169.46,-0.0018,1225494.0,10.12
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,130039999999.99998,11.13,38.6,-0.0297,13330009.0,5.56
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,62330000000.0,34.8,351.58,0.0144,282451.0,24.46
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5640000000.0,14.06,61.36,0.0054,206330.0,10.16
+TGLS,Tecnoglass Inc,Basic Materials,Building Materials,Colombia,1960000000.0,12.84,43.79,0.0317,315511.0,16.05
+V,Visa Inc,Financial,Credit Services,USA,603470000000.0,30.0,316.61,0.002,2670929.0,16.84
