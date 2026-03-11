@@ -1,0 +1,18 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4290000000.0,30.66,146.84,-0.0024,219349.0,17.11
+CLMB,Climb Global Solutions Inc,Technology,Electronics & Computer Distribution,USA,377900000.0,17.69,82.05,-0.032,62407.0,21.2
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,34250000000.0,22.3,35.55,-0.0209,7889829.0,21.78
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,79310000000.0,42.87,198.34,0.0105,5046978.0,25.54
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4550000000.0,20.69,24.64,-0.005600000000000001,1938836.0,-7.32
+HLI,Houlihan Lokey Inc,Financial,Capital Markets,USA,10210000000.0,22.48,146.37,0.0052,520997.0,21.75
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5480000000.0,17.62,98.19,-0.0602,1181653.0,21.22
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1250000000.0,15.32,49.84,-0.035,282144.0,19.39
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8350000000.0,16.65,360.64,0.0024,176747.0,35.09
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13900000000.0,6.55,73.17,-0.012199999999999999,420311.0,-1.94
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,19930000000.0,11.36,162.79,-0.0219,2470464.0,9.9
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,130820000000.0,11.2,38.83,0.0028000000000000004,13139089.0,5.27
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8880000000.0,8.23,37.38,-0.0326,1027644.0,7.74
+PRI,Primerica Inc,Financial,Insurance - Life,USA,7950000000.0,10.94,251.04,-0.0131,215915.0,20.58
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,60380000000.0,33.71,340.61,-0.0172,386225.0,24.46
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5560000000.0,13.85,60.45,-0.0046,709084.0,10.1
+V,Visa Inc,Financial,Credit Services,USA,588880000000.0,29.28,308.96,-0.0174,6373191.0,16.78
