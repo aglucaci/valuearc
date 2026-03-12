@@ -1,0 +1,15 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4230000000.0000005,30.29,145.11,-0.0118,73341.0,17.09
+CLMB,Climb Global Solutions Inc,Technology,Electronics & Computer Distribution,USA,369360000.0,17.29,80.2,-0.0226,48941.0,20.8
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,33310000000.000004,21.69,34.58,-0.0274,5737557.0,21.52
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4490000000.0,20.41,24.31,-0.013500000000000002,1301107.0,-7.37
+HLI,Houlihan Lokey Inc,Financial,Capital Markets,USA,9910000000.0,21.81,141.99,-0.029900000000000003,256015.0,21.82
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1240000000.0,15.18,49.37,-0.009399999999999999,76557.0,18.96
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8480000000.0,16.92,366.36,0.0158,85512.0,35.12
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13550000000.0,6.38,71.29,-0.025699999999999997,449617.0,-2.06
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,19560000000.0,11.15,159.76,-0.018600000000000002,1331939.0,9.66
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,128490000000.00002,11.0,38.14,-0.0178,10287630.0,5.3
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8580000000.0,7.96,36.12,-0.0336,724507.0,7.39
+PRI,Primerica Inc,Financial,Insurance - Life,USA,7940000000.0,10.93,250.69,-0.0014000000000000002,65801.0,20.42
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,59710000000.0,33.34,336.8,-0.011200000000000002,313679.0,24.24
+V,Visa Inc,Financial,Credit Services,USA,585570000000.0,29.11,307.23,-0.005600000000000001,3325904.0,16.58
