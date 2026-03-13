@@ -1,0 +1,18 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4280000000.0000005,30.64,146.75,0.017,101683.0,16.82
+CLMB,Climb Global Solutions Inc,Technology,Electronics & Computer Distribution,USA,373520000.0,17.49,81.1,0.009899999999999999,21751.0,20.5
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,77390000000.0,41.83,193.53,0.0014000000000000002,282829.0,25.33
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4520000000.0,20.53,24.45,0.006999999999999999,378515.0,-7.51
+HLI,Houlihan Lokey Inc,Financial,Capital Markets,USA,9760000000.0,21.48,139.86,-0.0001,56151.0,21.71
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5470000000.0,17.58,97.99,0.039900000000000005,242127.0,19.98
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1220000000.0,15.01,48.83,-0.0068000000000000005,18584.0,18.76
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8369999999.999999,16.7,361.6,-0.0007000000000000001,21352.0,35.16
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13630000000.0,6.42,71.74,0.0086,150487.0,-2.34
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,19360000000.0,11.03,158.11,-0.0005,710197.0,9.65
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,8400000000.0,38.94,140.3,0.0001,86748.0,9.51
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,128669999999.99998,11.01,38.19,0.0045000000000000005,3114070.0,5.27
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8630000000.0,8.0,36.32,0.0034999999999999996,162033.0,7.24
+PRI,Primerica Inc,Financial,Insurance - Life,USA,7860000000.0,10.82,248.31,-0.003,16305.0,20.53
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,59320000000.0,33.12,334.59,0.0001,146524.0,24.21
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,297460000.0,1.69,5.67,-0.019,95573.0,4.91
+V,Visa Inc,Financial,Credit Services,USA,587930000000.0,29.23,308.46,0.0064,1023125.0,16.42
