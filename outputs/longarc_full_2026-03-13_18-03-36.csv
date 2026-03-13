@@ -1,0 +1,19 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4230000000.0000005,30.29,145.07,0.0053,242296.0,16.82
+CLMB,Climb Global Solutions Inc,Technology,Electronics & Computer Distribution,USA,373150000.0,17.47,81.02,0.0089,40399.0,20.5
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,32759999999.999996,21.33,34.01,0.001,3003668.0,20.97
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,77080000000.0,41.66,192.74,-0.0027,766324.0,25.33
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4490000000.0,20.4,24.29,0.0004,1016197.0,-7.51
+EXLS,ExlService Holdings Inc,Technology,Information Technology Services,USA,4610000000.0,19.11,29.51,-0.0069,896703.0,11.92
+HLI,Houlihan Lokey Inc,Financial,Capital Markets,USA,9760000000.0,21.47,139.79,-0.0005,195938.0,21.71
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5420000000.0,17.44,97.2,0.0315,387867.0,19.98
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1210000000.0,14.87,48.35,-0.016399999999999998,70728.0,18.76
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8400000000.0,16.76,362.92,0.0029,56576.0,35.16
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13320000000.0,6.28,70.11,-0.0143,374145.0,-2.34
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,19400000000.0,11.06,158.5,0.002,1383777.0,9.65
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,128039999999.99998,10.96,38.0,-0.0004,7474520.0,5.27
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5940000000.0,25.92,110.18,-0.0031,221772.0,13.76
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8650000000.0,8.02,36.4,0.0059,373950.0,7.24
+PRI,Primerica Inc,Financial,Insurance - Life,USA,7930000000.0,10.91,250.32,0.0051,55075.0,20.53
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,59220000000.0,33.07,334.06,-0.0015,485102.0,24.21
+V,Visa Inc,Financial,Credit Services,USA,586710000000.0,29.17,307.82,0.0043,2431876.0,16.42
