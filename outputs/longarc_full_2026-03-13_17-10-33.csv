@@ -1,0 +1,20 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4219999999.9999995,30.2,144.67,0.0025,206693.0,16.82
+CLMB,Climb Global Solutions Inc,Technology,Electronics & Computer Distribution,USA,375290000.0,17.57,81.48,0.0147,34797.0,20.5
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,32700000000.000004,21.29,33.94,-0.0008,2437281.0,20.97
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,77010000000.0,41.62,192.57,-0.0036,602520.0,25.33
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4470000000.0,20.31,24.19,-0.0037,843181.0,-7.51
+EXLS,ExlService Holdings Inc,Technology,Information Technology Services,USA,4600000000.0,19.07,29.44,-0.0091,641056.0,11.92
+HLI,Houlihan Lokey Inc,Financial,Capital Markets,USA,9780000000.0,21.52,140.13,0.0019,152554.0,21.71
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5450000000.0,17.53,97.71,0.0369,333795.0,19.98
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1220000000.0,14.93,48.57,-0.0121,55498.0,18.76
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8359999999.999999,16.67,361.12,-0.002,47047.0,35.16
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,19340000000.0,11.03,158.0,-0.0012,1188007.0,9.65
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,8310000000.000001,38.55,138.88,-0.01,204237.0,9.51
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,128180000000.0,10.97,38.04,0.0007000000000000001,6660459.0,5.27
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5920000000.0,25.83,109.8,-0.006500000000000001,173618.0,13.76
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8640000000.0,8.01,36.38,0.0053,315032.0,7.24
+PRI,Primerica Inc,Financial,Insurance - Life,USA,7910000000.0,10.89,249.78,0.0029,37214.0,20.53
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,58940000000.0,32.91,332.48,-0.0062,391329.0,24.21
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,298250000.0,1.7,5.68,-0.016399999999999998,250639.0,4.91
+V,Visa Inc,Financial,Credit Services,USA,587270000000.0,29.2,308.11,0.0053,1998430.0,16.42
