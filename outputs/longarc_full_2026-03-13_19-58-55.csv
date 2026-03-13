@@ -1,0 +1,19 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4269999999.9999995,30.56,146.38,0.0144,334289.0,16.82
+CLMB,Climb Global Solutions Inc,Technology,Electronics & Computer Distribution,USA,370480000.0,17.35,80.44,0.0017000000000000001,47695.0,20.5
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,32810000000.000004,21.36,34.06,0.0025,4506765.0,20.97
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,77660000000.0,41.98,194.21,0.0049,1372664.0,25.33
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4490000000.0,20.42,24.32,0.0016,1510304.0,-7.51
+EXLS,ExlService Holdings Inc,Technology,Information Technology Services,USA,4620000000.0,19.13,29.54,-0.005699999999999999,1423876.0,11.92
+HLI,Houlihan Lokey Inc,Financial,Capital Markets,USA,9750000000.0,21.45,139.68,-0.0013,373705.0,21.71
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5380000000.0,17.31,96.5,0.0241,590370.0,19.98
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1210000000.0,14.88,48.39,-0.015700000000000002,102828.0,18.76
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8410000000.0,16.78,363.4,0.0042,84242.0,35.16
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,8340000000.0,38.66,139.29,-0.0070999999999999995,396869.0,9.51
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,127960000000.0,10.95,37.98,-0.0011,9912912.0,5.27
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5900000000.0,25.75,109.46,-0.0096,415570.0,13.76
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8610000000.0,7.98,36.22,0.001,605386.0,7.24
+PRI,Primerica Inc,Financial,Insurance - Life,USA,7890000000.0,10.87,249.3,0.001,84512.0,20.53
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,58890000000.0,32.88,332.2,-0.006999999999999999,728496.0,24.21
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,297200000.0,1.69,5.66,-0.0199,627889.0,4.91
+V,Visa Inc,Financial,Credit Services,USA,584990000000.0,29.08,306.92,0.0014000000000000002,3462812.0,16.42
