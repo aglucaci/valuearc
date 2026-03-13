@@ -1,0 +1,19 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4269999999.9999995,30.52,146.16,0.0129,282563.0,16.82
+CLMB,Climb Global Solutions Inc,Technology,Electronics & Computer Distribution,USA,370900000.0,17.37,80.53,0.0028000000000000004,42180.0,20.5
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,32759999999.999996,21.34,34.01,0.0012,3769253.0,20.97
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,77690000000.0,41.99,194.29,0.0053,1035808.0,25.33
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4480000000.0,20.35,24.23,-0.0021,1277669.0,-7.51
+EXLS,ExlService Holdings Inc,Technology,Information Technology Services,USA,4610000000.0,19.1,29.5,-0.0070999999999999995,1169382.0,11.92
+HLI,Houlihan Lokey Inc,Financial,Capital Markets,USA,9720000000.0,21.4,139.3,-0.004,276851.0,21.71
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5410000000.0,17.39,96.94,0.0288,496433.0,19.98
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1210000000.0,14.89,48.44,-0.0147,83027.0,18.76
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8410000000.0,16.77,363.09,0.0034000000000000002,69327.0,35.16
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,8369999999.999999,38.82,139.88,-0.0029,319974.0,9.51
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,128090000000.0,10.96,38.02,0.0,8770031.0,5.27
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5910000000.0,25.8,109.68,-0.0076,305780.0,13.76
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8660000000.0,8.03,36.47,0.0077,465162.0,7.24
+PRI,Primerica Inc,Financial,Insurance - Life,USA,7930000000.0,10.91,250.35,0.0052,69167.0,20.53
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,59160000000.0,33.03,333.7,-0.0026,598344.0,24.21
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,298010000.0,1.7,5.68,-0.0172,495180.0,4.91
+V,Visa Inc,Financial,Credit Services,USA,587320000000.0,29.2,308.14,0.0054,2938618.0,16.42
