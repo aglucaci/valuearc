@@ -1,11 +1,11 @@
-name: LONGARC Screener - Hourly
+name: ValueArc Screener - Hourly
 
 on:
   workflow_dispatch:
   schedule:
-    # Every hour at :30 during possible US market window (UTC)
-    # Guard step below enforces 9:30–16:00 America/New_York
-    - cron: "30 14-21 * * 1-5"
+    # Every hour at :30 during US market hours
+    # 9:30–15:30 ET (14:30–20:30 UTC)
+    - cron: "30 14-20 * * 1-5"
 
 permissions:
   contents: write
