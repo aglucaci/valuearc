@@ -1,0 +1,20 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4430000000.0,31.7,151.86,0.036000000000000004,446487.0,17.19
+CLMB,Climb Global Solutions Inc,Technology,Electronics & Computer Distribution,USA,369930000.0,17.32,80.32,-0.0027,108611.0,20.24
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,32640000000.0,21.25,33.88,-0.0062,11325942.0,20.67
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,77070000000.0,41.66,192.74,-0.0079,1732857.0,25.28
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4540000000.0,20.65,24.59,0.009000000000000001,2312370.0,-7.48
+HLI,Houlihan Lokey Inc,Financial,Capital Markets,USA,9740000000.0,21.43,139.51,0.0006,633206.0,21.26
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5420000000.0,17.43,97.16,0.0032,528673.0,20.31
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1200000000.0,14.7,47.81,-0.0189,208662.0,18.05
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8300000000.000001,16.56,358.65,-0.010700000000000001,161002.0,35.19
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13630000000.0,6.68,71.72,0.0418,817039.0,-2.66
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,19580000000.0,11.16,159.91,0.013500000000000002,3007566.0,9.7
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,129979999999.99998,11.12,38.58,0.0163,11121882.0,5.38
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5930000000.0,25.88,110.0,0.005600000000000001,551603.0,13.2
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8730000000.0,8.09,36.74,0.014199999999999999,957618.0,6.62
+PRI,Primerica Inc,Financial,Insurance - Life,USA,7910000000.0,10.89,249.73,0.0025,241091.0,19.99
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,59280000000.0,33.1,334.36,0.0075,662215.0,23.81
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,297980000.0,1.7,5.68,0.0018,1166564.0,4.78
+TGLS,Tecnoglass Inc,Basic Materials,Building Materials,Colombia,1960000000.0,12.85,43.86,-0.0405,750570.0,16.32
+V,Visa Inc,Financial,Credit Services,USA,591070000000.0,29.39,310.11,0.0097,6399703.0,16.14
