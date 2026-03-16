@@ -1,0 +1,20 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4420000000.0,31.62,151.46,0.0333,242602.0,17.19
+CLMB,Climb Global Solutions Inc,Technology,Electronics & Computer Distribution,USA,376430000.0,17.63,81.73,0.0148,78873.0,20.24
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,32590000000.000004,21.23,33.83,-0.0075,6456820.0,20.67
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,77250000000.0,41.75,193.17,-0.005699999999999999,947926.0,25.28
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4530000000.0,20.58,24.51,0.005699999999999999,1517705.0,-7.48
+HLI,Houlihan Lokey Inc,Financial,Capital Markets,USA,9770000000.0,21.51,140.06,0.0046,346210.0,21.26
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5420000000.0,17.44,97.23,0.0039000000000000003,371331.0,20.31
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1200000000.0,14.75,47.97,-0.015600000000000001,117103.0,18.05
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8380000000.000001,16.71,361.95,-0.0016,73455.0,35.19
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13600000000.0,6.67,71.55,0.0394,572994.0,-2.66
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,19580000000.0,11.16,159.97,0.0139,2305397.0,9.7
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,129500000000.0,11.08,38.44,0.0125,8757542.0,5.38
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5920000000.0,25.85,109.88,0.0044,345248.0,13.2
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8730000000.0,8.1,36.75,0.014499999999999999,688665.0,6.62
+PRI,Primerica Inc,Financial,Insurance - Life,USA,7920000000.0,10.9,250.06,0.0038,96018.0,19.99
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,59090000000.0,32.99,333.31,0.0044,490072.0,23.81
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,298250000.0,1.7,5.68,0.0026,538371.0,4.78
+TGLS,Tecnoglass Inc,Basic Materials,Building Materials,Colombia,1970000000.0,12.89,43.98,-0.0378,503841.0,16.32
+V,Visa Inc,Financial,Credit Services,USA,589460000000.0,29.31,309.27,0.0069,3094825.0,16.14
