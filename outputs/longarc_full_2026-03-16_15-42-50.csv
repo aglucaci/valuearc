@@ -1,0 +1,19 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4450000000.0,31.84,152.49,0.0403,73103.0,17.19
+CLMB,Climb Global Solutions Inc,Technology,Electronics & Computer Distribution,USA,381690000.0,17.87,82.88,0.028999999999999998,38548.0,20.24
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,33220000000.0,21.64,34.49,0.011699999999999999,1451882.0,20.67
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,77150000000.0,41.7,192.93,-0.0069,338314.0,25.28
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4570000000.0,20.77,24.73,0.0148,559190.0,-7.48
+HLI,Houlihan Lokey Inc,Financial,Capital Markets,USA,9820000000.0,21.62,140.79,0.0098,106616.0,21.26
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5490000000.0,17.65,98.4,0.016,203786.0,20.31
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1190000000.0,14.63,47.6,-0.0231,46570.0,18.05
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8439999999.999999,16.84,364.67,0.0059,22254.0,35.19
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13550000000.0,6.64,71.3,0.0358,233764.0,-2.66
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,19680000000.0,11.22,160.72,0.018600000000000002,1083160.0,9.7
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,128229999999.99998,10.97,38.06,0.0026,3938472.0,5.38
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5930000000.0,25.88,110.01,0.005699999999999999,101048.0,13.2
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8790000000.0,8.15,36.99,0.021099999999999997,296732.0,6.62
+PRI,Primerica Inc,Financial,Insurance - Life,USA,7990000000.0,11.0,252.42,0.013300000000000001,31422.0,19.99
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,58860000000.0,32.86,331.99,0.0004,257315.0,23.81
+TGLS,Tecnoglass Inc,Basic Materials,Building Materials,Colombia,1960000000.0,12.83,43.78,-0.042199999999999994,202064.0,16.32
+V,Visa Inc,Financial,Credit Services,USA,589680000000.0,29.32,309.38,0.0073,1236184.0,16.14
