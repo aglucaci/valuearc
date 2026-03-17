@@ -1,0 +1,16 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4320000000.0,30.89,147.95,-0.025699999999999997,158037.0,17.7
+CLMB,Climb Global Solutions Inc,Technology,Electronics & Computer Distribution,USA,366570000.0,17.16,79.59,-0.0091,61566.0,19.96
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,32900000000.0,21.42,34.15,0.008,3180707.0,20.68
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,77380000000.0,41.82,193.51,0.004,536138.0,25.22
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4650000000.0,21.12,25.15,0.0227,999901.0,-7.39
+HLI,Houlihan Lokey Inc,Financial,Capital Markets,USA,9810000000.0,21.59,140.59,0.0077,410040.0,21.27
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5680000000.0,18.26,101.79,0.04769999999999999,217021.0,20.35
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1200000000.0,14.68,47.74,-0.0015,69985.0,17.68
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8289999999.999999,16.54,358.15,-0.0014000000000000002,63414.0,35.04
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13980000000.0,6.85,73.56,0.025699999999999997,272839.0,-2.26
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,19800000000.0,11.29,161.76,0.0116,1547519.0,10.26
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,129740000000.00002,11.1,38.51,-0.0018,8284506.0,5.58
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8900000000.0,8.26,37.48,0.0202,206452.0,6.94
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,59670000000.0,33.32,336.58,0.0066,327230.0,24.01
+V,Visa Inc,Financial,Credit Services,USA,590450000000.0,29.36,309.78,-0.0011,2693813.0,16.25
