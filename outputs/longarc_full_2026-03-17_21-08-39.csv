@@ -1,0 +1,19 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4380000000.0,31.32,150.0,-0.012199999999999999,378551.0,17.7
+CLMB,Climb Global Solutions Inc,Technology,Electronics & Computer Distribution,USA,368130000.0,17.24,79.93,-0.0049,96126.0,19.96
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,32799999999.999996,21.36,34.05,0.005,7796462.0,20.68
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,77110000000.0,41.68,192.84,0.0005,1687637.0,25.22
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4600000000.0,20.92,24.91,0.013000000000000001,2352401.0,-7.39
+HLI,Houlihan Lokey Inc,Financial,Capital Markets,USA,9790000000.0,21.55,140.28,0.0055000000000000005,752675.0,21.27
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5610000000.0,18.04,100.56,0.035,489484.0,20.35
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1200000000.0,14.76,48.0,0.004,179214.0,17.68
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8240000000.0,16.43,355.74,-0.008100000000000001,179797.0,35.04
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13970000000.0,6.85,73.51,0.025,550892.0,-2.26
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,19500000000.0,11.12,159.27,-0.004,5892937.0,10.26
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,8420000000.0,39.03,140.62,-0.0043,521252.0,9.66
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,129479999999.99998,11.08,38.43,-0.0039000000000000003,12150766.0,5.58
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8870000000.0,8.22,37.33,0.0161,609208.0,6.94
+PRI,Primerica Inc,Financial,Insurance - Life,USA,8000000000.0,11.01,252.66,0.011699999999999999,195545.0,20.17
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,59650000000.0,33.31,336.48,0.0063,554647.0,24.01
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5630000000.0,14.02,61.22,-0.0042,492162.0,9.99
+V,Visa Inc,Financial,Credit Services,USA,587930000000.0,29.23,308.46,-0.0053,6870024.0,16.25
