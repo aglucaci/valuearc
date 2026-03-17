@@ -1,0 +1,17 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4350000000.0,31.13,149.11,-0.0181,216519.0,17.7
+CLMB,Climb Global Solutions Inc,Technology,Electronics & Computer Distribution,USA,367070000.0,17.19,79.7,-0.0077,79106.0,19.96
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,33000000000.0,21.49,34.25,0.011000000000000001,4269451.0,20.68
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,77450000000.0,41.86,193.68,0.0049,772905.0,25.22
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4640000000.0,21.08,25.11,0.021,1477459.0,-7.39
+HLI,Houlihan Lokey Inc,Financial,Capital Markets,USA,9850000000.0,21.68,141.18,0.012,538156.0,21.27
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5640000000.0,18.14,101.09,0.0404,312962.0,20.35
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1200000000.0,14.74,47.96,0.003,96519.0,17.68
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8320000000.0,16.59,359.37,0.002,99777.0,35.04
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13950000000.0,6.84,73.4,0.023399999999999997,361211.0,-2.26
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,19790000000.0,11.28,161.64,0.0108,2825966.0,10.26
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,129690000000.0,11.1,38.49,-0.0022,9907815.0,5.58
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8880000000.0,8.23,37.36,0.0169,314399.0,6.94
+PRI,Primerica Inc,Financial,Insurance - Life,USA,8000000000.0,11.02,252.68,0.0118,108773.0,20.17
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,59690000000.0,33.33,336.67,0.0069,415022.0,24.01
+V,Visa Inc,Financial,Credit Services,USA,588730000000.0,29.27,308.88,-0.004,4014099.0,16.25
