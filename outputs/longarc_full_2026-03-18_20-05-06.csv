@@ -1,0 +1,22 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+AMP,Ameriprise Financial Inc,Financial,Asset Management,USA,39440000000.0,11.9,432.55,-0.0123,449977.0,19.05
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4340000000.0,31.02,148.6,-0.009300000000000001,159892.0,17.55
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,74170000000.0,40.09,185.49,-0.0381,2301604.0,25.23
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4580000000.0,20.83,24.81,-0.004,1201873.0,-7.27
+HLI,Houlihan Lokey Inc,Financial,Capital Markets,USA,9660000000.0,21.25,138.36,-0.0137,322870.0,21.34
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1190000000.0,14.53,47.28,-0.0151,110890.0,17.73
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8070000000.0,16.1,348.66,-0.0199,124680.0,34.93
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13870000000.0,6.8,73.01,-0.0068000000000000005,346260.0,-2.02
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,20320000000.0,12.48,165.95,0.04190000000000001,6305039.0,10.22
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,8330000000.0,38.61,139.12,-0.0106,319205.0,9.61
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,126360000000.0,10.81,37.51,-0.0241,22469027.0,5.54
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5930000000.0,25.87,109.99,-0.0074,313004.0,13.48
+PLMR,Palomar Holdings Inc,Financial,Insurance - Property & Casualty,USA,3100000000.0,16.18,116.18,-0.0241,197431.0,20.15
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8730000000.0,8.09,36.73,-0.0161,657680.0,7.11
+PRI,Primerica Inc,Financial,Insurance - Life,USA,7910000000.0,10.89,249.71,-0.011699999999999999,98745.0,20.31
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,58700000000.0,32.78,331.13,-0.0159,449465.0,24.09
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5430000000.0,13.54,59.12,-0.034300000000000004,488841.0,9.94
+ROL,"Rollins, Inc",Consumer Cyclical,Personal Services,USA,25940000000.0,49.56,53.91,-0.0346,1432816.0,18.2
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,286970000.0,1.63,5.47,-0.052000000000000005,1003159.0,5.14
+TGLS,Tecnoglass Inc,Basic Materials,Building Materials,Colombia,1960000000.0,12.81,43.72,-0.0276,437553.0,15.92
+V,Visa Inc,Financial,Credit Services,USA,570600000000.0,28.37,299.37,-0.029500000000000002,5071239.0,16.19
