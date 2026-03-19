@@ -1,0 +1,21 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+AMP,Ameriprise Financial Inc,Financial,Asset Management,USA,39580000000.0,11.94,434.06,0.0034999999999999996,841743.0,18.91
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4330000000.0,30.98,148.41,0.0034999999999999996,290977.0,17.38
+CLMB,Climb Global Solutions Inc,Technology,Electronics & Computer Distribution,USA,358410000.0,16.78,77.82,0.0054,107838.0,19.51
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,72710000000.0,39.3,181.83,-0.0195,2907110.0,24.74
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4580000000.0,20.82,24.8,0.0004,1669536.0,-7.32
+HLI,Houlihan Lokey Inc,Financial,Capital Markets,USA,9700000000.0,21.34,138.95,0.0004,933481.0,21.22
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5630000000.0,18.12,101.0,-0.016399999999999998,726336.0,21.01
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1200000000.0,14.69,47.79,0.011399999999999999,195653.0,17.54
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13870000000.0,6.8,73.01,-0.0009,612131.0,-2.08
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,19990000000.0,12.45,165.57,0.0011,3826878.0,10.63
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,8369999999.999999,38.8,139.81,0.0115,457516.0,9.42
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,124930000000.0,10.69,37.08,-0.009899999999999999,21217222.0,5.27
+PLMR,Palomar Holdings Inc,Financial,Insurance - Property & Casualty,USA,3100000000.0,16.17,116.15,-0.009399999999999999,278211.0,19.97
+PRI,Primerica Inc,Financial,Insurance - Life,USA,7820000000.0,10.77,247.02,-0.0058,158185.0,20.11
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5340000000.0,13.31,58.09,-0.015600000000000001,560475.0,9.54
+ROL,"Rollins, Inc",Consumer Cyclical,Personal Services,USA,26020000000.0,49.72,54.09,0.0033,2595442.0,17.79
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,288010000.0,1.64,5.49,0.0018,1495325.0,4.6
+SMID,Smith-Midland Corp,Basic Materials,Building Materials,USA,146010000.0,12.42,27.52,-0.0277,4911.0,26.46
+TGLS,Tecnoglass Inc,Basic Materials,Building Materials,Colombia,1910000000.0,12.53,42.74,-0.018600000000000002,462840.0,15.55
+V,Visa Inc,Financial,Credit Services,USA,571250000000.0,28.4,299.71,0.0023,6804912.0,15.83
