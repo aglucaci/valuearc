@@ -1,0 +1,18 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+AMP,Ameriprise Financial Inc,Financial,Asset Management,USA,39500000000.0,11.92,433.17,0.0015,235665.0,18.91
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4290000000.0,30.67,146.93,-0.006500000000000001,117509.0,17.38
+CLMB,Climb Global Solutions Inc,Technology,Electronics & Computer Distribution,USA,353390000.0,16.55,76.73,-0.0087,36808.0,19.51
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4530000000.0,20.57,24.5,-0.011699999999999999,748484.0,-7.32
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5580000000.0,17.94,100.0,-0.026099999999999998,300372.0,21.01
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1190000000.0,14.6,47.49,0.0051,77862.0,17.54
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13780000000.0,6.76,72.5,-0.0079,440718.0,-2.08
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,19770000000.0,12.32,163.78,-0.0097,1966248.0,10.63
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,8300000000.000001,38.49,138.68,0.0033,173657.0,9.42
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,123920000000.0,10.61,36.78,-0.0179,14940848.0,5.27
+PLMR,Palomar Holdings Inc,Financial,Insurance - Property & Casualty,USA,3100000000.0,16.18,116.16,-0.009300000000000001,127647.0,19.97
+PRI,Primerica Inc,Financial,Insurance - Life,USA,7820000000.0,10.77,246.98,-0.006,61392.0,20.11
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5360000000.0,13.35,58.26,-0.0126,270410.0,9.54
+ROL,"Rollins, Inc",Consumer Cyclical,Personal Services,USA,25840000000.0,49.37,53.71,-0.0038,954157.0,17.79
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,287230000.0,1.64,5.47,-0.0009,780793.0,4.6
+SMID,Smith-Midland Corp,Basic Materials,Building Materials,USA,142320000.0,12.11,26.83,-0.052300000000000006,1791.0,26.46
+TGLS,Tecnoglass Inc,Basic Materials,Building Materials,Colombia,1890000000.0,12.36,42.17,-0.0317,187717.0,15.55
