@@ -1,0 +1,24 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4320000000.0,30.89,147.94,-0.0032,875749.0,17.41
+CALM,"Cal-Maine Foods, Inc",Consumer Defensive,Farm Products,USA,3730000000.0,3.31,78.35,-0.0358,2602164.0,7.7
+CLMB,Climb Global Solutions Inc,Technology,Electronics & Computer Distribution,USA,361770000.0,16.94,78.55,0.009399999999999999,99348.0,19.47
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,31650000000.0,20.61,32.86,0.0105,13775154.0,20.26
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,71720000000.0,38.76,179.34,-0.0137,3836257.0,24.47
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4510000000.0,20.5,24.41,-0.015700000000000002,5112526.0,-7.31
+HLI,Houlihan Lokey Inc,Financial,Capital Markets,USA,9740000000.0,21.43,139.51,0.004,1289038.0,21.21
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5550000000.0,17.87,99.59,-0.013999999999999999,807727.0,20.81
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1190000000.0,14.62,47.56,-0.0048,226734.0,17.88
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,7600000000.0,15.15,328.21,0.0046,383199.0,33.79
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13710000000.0,6.72,72.17,-0.0115,711652.0,-2.09
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,19650000000.0,12.24,162.82,-0.0166,4868993.0,10.62
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,8220000000.000001,38.11,137.32,-0.0178,946493.0,9.6
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,123070000000.0,10.53,36.53,-0.0148,26170360.0,5.13
+PLMR,Palomar Holdings Inc,Financial,Insurance - Property & Casualty,USA,3120000000.0,16.28,116.9,0.006500000000000001,698445.0,19.85
+PRI,Primerica Inc,Financial,Insurance - Life,USA,7770000000.0,10.7,245.55,-0.006,529878.0,20.16
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,55780000000.0,31.14,314.63,-0.0199,940553.0,23.62
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5330000000.0,13.28,57.96,-0.0022,1202936.0,9.43
+ROL,"Rollins, Inc",Consumer Cyclical,Personal Services,USA,25620000000.0,48.96,53.26,-0.015300000000000001,7548414.0,17.69
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,284350000.0,1.62,5.42,-0.0128,1717305.0,4.65
+SMID,Smith-Midland Corp,Basic Materials,Building Materials,USA,139250000.0,11.85,26.25,-0.0463,21853.0,26.43
+TGLS,Tecnoglass Inc,Basic Materials,Building Materials,Colombia,1810000000.0,11.88,40.52,-0.0519,2373285.0,15.16
+V,Visa Inc,Financial,Credit Services,USA,574890000000.0,28.58,301.62,0.0064,14383341.0,15.99
