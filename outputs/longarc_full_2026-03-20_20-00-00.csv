@@ -1,0 +1,23 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4320000000.0,30.91,148.06,-0.0023,242491.0,17.41
+CALM,"Cal-Maine Foods, Inc",Consumer Defensive,Farm Products,USA,3740000000.0,3.31,78.43,-0.0348,876555.0,7.7
+CLMB,Climb Global Solutions Inc,Technology,Electronics & Computer Distribution,USA,360940000.0,16.9,78.37,0.0070999999999999995,37861.0,19.47
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,31400000000.0,20.45,32.6,0.0025,5316177.0,20.26
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,71800000000.0,38.81,179.55,-0.0126,1514457.0,24.47
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4490000000.0,20.42,24.32,-0.0194,1365221.0,-7.31
+HLI,Houlihan Lokey Inc,Financial,Capital Markets,USA,9660000000.0,21.26,138.41,-0.0039000000000000003,487095.0,21.21
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5530000000.0,17.78,99.12,-0.018600000000000002,244942.0,20.81
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1190000000.0,14.61,47.51,-0.0058,64020.0,17.87
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,7570000000.0,15.09,326.88,0.0005,175460.0,33.79
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13820000000.0,6.78,72.75,-0.0036,548476.0,-2.09
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,19560000000.0,12.18,162.0,-0.0216,2163213.0,10.62
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,8220000000.000001,38.14,137.42,-0.0171,268806.0,9.6
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,122300000000.0,10.47,36.3,-0.021,22002004.0,5.13
+PLMR,Palomar Holdings Inc,Financial,Insurance - Property & Casualty,USA,3110000000.0,16.22,116.49,0.0029,173742.0,19.85
+PRI,Primerica Inc,Financial,Insurance - Life,USA,7730000000.0,10.65,244.18,-0.0115,126002.0,20.16
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5340000000.0,13.3,58.08,-0.0001,458414.0,9.43
+ROL,"Rollins, Inc",Consumer Cyclical,Personal Services,USA,25520000000.0,48.76,53.04,-0.0194,1737042.0,17.69
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,283770000.0,1.62,5.41,-0.0148,732203.0,4.65
+SMID,Smith-Midland Corp,Basic Materials,Building Materials,USA,136380000.0,11.6,25.71,-0.0659,9647.0,26.43
+TGLS,Tecnoglass Inc,Basic Materials,Building Materials,Colombia,1830000000.0,12.0,40.95,-0.04190000000000001,307219.0,15.16
+V,Visa Inc,Financial,Credit Services,USA,573550000000.0,28.52,300.92,0.004,5418119.0,15.99
