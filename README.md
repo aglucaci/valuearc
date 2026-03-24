@@ -1,161 +1,102 @@
 # ValueArc
 
-ValueArc is a systematic equity research pipeline designed to identify asymmetric opportunities using a conservative Margin of Safety (MOS) model, automated screening, and a live dark-mode quant dashboard.
+ValueArc is a systematic equity screening pipeline that ranks ideas by conservative margin of safety. It combines a Finviz ruleset, long-horizon price CAGR, and a local bear/base/bull intrinsic value model built from normalized EPS, quality haircuts, and balance-sheet floor values.
 
-The platform integrates:
+The repo publishes two things:
 
-* Rule-based screening
-* Scenario-based earnings valuation
-* Predictability and balance-sheet risk adjustments
-* Static dashboards powered by GitHub-hosted data
+- Fresh CSV outputs in [`outputs/`](./outputs)
+- A static dashboard in [`docs/index.html`](./docs/index.html) for GitHub Pages
 
----
-
-## View the Dashboard
-
-Open:
+## Live dashboard
 
 https://aglucaci.github.io/valuearc/
 
-or deploy through static hosting platforms such as GitHub Pages or Netlify.
+The dashboard now reads a published metadata file and shows the timestamp of the last completed screener run, not the viewer's current clock.
 
----
+## Repo structure
 
-# Core Philosophy
-
-LongArc emphasizes:
-
-* Downside protection
-* Repeatable valuation logic
-* Transparent assumptions
-* Efficient visual scanning of opportunities
-
-Rather than relying on a single fair-value estimate, LongArc calculates:
-
-Bear / Base / Bull intrinsic value scenarios
-
-Securities are ranked primarily using:
-
-MOS_Bear_% (conservative margin of safety)
-
----
-
-# Margin of Safety Model
-
-The MOS engine runs locally and does not depend on external valuation sites.
-
-## Intrinsic Value Framework
-
-Normalized EPS
-→ Two-stage discounted earnings stream
-→ Predictability multiplier (quality haircut)
-→ Balance-sheet floor valuation
-
-### Stage Structure
-
-* Growth Stage: N years
-* Terminal Stage: M years
-* No perpetuity assumption (intentionally conservative)
-
-### Margin of Safety Definition
-
-MOS = (Intrinsic Value − Price) / Intrinsic Value
-
-Large negative MOS values indicate that price significantly exceeds the model’s intrinsic estimate and should be interpreted as an overvaluation flag rather than a literal downside percentage.
-
----
-
-# Screener Pipeline
-
-Finviz Filters
-→ 10-year Price CAGR
-→ Recommended MOS Calculation
-→ Filtered Output CSV
-
-Generated files:
-
-```
-outputs/
- ├── longarc_full_<timestamp>.csv
- ├── longarc_filtered_<timestamp>.csv
- └── longarc_filtered_TODAY.csv
+```text
+.
+|-- .github/workflows/          # scheduled screener automation
+|-- docs/
+|   |-- archive/                # older dashboard variants
+|   |-- data/latest-run.json    # published run metadata for the site
+|   `-- index.html              # GitHub Pages dashboard
+|-- logo/                       # brand assets
+|-- outputs/                    # generated CSVs and latest_run.json
+|-- scripts/
+|   |-- margin_of_safety.py     # standalone MOS analysis helper
+|   `-- run_screener.py         # main screener entrypoint
+|-- longarc_screener_mos_recommended.py  # compatibility wrapper
+`-- requirements.txt
 ```
 
----
+## How the screener works
 
-## Features
+1. Pull the Finviz screen defined in [`scripts/run_screener.py`](./scripts/run_screener.py).
+2. Calculate 10-year price CAGR per ticker.
+3. Filter for CAGR above 15%.
+4. Compute local bear/base/bull intrinsic values from:
+   - normalized EPS
+   - scenario growth assumptions
+   - predictability haircuts
+   - balance-sheet floor values
+5. Write timestamped outputs plus `longarc_filtered_TODAY.csv`.
+6. Write `latest_run.json` so the dashboard can display the last completed run timestamp.
 
-* Dark professional interface
-* MOS heat shading
-* Company and ticker display
-* Live sorting and filtering
-* Search across ticker, sector, industry, and company
-* Median and top-decile MOS metrics
+## Local usage
 
-No backend infrastructure is required.
+Install dependencies:
 
----
-
-# Usage
-
-## Run the Screener
-
-```
-python longarc_screener.py
+```bash
+pip install -r requirements.txt
 ```
 
-Dependencies:
+Run the full screener:
 
-```
-pip install yfinance pandas numpy finvizfinance
-```
-
----
-
-## Publish Data
-
-Commit the updated CSV:
-
-```
-outputs/longarc_filtered_TODAY.csv
+```bash
+python scripts/run_screener.py
 ```
 
-GitHub Raw acts as the live data source.
+The legacy wrapper still works:
 
----
+```bash
+python longarc_screener_mos_recommended.py
+```
 
-# Output Columns
+Run the standalone MOS helper for one or more tickers:
 
-| Column               | Description                   |
-| -------------------- | ----------------------------- |
-| MOS_Bear_%           | Conservative margin of safety |
-| MOS_Base_%           | Neutral scenario MOS          |
-| MOS_Bull_%           | Upside scenario MOS           |
-| Value_Bear/Base/Bull | Intrinsic values              |
-| EPS_Norm             | Normalized earnings           |
-| Quality_Mult         | Predictability adjustment     |
-| Floor_Value          | Downside floor valuation      |
-| 10yr_CAGR            | Historical price CAGR         |
+```bash
+python scripts/margin_of_safety.py QLYS AAPL MSFT
+```
 
----
+## Generated files
 
-# Design Principles
+Each successful screener run writes:
 
-* Conservative valuation bias
-* Minimal external dependencies
-* Static-site deployment
-* Institutional-style interface
+- `outputs/longarc_full_<timestamp>.csv`
+- `outputs/longarc_filtered_<timestamp>.csv`
+- `outputs/longarc_filtered_TODAY.csv`
+- `outputs/latest_run.json`
+- `docs/data/latest-run.json`
 
----
+## GitHub Actions
 
-# Notes
+Two workflows are included:
 
-* Extremely negative MOS values are expected under conservative assumptions.
-* Yahoo Finance fields may occasionally be incomplete or delayed.
-* This tool is intended for research and educational purposes only.
+- `daily_py.yaml` for a weekday scheduled run
+- `hourly_market_hours_update.yml` for hourly updates during US market hours
 
----
+The workflows now:
 
-# License
+- run the organized `scripts/run_screener.py` entrypoint
+- validate required output files before upload/commit
+- publish run metadata for the dashboard
+- use guarded commits and rebasing to reduce push failures
+- skip hourly runs outside market hours without failing the job
 
-Internal research tooling. Adapt freely for personal or organizational use.
+## Notes
+
+- The model is intentionally conservative. Very negative MOS values should be read as overvaluation flags, not literal downside forecasts.
+- Data quality depends on upstream Yahoo Finance and Finviz responses.
+- Outputs in this repo are research artifacts, not investment advice.

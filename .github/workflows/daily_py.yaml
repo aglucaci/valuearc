@@ -1,24 +1,32 @@
-name: LONGARC Screener
+name: ValueArc Daily Screener
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 17 * * 1-5"  # 12:00 PM EST (17:00 UTC), Mon–Fri
+    - cron: "0 17 * * 1-5"
 
 permissions:
   contents: write
 
 concurrency:
-  group: longarc-screener
+  group: valuearc-screener
   cancel-in-progress: false
 
 jobs:
   run-screener:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
+    defaults:
+      run:
+        shell: bash
+    env:
+      PYTHONUNBUFFERED: "1"
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -29,38 +37,70 @@ jobs:
 
       - name: Install Python dependencies
         run: |
+          set -euo pipefail
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      # IMPORTANT: installs Chromium + Linux deps Playwright needs on ubuntu-latest
-      - name: Install Playwright browsers
-        run: |
-          python -m playwright install --with-deps chromium
+          pip install --retries 5 -r requirements.txt
 
       - name: Prepare output directory
         run: |
+          set -euo pipefail
           mkdir -p outputs
 
-      - name: Run LONGARC screener
+      - name: Run ValueArc screener
         run: |
-          python longarc_screener_mos_recommended.py
+          set -euo pipefail
+          python scripts/run_screener.py
+
+      - name: Validate published artifacts
+        run: |
+          set -euo pipefail
+          test -f outputs/longarc_filtered_TODAY.csv
+          test -f outputs/latest_run.json
+          test -f docs/data/latest-run.json
 
       - name: Upload outputs as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: longarc-outputs
-          path: outputs/
+          name: valuearc-daily-outputs
+          path: |
+            outputs/
+            docs/data/latest-run.json
           retention-days: 14
           if-no-files-found: error
 
       - name: Commit outputs back to repo
         run: |
+          set -euo pipefail
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git add outputs/ || true
+          git add outputs/ docs/data/latest-run.json
+
           if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0
           fi
-          git commit -m "LONGARC screener run ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+
+          git commit -m "ValueArc screener run ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
           git push
+
+      - name: Write job summary
+        if: always()
+        run: |
+          {
+            echo "## ValueArc daily run"
+            echo
+            echo "- Workflow date: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            if [[ -f outputs/latest_run.json ]]; then
+              echo "- Metadata file: \`outputs/latest_run.json\`"
+              python - <<'PY'
+import json
+from pathlib import Path
+data = json.loads(Path("outputs/latest_run.json").read_text(encoding="utf-8"))
+print(f"- Last completed run: {data.get('completed_at_display', 'unknown')}")
+print(f"- Filtered rows: {data.get('filtered_rows', 'unknown')}")
+PY
+            else
+              echo "- Metadata file not generated."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"

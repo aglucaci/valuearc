@@ -2,420 +2,504 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>ValueArc</title>
-  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/aglucaci/valuearc/refs/heads/main/logo/valuearc_logo_thumbnail.png">
-  <link rel="shortcut icon" href="https://raw.githubusercontent.com/aglucaci/valuearc/refs/heads/main/logo/valuearc_logo_thumbnail.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ValueArc Dashboard</title>
+  <meta name="description" content="ValueArc systematic equity dashboard with conservative margin-of-safety ranking." />
   <style>
     :root {
-      --bg: #0b0f14;
-      --panel: #0f1621;
-      --panel2: #111b2a;
-      --text: #e6edf3;
-      --muted: #9fb0c0;
-      --grid: rgba(255,255,255,.06);
-      --accent: #5eead4;   /* teal */
-      --accent2: #60a5fa;  /* blue */
-      --good: #34d399;     /* green */
-      --warn: #fbbf24;     /* amber */
-      --bad:  #fb7185;     /* rose */
-      --chip: rgba(255,255,255,.06);
-      --shadow: 0 10px 35px rgba(0,0,0,.45);
-      --radius: 16px;
-      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background: radial-gradient(1200px 700px at 20% -10%, rgba(96,165,250,.16), transparent 55%),
-                  radial-gradient(900px 600px at 90% 0%, rgba(94,234,212,.14), transparent 60%),
-                  var(--bg);
-      color: var(--text);
-      font-family: var(--sans);
-      letter-spacing: 0.2px;
-    }
-    a { color: inherit; }
-    .wrap {
-      max-width: 1220px;
-      margin: 0 auto;
-      padding: 22px 18px 60px;
-    }
-    header {
-      display:flex;
-      gap: 14px;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 16px;
-    }
-    .brand {
-      display:flex;
-      gap: 12px;
-      align-items:center;
-      min-width: 280px;
-    }
-    .logo {
-      width: 40px; height: 40px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, rgba(96,165,250,.95), rgba(94,234,212,.95));
-      box-shadow: 0 12px 30px rgba(0,0,0,.35);
-    }
-    .title { line-height: 1.05; }
-    .title h1 {
-      margin: 0;
-      font-size: 18px;
-      font-weight: 720;
-    }
-    .title .sub {
-      margin-top: 4px;
-      color: var(--muted);
-      font-size: 12px;
-      font-family: var(--mono);
+      --bg: #08111f;
+      --bg-soft: #0d1830;
+      --panel: rgba(12, 24, 43, 0.84);
+      --panel-strong: rgba(10, 20, 37, 0.96);
+      --border: rgba(148, 163, 184, 0.16);
+      --text: #e5eef8;
+      --muted: #8ea2bb;
+      --accent: #7dd3fc;
+      --accent-strong: #38bdf8;
+      --accent-warm: #f59e0b;
+      --good: #34d399;
+      --warn: #fbbf24;
+      --bad: #fb7185;
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.34);
+      --radius: 22px;
+      --mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      --sans: "Segoe UI", "Inter", system-ui, sans-serif;
     }
 
-    .toolbar {
-      display:flex;
-      gap: 10px;
-      align-items:center;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-    .input {
-      background: rgba(255,255,255,.04);
-      border: 1px solid rgba(255,255,255,.08);
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
       color: var(--text);
-      border-radius: 12px;
-      padding: 10px 12px;
-      outline: none;
-      min-width: 240px;
+      font-family: var(--sans);
+      background:
+        radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), transparent 30%),
+        radial-gradient(circle at 85% 10%, rgba(245, 158, 11, 0.14), transparent 24%),
+        linear-gradient(180deg, #09111e 0%, #060c17 100%);
     }
-    .input:focus {
-      border-color: rgba(94,234,212,.35);
-      box-shadow: 0 0 0 4px rgba(94,234,212,.10);
-    }
-    .select {
-      background: rgba(255,255,255,.04);
-      border: 1px solid rgba(255,255,255,.08);
-      color: var(--text);
-      border-radius: 12px;
-      padding: 10px 10px;
-      outline: none;
-      min-width: 180px;
-    }
-    .btn {
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.05);
-      color: var(--text);
-      border-radius: 12px;
-      padding: 10px 12px;
-      cursor: pointer;
-      transition: transform .08s ease, border-color .12s ease, background .12s ease;
-      user-select: none;
+
+    a {
+      color: inherit;
       text-decoration: none;
+    }
+
+    .shell {
+      width: min(1380px, calc(100vw - 32px));
+      margin: 24px auto 40px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 28px;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background:
+        linear-gradient(135deg, rgba(19, 35, 61, 0.96), rgba(8, 17, 31, 0.94)),
+        linear-gradient(120deg, rgba(125, 211, 252, 0.08), transparent 55%);
+      box-shadow: var(--shadow);
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      border-radius: 999px;
+      filter: blur(18px);
+      opacity: 0.7;
+      pointer-events: none;
+    }
+
+    .hero::before {
+      top: -48px;
+      right: 56px;
+      width: 220px;
+      height: 220px;
+      background: rgba(56, 189, 248, 0.12);
+    }
+
+    .hero::after {
+      bottom: -60px;
+      left: 12%;
+      width: 260px;
+      height: 180px;
+      background: rgba(245, 158, 11, 0.08);
+    }
+
+    .hero-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(360px, 0.8fr);
+      gap: 22px;
+      align-items: end;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 16px;
+      padding: 8px 12px;
+      border: 1px solid rgba(125, 211, 252, 0.18);
+      border-radius: 999px;
+      background: rgba(125, 211, 252, 0.08);
+      color: #d5f1fb;
+      font: 600 12px/1 var(--mono);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .eyebrow .pulse {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--good);
+      box-shadow: 0 0 0 6px rgba(52, 211, 153, 0.12);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.2rem, 3.8vw, 4.4rem);
+      line-height: 0.98;
+      letter-spacing: -0.04em;
+      font-weight: 760;
+    }
+
+    .lede {
+      max-width: 62ch;
+      margin: 16px 0 0;
+      color: var(--muted);
+      font-size: 1.02rem;
+      line-height: 1.65;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .btn,
+    .control {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text);
+      font: 600 0.95rem/1 var(--sans);
+      transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
+    }
+
+    .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
+      gap: 10px;
+      padding: 13px 16px;
+      cursor: pointer;
     }
-    .btn:hover {
-      border-color: rgba(94,234,212,.35);
-      background: rgba(94,234,212,.08);
+
+    .btn:hover,
+    .control:hover,
+    .control:focus {
+      border-color: rgba(125, 211, 252, 0.38);
+      background: rgba(125, 211, 252, 0.1);
     }
-    .btn:active { transform: translateY(1px); }
+
     .btn.primary {
-      border-color: rgba(96,165,250,.45);
-      background: rgba(96,165,250,.10);
-    }
-    .btn.primary:hover {
-      border-color: rgba(96,165,250,.65);
-      background: rgba(96,165,250,.14);
+      border-color: rgba(125, 211, 252, 0.34);
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.18), rgba(14, 165, 233, 0.1));
     }
 
-    .grid {
-      display:grid;
-      grid-template-columns: 1.4fr 1fr 1fr 1fr;
-      gap: 12px;
-      margin: 14px 0 16px;
+    .btn:active {
+      transform: translateY(1px);
     }
-    .card {
-      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03));
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: var(--radius);
-      padding: 14px 14px;
-      box-shadow: var(--shadow);
-      position: relative;
-      overflow: hidden;
+
+    .aside {
+      display: grid;
+      gap: 14px;
     }
-    .card::before {
-      content:"";
-      position:absolute; inset: -1px;
-      background: radial-gradient(600px 120px at 10% 0%, rgba(96,165,250,.18), transparent 55%),
-                  radial-gradient(500px 120px at 90% 0%, rgba(94,234,212,.14), transparent 60%);
-      opacity: .65;
-      pointer-events:none;
+
+    .glance {
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      background: rgba(9, 19, 35, 0.72);
+      backdrop-filter: blur(14px);
     }
-    .card > * { position: relative; }
-    .metric {
-      display:flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 10px;
-    }
-    .metric .label {
+
+    .glance-label {
       color: var(--muted);
-      font-size: 12px;
-      font-family: var(--mono);
-    }
-    .metric .value {
-      font-size: 18px;
-      font-weight: 720;
-      font-family: var(--mono);
-      letter-spacing: 0;
-    }
-    .metric .hint {
-      margin-top: 8px;
-      color: rgba(230,237,243,.78);
-      font-size: 12px;
-      line-height: 1.35;
+      font: 600 12px/1 var(--mono);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
     }
 
-    .tablewrap {
-      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
-      border: 1px solid rgba(255,255,255,.08);
+    .glance-value {
+      margin-top: 10px;
+      font: 700 clamp(1.1rem, 2vw, 1.7rem)/1.2 var(--sans);
+    }
+
+    .glance-note {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.5;
+    }
+
+    .toolbar {
+      display: grid;
+      grid-template-columns: minmax(0, 1.5fr) repeat(2, minmax(180px, 220px)) auto;
+      gap: 12px;
+      margin: 18px 0;
+    }
+
+    .control {
+      width: 100%;
+      padding: 14px 15px;
+      outline: none;
+    }
+
+    .panel-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .card {
+      padding: 18px;
+      border: 1px solid var(--border);
       border-radius: var(--radius);
-      overflow: hidden;
+      background: var(--panel);
+      backdrop-filter: blur(12px);
       box-shadow: var(--shadow);
     }
-    .tablehead {
-      padding: 10px 12px;
-      border-bottom: 1px solid rgba(255,255,255,.08);
-      display:flex;
-      align-items:center;
-      justify-content: space-between;
-      gap: 10px;
-      background: rgba(17,27,42,.55);
+
+    .metric-label {
+      color: var(--muted);
+      font: 600 12px/1 var(--mono);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
     }
-    .tablehead .left {
-      display:flex;
-      align-items:center;
-      gap: 10px;
+
+    .metric-value {
+      margin-top: 12px;
+      font: 760 clamp(1.4rem, 2.4vw, 2.2rem)/1 var(--sans);
+      letter-spacing: -0.04em;
+    }
+
+    .metric-note {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.94rem;
+      line-height: 1.55;
+    }
+
+    .table-shell {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: var(--panel-strong);
+      box-shadow: var(--shadow);
+    }
+
+    .table-top {
+      display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 18px 20px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(10, 20, 37, 0.94);
     }
+
+    .chips,
+    .status {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
     .chip {
-      display:inline-flex;
-      align-items:center;
-      gap: 8px;
-      padding: 6px 10px;
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      padding: 8px 12px;
+      border: 1px solid rgba(148, 163, 184, 0.12);
       border-radius: 999px;
-      background: var(--chip);
-      border: 1px solid rgba(255,255,255,.08);
-      font-family: var(--mono);
-      font-size: 12px;
-      color: rgba(230,237,243,.85);
+      background: rgba(255, 255, 255, 0.04);
+      color: #d8e5f1;
+      font: 600 12px/1 var(--mono);
     }
-    .dot {
-      width: 8px; height: 8px;
+
+    .status-indicator {
+      width: 9px;
+      height: 9px;
       border-radius: 999px;
       background: var(--accent);
-      box-shadow: 0 0 0 4px rgba(94,234,212,.10);
+      box-shadow: 0 0 0 6px rgba(56, 189, 248, 0.12);
+    }
+
+    .table-wrap {
+      overflow: auto;
+      max-height: 68vh;
     }
 
     table {
       width: 100%;
       border-collapse: separate;
       border-spacing: 0;
-      font-size: 13px;
+      font-size: 0.95rem;
     }
+
     thead th {
       position: sticky;
       top: 0;
-      z-index: 3;
+      z-index: 2;
+      padding: 14px 14px;
       text-align: left;
-      font-family: var(--mono);
-      font-weight: 700;
-      font-size: 12px;
-      color: rgba(230,237,243,.78);
-      background: rgba(15,22,33,.92);
-      backdrop-filter: blur(6px);
-      border-bottom: 1px solid rgba(255,255,255,.08);
-      padding: 10px 10px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(8, 17, 31, 0.98);
+      color: #c8d7e8;
+      font: 700 12px/1 var(--mono);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
       cursor: pointer;
-      user-select: none;
       white-space: nowrap;
     }
-    thead th:hover { background: rgba(17,27,42,.92); }
-    tbody td {
-      padding: 10px 10px;
-      border-bottom: 1px solid rgba(255,255,255,.06);
-      color: rgba(230,237,243,.90);
-      vertical-align: middle;
-      white-space: nowrap;
-    }
-    tbody tr { transition: background .12s ease; }
-    tbody tr:hover { background: rgba(96,165,250,.06); }
 
-    .ticker { font-family: var(--mono); font-weight: 800; letter-spacing: .3px; }
-    .muted { color: rgba(159,176,192,.92); font-family: var(--mono); font-size: 12px; }
-    .right { text-align: right; }
+    tbody td {
+      padding: 14px 14px;
+      border-bottom: 1px solid rgba(148, 163, 184, 0.08);
+      color: #e4edf7;
+      white-space: nowrap;
+      vertical-align: middle;
+    }
+
+    tbody tr:hover {
+      background: rgba(56, 189, 248, 0.06);
+    }
+
+    .ticker {
+      font: 700 0.96rem/1 var(--mono);
+      letter-spacing: 0.08em;
+    }
+
+    .company {
+      white-space: normal;
+      min-width: 220px;
+    }
+
+    .subtle {
+      color: var(--muted);
+      font: 600 12px/1.4 var(--mono);
+    }
+
+    .right {
+      text-align: right;
+    }
 
     .badge {
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      min-width: 78px;
-      padding: 6px 10px;
+      display: inline-flex;
+      min-width: 84px;
+      justify-content: center;
+      align-items: center;
+      padding: 8px 11px;
       border-radius: 999px;
-      font-family: var(--mono);
-      font-size: 12px;
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      background: rgba(255, 255, 255, 0.05);
+      font: 700 12px/1 var(--mono);
     }
-    .badge.good { border-color: rgba(52,211,153,.28); background: rgba(52,211,153,.10); color: rgba(209,250,229,.92); }
-    .badge.warn { border-color: rgba(251,191,36,.26); background: rgba(251,191,36,.10); color: rgba(254,243,199,.92); }
-    .badge.bad  { border-color: rgba(251,113,133,.24); background: rgba(251,113,133,.10); color: rgba(255,228,230,.92); }
 
-    .heat { position: relative; overflow: hidden; }
-    .heat::before {
-      content:"";
-      position:absolute;
-      inset: 0;
-      opacity: .16;
-      background: linear-gradient(90deg, rgba(251,113,133,.55), rgba(251,191,36,.35), rgba(52,211,153,.45));
-      transform: translateX(var(--heat-shift, 0%));
-      pointer-events:none;
-    }
-    .heat > span { position: relative; z-index: 1; }
-
-    .status {
-      display:flex;
-      align-items:center;
-      gap: 10px;
-      color: var(--muted);
-      font-size: 12px;
-      font-family: var(--mono);
-    }
-    .spinner {
-      width: 14px; height: 14px;
-      border-radius: 999px;
-      border: 2px solid rgba(255,255,255,.18);
-      border-top-color: rgba(94,234,212,.85);
-      animation: spin .8s linear infinite;
-    }
-    @keyframes spin { to { transform: rotate(360deg); } }
+    .good { background: rgba(52, 211, 153, 0.12); border-color: rgba(52, 211, 153, 0.3); color: #c8f9e7; }
+    .warn { background: rgba(251, 191, 36, 0.12); border-color: rgba(251, 191, 36, 0.28); color: #ffefc0; }
+    .bad { background: rgba(251, 113, 133, 0.12); border-color: rgba(251, 113, 133, 0.24); color: #ffd8df; }
 
     .toast {
-      margin-top: 12px;
-      padding: 10px 12px;
-      border-radius: 12px;
-      border: 1px solid rgba(251,113,133,.25);
-      background: rgba(251,113,133,.08);
-      color: rgba(255,228,230,.92);
-      font-family: var(--mono);
-      font-size: 12px;
       display: none;
+      margin-top: 14px;
+      padding: 14px 16px;
+      border: 1px solid rgba(251, 113, 133, 0.28);
+      border-radius: 16px;
+      background: rgba(127, 29, 29, 0.24);
+      color: #ffd7df;
+      font: 600 13px/1.55 var(--mono);
       white-space: pre-wrap;
     }
 
-    @media (max-width: 980px) {
-      .grid { grid-template-columns: 1fr 1fr; }
-      .input { min-width: 180px; }
+    @media (max-width: 1100px) {
+      .hero-grid,
+      .panel-grid,
+      .toolbar {
+        grid-template-columns: 1fr;
+      }
     }
-    @media (max-width: 560px) {
-      header { flex-direction: column; align-items: stretch; }
-      .toolbar { justify-content: flex-start; }
-      .grid { grid-template-columns: 1fr; }
+
+    @media (max-width: 720px) {
+      .shell {
+        width: min(100vw - 18px, 100%);
+        margin-top: 10px;
+      }
+
+      .hero,
+      .card {
+        padding: 18px;
+      }
+
+      .table-top {
+        padding: 16px;
+      }
+
+      thead th,
+      tbody td {
+        padding: 12px 10px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <div class="logo" aria-hidden="true"></div>
-        <div class="title">
+  <div class="shell">
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow"><span class="pulse" aria-hidden="true"></span>Systematic Equity Research</div>
           <h1>ValueArc</h1>
-          <div class="sub" id="subtitle">Loading…</div>
-        </div>
-      </div>
-
-      <div class="toolbar">
-        <input class="input" id="q" placeholder="Search ticker / sector / industry…" />
-        <select class="select" id="sortBy"></select>
-        <select class="select" id="mosFilter">
-          <option value="all">MOS Bear: all</option>
-          <option value="20">MOS Bear ≥ 20%</option>
-          <option value="40">MOS Bear ≥ 40%</option>
-          <option value="60">MOS Bear ≥ 60%</option>
-          <option value="0">MOS Bear ≥ 0%</option>
-        </select>
-        <button class="btn primary" id="reload">Reload</button>
-        <a class="btn" id="csvLink" href="https://raw.githubusercontent.com/aglucaci/longarc/refs/heads/main/outputs/longarc_filtered_TODAY.csv" target="_blank" rel="noreferrer">CSV</a>
-      </div>
-    </header>
-
-    <section class="grid">
-      <div class="card">
-        <div class="metric">
-          <div>
-            <div class="label">Universe</div>
-            <div class="value" id="mCount">—</div>
+          <p class="lede">
+            A conservative screening dashboard ranked by bear-case margin of safety, built around normalized earnings,
+            scenario valuation, and downside floors rather than one-point fair values.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" id="csvLink" href="https://raw.githubusercontent.com/aglucaci/valuearc/refs/heads/main/outputs/longarc_filtered_TODAY.csv" target="_blank" rel="noreferrer">Open Latest CSV</a>
+            <button class="btn" id="reload" type="button">Refresh Data</button>
           </div>
-          <div class="muted" id="mUpdated">—</div>
         </div>
-        <div class="metric hint">
-          Ranked by <b>MOS_Bear_%</b> (conservative). Values are scenario-based EPS-DCF with a quality haircut and balance-sheet floor.
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="metric">
-          <div>
-            <div class="label">Median MOS Bear</div>
-            <div class="value" id="mMedBear">—</div>
+        <div class="aside">
+          <div class="glance">
+            <div class="glance-label">Last Completed Run</div>
+            <div class="glance-value" id="lastRunDisplay">Loading...</div>
+            <div class="glance-note" id="lastRunUtc">Waiting for metadata...</div>
           </div>
-          <div class="muted">robust</div>
-        </div>
-        <div class="metric hint">Extreme negative MOS usually means “value ≪ price.” Treat it as an overvaluation flag, not literal magnitude.</div>
-      </div>
-
-      <div class="card">
-        <div class="metric">
-          <div>
-            <div class="label">Top Decile MOS Bear</div>
-            <div class="value" id="mTopDec">—</div>
+          <div class="glance">
+            <div class="glance-label">Method</div>
+            <div class="glance-value">Bear / Base / Bull MOS</div>
+            <div class="glance-note">Normalized EPS, quality haircut, balance-sheet floor, and sortable raw output.</div>
           </div>
-          <div class="muted">signal</div>
         </div>
-        <div class="metric hint">Use filters + column sorts to surface the best candidates quickly.</div>
-      </div>
-
-      <div class="card">
-        <div class="metric">
-          <div>
-            <div class="label">Data</div>
-            <div class="value" style="font-size:13px">GitHub Raw</div>
-          </div>
-          <div class="muted">live</div>
-        </div>
-        <div class="metric hint">Loads the latest published CSV from your repo. Reload to bypass caches.</div>
       </div>
     </section>
 
-    <section class="tablewrap">
-      <div class="tablehead">
-        <div class="left">
-          <div class="chip"><span class="dot"></span><span id="statusText">Loading…</span></div>
+    <section class="toolbar" aria-label="Dashboard filters">
+      <input class="control" id="q" type="search" placeholder="Search ticker, company, sector, or industry" />
+      <select class="control" id="sortBy"></select>
+      <select class="control" id="mosFilter">
+        <option value="all">MOS Bear: all</option>
+        <option value="60">MOS Bear >= 60%</option>
+        <option value="40">MOS Bear >= 40%</option>
+        <option value="20">MOS Bear >= 20%</option>
+        <option value="0">MOS Bear >= 0%</option>
+      </select>
+      <a class="btn" href="https://github.com/aglucaci/valuearc" target="_blank" rel="noreferrer">Repository</a>
+    </section>
+
+    <section class="panel-grid">
+      <article class="card">
+        <div class="metric-label">Universe</div>
+        <div class="metric-value" id="mCount">--</div>
+        <div class="metric-note" id="mUpdated">Awaiting published data.</div>
+      </article>
+      <article class="card">
+        <div class="metric-label">Median MOS Bear</div>
+        <div class="metric-value" id="mMedBear">--</div>
+        <div class="metric-note">Median of the published universe after parsing the current CSV.</div>
+      </article>
+      <article class="card">
+        <div class="metric-label">Top Decile MOS Bear</div>
+        <div class="metric-value" id="mTopDec">--</div>
+        <div class="metric-note">A quick read on the strongest tail of the current screen.</div>
+      </article>
+      <article class="card">
+        <div class="metric-label">Published Rows</div>
+        <div class="metric-value" id="mFilteredRows">--</div>
+        <div class="metric-note">Reported by the run metadata written after the screener completes.</div>
+      </article>
+    </section>
+
+    <section class="table-shell">
+      <div class="table-top">
+        <div class="chips">
+          <div class="chip"><span class="status-indicator" aria-hidden="true"></span><span id="statusText">Loading data</span></div>
           <div class="chip" id="chipCount">0 rows</div>
           <div class="chip" id="chipFilter">Filter: none</div>
         </div>
-        <div class="status" id="status">
-          <div class="spinner" aria-hidden="true"></div>
-          <div id="statusDetail">Fetching CSV…</div>
+        <div class="status">
+          <div class="chip" id="statusDetail">Fetching published CSV and metadata</div>
         </div>
       </div>
-
-      <div style="overflow:auto; max-height: 68vh;">
-        <table id="tbl">
+      <div class="table-wrap">
+        <table>
           <thead><tr id="thead"></tr></thead>
           <tbody id="tbody"></tbody>
         </table>
@@ -425,371 +509,347 @@
     <div class="toast" id="toast"></div>
   </div>
 
-<script>
-(() => {
-  const csvUrl = "https://raw.githubusercontent.com/aglucaci/longarc/refs/heads/main/outputs/longarc_filtered_TODAY.csv";
-  const csvPath = csvUrl + "?t=" + Date.now(); // cache bust
-  const el = (id) => document.getElementById(id);
+  <script>
+    (() => {
+      const csvUrl = "https://raw.githubusercontent.com/aglucaci/valuearc/refs/heads/main/outputs/longarc_filtered_TODAY.csv";
+      const metadataUrl = "./data/latest-run.json";
+      const el = (id) => document.getElementById(id);
 
-  const toast = el("toast");
-  function showError(msg) {
-    toast.style.display = "block";
-    toast.textContent = msg;
-    el("statusText").textContent = "Error";
-    el("statusDetail").textContent = "Failed to load CSV";
-    el("status").style.opacity = 1;
-  }
+      const state = {
+        raw: [],
+        columns: [],
+        sortKey: "MOS_Bear_%",
+        sortDir: -1,
+        metadata: null,
+      };
 
-  function setLoading(isLoading, detail) {
-    el("status").style.opacity = isLoading ? 1 : 0;
-    el("statusDetail").textContent = detail || (isLoading ? "Loading…" : "");
-    el("statusText").textContent = isLoading ? "Loading…" : "Ready";
-  }
+      function showError(message) {
+        const toast = el("toast");
+        toast.style.display = "block";
+        toast.textContent = message;
+        el("statusText").textContent = "Load failed";
+        el("statusDetail").textContent = "Check workflow output or published files";
+      }
 
-  // Robust CSV parser (handles quotes, commas, CRLF)
-  function parseCSV(text) {
-    const rows = [];
-    let row = [];
-    let field = "";
-    let inQuotes = false;
+      function setStatus(title, detail) {
+        el("statusText").textContent = title;
+        el("statusDetail").textContent = detail;
+      }
 
-    for (let i = 0; i < text.length; i++) {
-      const c = text[i];
-      const next = text[i + 1];
+      function parseCSV(text) {
+        const rows = [];
+        let row = [];
+        let field = "";
+        let inQuotes = false;
 
-      if (inQuotes) {
-        if (c === '"' && next === '"') {
-          field += '"';
-          i++;
-        } else if (c === '"') {
-          inQuotes = false;
-        } else {
-          field += c;
-        }
-      } else {
-        if (c === '"') {
-          inQuotes = true;
-        } else if (c === ',') {
-          row.push(field);
-          field = "";
-        } else if (c === '\n') {
-          row.push(field);
-          field = "";
-          if (row.length && row[row.length - 1].endsWith('\r')) {
-            row[row.length - 1] = row[row.length - 1].slice(0, -1);
+        for (let i = 0; i < text.length; i += 1) {
+          const c = text[i];
+          const next = text[i + 1];
+
+          if (inQuotes) {
+            if (c === '"' && next === '"') {
+              field += '"';
+              i += 1;
+            } else if (c === '"') {
+              inQuotes = false;
+            } else {
+              field += c;
+            }
+          } else if (c === '"') {
+            inQuotes = true;
+          } else if (c === ",") {
+            row.push(field);
+            field = "";
+          } else if (c === "\n") {
+            row.push(field.replace(/\r$/, ""));
+            rows.push(row);
+            row = [];
+            field = "";
+          } else {
+            field += c;
           }
-          rows.push(row);
-          row = [];
-        } else {
-          field += c;
         }
+
+        if (field.length || row.length) {
+          row.push(field.replace(/\r$/, ""));
+          rows.push(row);
+        }
+
+        return rows;
       }
-    }
-    if (field.length || row.length) {
-      row.push(field);
-      if (row.length && row[row.length - 1].endsWith('\r')) {
-        row[row.length - 1] = row[row.length - 1].slice(0, -1);
+
+      function toNumber(value) {
+        if (value === null || value === undefined) return null;
+        const normalized = String(value).trim();
+        if (!normalized || normalized === "NA" || normalized === "nan" || normalized === "None") return null;
+        const parsed = Number(normalized.replace(/[$,%]/g, "").replace(/,/g, ""));
+        return Number.isFinite(parsed) ? parsed : null;
       }
-      rows.push(row);
-    }
-    return rows;
-  }
 
-  function toNumber(val) {
-    if (val === null || val === undefined) return null;
-    const s = String(val).trim();
-    if (!s || s === "NA" || s === "nan" || s === "None") return null;
-    const cleaned = s.replace(/[$,%]/g, "").replace(/,/g, "");
-    const n = Number(cleaned);
-    return Number.isFinite(n) ? n : null;
-  }
-
-  function fmtMoney(x) {
-    if (x === null) return "—";
-    const abs = Math.abs(x);
-    if (abs >= 1e12) return (x/1e12).toFixed(2) + "T";
-    if (abs >= 1e9) return (x/1e9).toFixed(2) + "B";
-    if (abs >= 1e6) return (x/1e6).toFixed(2) + "M";
-    if (abs >= 1e3) return (x/1e3).toFixed(2) + "K";
-    return x.toFixed(2);
-  }
-
-  function fmtPctAlready(x) {
-    if (x === null) return "—";
-    return x.toFixed(2) + "%";
-  }
-
-  function badgeClass(mosPct) {
-    if (mosPct === null) return "badge";
-    if (mosPct >= 40) return "badge good";
-    if (mosPct >= 20) return "badge warn";
-    return "badge bad";
-  }
-
-  function heatShift(mosPct) {
-    // map [-100, 80] -> [-60%, 30%] shift (visual only)
-    if (mosPct === null) return "0%";
-    const v = Math.max(-100, Math.min(80, mosPct));
-    const t = (v + 100) / 180; // 0..1
-    const shift = (-60 + 90 * t); // -60..30
-    return shift.toFixed(1) + "%";
-  }
-
-  function computeStats(rows, col) {
-    const xs = rows.map(r => toNumber(r[col])).filter(x => x !== null);
-    if (!xs.length) return {med: null, p90: null};
-    xs.sort((a,b)=>a-b);
-    const med = xs[Math.floor(xs.length/2)];
-    const p90 = xs[Math.floor(xs.length*0.9)];
-    return {med, p90};
-  }
-
-  let raw = [];
-  let columns = [];
-  let sortKey = "MOS_Bear_%";
-  let sortDir = -1; // desc
-
-  function buildSortSelect() {
-    const s = el("sortBy");
-    s.innerHTML = "";
-    const preferred = [
-      "MOS_Bear_%","MOS_Base_%","MOS_Bull_%",
-      "Value_Bear","Value_Base","Value_Bull",
-      "10yr_CAGR","Market Cap","Price",
-      "Sector","Industry","Ticker"
-    ];
-    const opts = [];
-    for (const k of preferred) if (columns.includes(k)) opts.push(k);
-    for (const k of columns) if (!opts.includes(k)) opts.push(k);
-
-    for (const k of opts) {
-      const opt = document.createElement("option");
-      opt.value = k;
-      opt.textContent = "Sort: " + k;
-      s.appendChild(opt);
-    }
-    s.value = columns.includes(sortKey) ? sortKey : opts[0];
-  }
-
-  function headerLabel(col) {
-    if (col === "MOS_Bear_%") return "MOS (Bear)";
-    if (col === "MOS_Base_%") return "MOS (Base)";
-    if (col === "MOS_Bull_%") return "MOS (Bull)";
-    if (col === "10yr_CAGR") return "CAGR 10y";
-    return col;
-  }
-
-  function pickColumns() {
-    const want = [
-      "Ticker","Company","Sector","Industry",
-      "Price","Market Cap","10yr_CAGR",
-      "MOS_Bear_%","MOS_Base_%","MOS_Bull_%",
-      "Value_Bear","Value_Base","Value_Bull",
-      "EPS_Norm","Quality_Mult","Floor_Value"
-    ];
-    const out = [];
-    for (const c of want) if (columns.includes(c)) out.push(c);
-    if (out.length < 6) return columns.slice(0, 12);
-    return out;
-  }
-
-  function buildHeader() {
-    const tr = el("thead");
-    tr.innerHTML = "";
-    const show = pickColumns();
-    for (const c of show) {
-      const th = document.createElement("th");
-      th.textContent = headerLabel(c) + (c === sortKey ? (sortDir === -1 ? " ↓" : " ↑") : "");
-      th.title = "Click to sort";
-      th.addEventListener("click", () => {
-        if (sortKey === c) sortDir *= -1;
-        else { sortKey = c; sortDir = -1; }
-        render();
-      });
-      tr.appendChild(th);
-    }
-  }
-
-  function rowCell(col, val) {
-    const td = document.createElement("td");
-
-    if (col === "Ticker") {
-      td.innerHTML = `<span class="ticker">${val || "—"}</span>`;
-      return td;
-    }
-    if (col === "Company") {
-      td.textContent = val || "—";
-      return td;
-    }
-    if (col === "Market Cap") {
-      const n = toNumber(val);
-      td.className = "right muted";
-      td.textContent = n === null ? "—" : fmtMoney(n);
-      return td;
-    }
-    if (col === "Price") {
-      const n = toNumber(val);
-      td.className = "right muted";
-      td.textContent = n === null ? "—" : n.toFixed(2);
-      return td;
-    }
-    if (col === "10yr_CAGR") {
-      const n = toNumber(val);
-      td.className = "right muted";
-      td.textContent = n === null ? "—" : fmtPctAlready(n);
-      return td;
-    }
-    if (col.startsWith("Value_") || col === "EPS_Norm" || col === "Floor_Value") {
-      const n = toNumber(val);
-      td.className = "right muted";
-      td.textContent = n === null ? "—" : n.toFixed(2);
-      return td;
-    }
-    if (col === "Quality_Mult") {
-      const n = toNumber(val);
-      td.className = "right muted";
-      td.textContent = n === null ? "—" : n.toFixed(2);
-      return td;
-    }
-    if (col.startsWith("MOS_") && col.endsWith("%")) {
-      const n = toNumber(val);
-      td.className = "right heat";
-      td.style.setProperty("--heat-shift", heatShift(n));
-      const cls = badgeClass(n);
-      td.innerHTML = `<span class="${cls}">${n === null ? "—" : fmtPctAlready(n)}</span>`;
-      return td;
-    }
-
-    td.textContent = val || "—";
-    return td;
-  }
-
-  function applyFilters() {
-    const q = el("q").value.trim().toLowerCase();
-    const mosF = el("mosFilter").value;
-    const mosMin = mosF === "all" ? null : Number(mosF);
-
-    const out = raw.filter(r => {
-      if (q) {
-        const blob = (String(r["Ticker"]||"") + " " + String(r["Sector"]||"") + " " + String(r["Industry"]||"")).toLowerCase();
-        if (!blob.includes(q)) return false;
+      function fmtMoney(value) {
+        if (value === null) return "--";
+        const abs = Math.abs(value);
+        if (abs >= 1e12) return (value / 1e12).toFixed(2) + "T";
+        if (abs >= 1e9) return (value / 1e9).toFixed(2) + "B";
+        if (abs >= 1e6) return (value / 1e6).toFixed(2) + "M";
+        if (abs >= 1e3) return (value / 1e3).toFixed(2) + "K";
+        return value.toFixed(2);
       }
-      if (mosMin !== null && "MOS_Bear_%" in r) {
-        const m = toNumber(r["MOS_Bear_%"]);
-        if (m === null || m < mosMin) return false;
+
+      function fmtPct(value) {
+        return value === null ? "--" : value.toFixed(2) + "%";
       }
-      return true;
-    });
 
-    el("chipCount").textContent = out.length + " rows";
-    el("chipFilter").textContent = "Filter: " + (mosMin === null ? "none" : `MOS Bear ≥ ${mosMin}%`) + (q ? " + search" : "");
-    return out;
-  }
+      function badgeClass(value) {
+        if (value === null) return "badge";
+        if (value >= 40) return "badge good";
+        if (value >= 20) return "badge warn";
+        return "badge bad";
+      }
 
-  function sortRows(rows) {
-    const k = sortKey;
-    const dir = sortDir;
+      function computeStats(rows, column) {
+        const values = rows.map((row) => toNumber(row[column])).filter((value) => value !== null).sort((a, b) => a - b);
+        if (!values.length) return { median: null, p90: null };
+        return {
+          median: values[Math.floor(values.length / 2)],
+          p90: values[Math.floor(values.length * 0.9)],
+        };
+      }
 
-    function getSortVal(r) {
-      const v = r[k];
-      const n = toNumber(v);
-      if (n !== null) return {t:0, v:n}; // numeric
-      return {t:1, v:String(v ?? "")};   // text
-    }
+      function buildSortSelect() {
+        const preferred = [
+          "MOS_Bear_%", "MOS_Base_%", "MOS_Bull_%",
+          "Value_Bear", "Value_Base", "Value_Bull",
+          "10yr_CAGR", "Market Cap", "Price",
+          "Sector", "Industry", "Ticker"
+        ];
+        const select = el("sortBy");
+        select.innerHTML = "";
 
-    return rows.slice().sort((a,b) => {
-      const A = getSortVal(a);
-      const B = getSortVal(b);
-      if (A.t !== B.t) return (A.t - B.t); // numeric first
-      if (A.t === 0) return dir * (A.v - B.v);
-      return dir * A.v.localeCompare(B.v);
-    });
-  }
-
-  function render() {
-    const filtered = sortRows(applyFilters());
-    buildHeader();
-
-    const tbody = el("tbody");
-    tbody.innerHTML = "";
-
-    const show = pickColumns();
-    for (const r of filtered) {
-      const tr = document.createElement("tr");
-      for (const c of show) tr.appendChild(rowCell(c, r[c]));
-      tbody.appendChild(tr);
-    }
-
-    // update metrics
-    el("mCount").textContent = raw.length ? String(raw.length) : "—";
-    const st = computeStats(raw, "MOS_Bear_%");
-    el("mMedBear").textContent = st.med === null ? "—" : fmtPctAlready(st.med);
-    el("mTopDec").textContent = st.p90 === null ? "—" : fmtPctAlready(st.p90);
-
-    el("subtitle").textContent = "Live CSV • " + new Date().toLocaleString();
-    el("mUpdated").textContent = `${raw.length ? "ok" : "—"}`;
-  }
-
-  async function load() {
-    toast.style.display = "none";
-    setLoading(true, "Fetching CSV…");
-
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 12000);
-
-    try {
-      const resp = await fetch(csvPath, {
-        cache: "no-store",
-        signal: controller.signal,
-        headers: { "Accept": "text/csv,*/*" }
-      });
-      clearTimeout(timeout);
-
-      if (!resp.ok) throw new Error(`HTTP ${resp.status} ${resp.statusText}`);
-
-      const text = await resp.text();
-      if (!text || text.trim().length < 5) throw new Error("Empty CSV response");
-
-      const parsed = parseCSV(text);
-      const header = parsed.shift();
-      if (!header || header.length < 2) throw new Error("CSV header missing or invalid");
-
-      columns = header.map(h => h.trim());
-      raw = parsed
-        .filter(r => r.length && r.some(x => String(x).trim() !== ""))
-        .map(r => {
-          const obj = {};
-          for (let i=0; i<columns.length; i++) obj[columns[i]] = (r[i] ?? "").trim();
-          return obj;
+        const options = [];
+        preferred.forEach((key) => {
+          if (state.columns.includes(key)) options.push(key);
+        });
+        state.columns.forEach((key) => {
+          if (!options.includes(key)) options.push(key);
         });
 
-      if (!columns.includes(sortKey)) {
-        sortKey = columns.includes("MOS_Bear_%") ? "MOS_Bear_%" : (columns.includes("10yr_CAGR") ? "10yr_CAGR" : columns[0]);
+        options.forEach((key) => {
+          const option = document.createElement("option");
+          option.value = key;
+          option.textContent = "Sort: " + key;
+          select.appendChild(option);
+        });
+
+        select.value = state.columns.includes(state.sortKey) ? state.sortKey : options[0];
       }
 
-      buildSortSelect();
-      render();
-      setLoading(false, "Ready");
-      el("status").style.opacity = 0;
-      el("statusText").textContent = "Ready";
+      function headerLabel(column) {
+        const labels = {
+          "MOS_Bear_%": "MOS Bear",
+          "MOS_Base_%": "MOS Base",
+          "MOS_Bull_%": "MOS Bull",
+          "10yr_CAGR": "CAGR 10Y"
+        };
+        return labels[column] || column;
+      }
 
-      // update CSV link
-      el("csvLink").href = csvUrl;
+      function pickColumns() {
+        const desired = [
+          "Ticker", "Company", "Sector", "Industry",
+          "Price", "Market Cap", "10yr_CAGR",
+          "MOS_Bear_%", "MOS_Base_%", "MOS_Bull_%",
+          "Value_Bear", "Value_Base", "Value_Bull",
+          "EPS_Norm", "Quality_Mult", "Floor_Value"
+        ];
+        const result = desired.filter((column) => state.columns.includes(column));
+        return result.length >= 6 ? result : state.columns.slice(0, 12);
+      }
 
-    } catch (err) {
-      clearTimeout(timeout);
-      showError(String(err));
-    }
-  }
+      function buildHeader() {
+        const row = el("thead");
+        row.innerHTML = "";
+        pickColumns().forEach((column) => {
+          const th = document.createElement("th");
+          const arrow = state.sortKey === column ? (state.sortDir === -1 ? " ↓" : " ↑") : "";
+          th.textContent = headerLabel(column) + arrow;
+          th.addEventListener("click", () => {
+            if (state.sortKey === column) state.sortDir *= -1;
+            else {
+              state.sortKey = column;
+              state.sortDir = -1;
+            }
+            render();
+          });
+          row.appendChild(th);
+        });
+      }
 
-  // events
-  el("q").addEventListener("input", () => render());
-  el("mosFilter").addEventListener("change", () => render());
-  el("sortBy").addEventListener("change", (e) => { sortKey = e.target.value; sortDir = -1; render(); });
-  el("reload").addEventListener("click", () => location.reload());
+      function renderCell(column, value) {
+        const td = document.createElement("td");
+        if (column === "Ticker") {
+          td.innerHTML = `<span class="ticker">${value || "--"}</span>`;
+          return td;
+        }
+        if (column === "Company") {
+          td.className = "company";
+          td.textContent = value || "--";
+          return td;
+        }
+        if (column === "Market Cap") {
+          td.className = "right subtle";
+          td.textContent = fmtMoney(toNumber(value));
+          return td;
+        }
+        if (column === "Price" || column === "EPS_Norm" || column === "Quality_Mult" || column === "Floor_Value" || column.startsWith("Value_")) {
+          const numeric = toNumber(value);
+          td.className = "right subtle";
+          td.textContent = numeric === null ? "--" : numeric.toFixed(2);
+          return td;
+        }
+        if (column === "10yr_CAGR") {
+          td.className = "right subtle";
+          td.textContent = fmtPct(toNumber(value));
+          return td;
+        }
+        if (column.startsWith("MOS_")) {
+          const numeric = toNumber(value);
+          td.className = "right";
+          td.innerHTML = `<span class="${badgeClass(numeric)}">${fmtPct(numeric)}</span>`;
+          return td;
+        }
+        td.textContent = value || "--";
+        return td;
+      }
 
-  load();
-})();
-</script>
+      function applyFilters() {
+        const query = el("q").value.trim().toLowerCase();
+        const mosFilter = el("mosFilter").value;
+        const minMos = mosFilter === "all" ? null : Number(mosFilter);
+
+        const filtered = state.raw.filter((row) => {
+          if (query) {
+            const blob = [row.Ticker, row.Company, row.Sector, row.Industry].join(" ").toLowerCase();
+            if (!blob.includes(query)) return false;
+          }
+          if (minMos !== null) {
+            const mos = toNumber(row["MOS_Bear_%"]);
+            if (mos === null || mos < minMos) return false;
+          }
+          return true;
+        });
+
+        el("chipCount").textContent = filtered.length + " rows";
+        el("chipFilter").textContent = "Filter: " + (minMos === null ? "none" : `MOS Bear >= ${minMos}%`) + (query ? " + search" : "");
+        return filtered;
+      }
+
+      function sortRows(rows) {
+        return rows.slice().sort((a, b) => {
+          const av = a[state.sortKey];
+          const bv = b[state.sortKey];
+          const an = toNumber(av);
+          const bn = toNumber(bv);
+          if (an !== null && bn !== null) return state.sortDir * (an - bn);
+          return state.sortDir * String(av ?? "").localeCompare(String(bv ?? ""));
+        });
+      }
+
+      function renderMeta() {
+        const metadata = state.metadata;
+        if (!metadata) {
+          el("lastRunDisplay").textContent = "Unavailable";
+          el("lastRunUtc").textContent = "No published run metadata found.";
+          el("mFilteredRows").textContent = "--";
+          return;
+        }
+
+        el("lastRunDisplay").textContent = metadata.completed_at_display || "Unavailable";
+        el("lastRunUtc").textContent = metadata.completed_at_utc ? `UTC ${metadata.completed_at_utc}` : "UTC timestamp unavailable";
+        el("mFilteredRows").textContent = metadata.filtered_rows ?? "--";
+        el("mUpdated").textContent = metadata.completed_at_display
+          ? `Published ${metadata.completed_at_display}`
+          : "Published timestamp unavailable";
+      }
+
+      function render() {
+        renderMeta();
+        buildHeader();
+
+        const rows = sortRows(applyFilters());
+        const tbody = el("tbody");
+        tbody.innerHTML = "";
+
+        const visibleColumns = pickColumns();
+        rows.forEach((row) => {
+          const tr = document.createElement("tr");
+          visibleColumns.forEach((column) => tr.appendChild(renderCell(column, row[column])));
+          tbody.appendChild(tr);
+        });
+
+        const stats = computeStats(state.raw, "MOS_Bear_%");
+        el("mCount").textContent = state.raw.length ? String(state.raw.length) : "--";
+        el("mMedBear").textContent = fmtPct(stats.median);
+        el("mTopDec").textContent = fmtPct(stats.p90);
+      }
+
+      async function fetchJson(url) {
+        const response = await fetch(url + "?t=" + Date.now(), { cache: "no-store" });
+        if (!response.ok) throw new Error(`Metadata request failed: HTTP ${response.status}`);
+        return response.json();
+      }
+
+      async function fetchCsv(url) {
+        const response = await fetch(url + "?t=" + Date.now(), { cache: "no-store", headers: { Accept: "text/csv,*/*" } });
+        if (!response.ok) throw new Error(`CSV request failed: HTTP ${response.status}`);
+        return response.text();
+      }
+
+      async function load() {
+        el("toast").style.display = "none";
+        setStatus("Loading data", "Fetching published CSV and metadata");
+
+        try {
+          const [metadata, csvText] = await Promise.all([fetchJson(metadataUrl), fetchCsv(csvUrl)]);
+          const parsed = parseCSV(csvText);
+          const header = parsed.shift();
+          if (!header || header.length < 2) throw new Error("CSV header missing or invalid");
+
+          state.columns = header.map((cell) => cell.trim());
+          state.raw = parsed
+            .filter((row) => row.length && row.some((cell) => String(cell).trim() !== ""))
+            .map((row) => {
+              const obj = {};
+              state.columns.forEach((column, index) => {
+                obj[column] = (row[index] || "").trim();
+              });
+              return obj;
+            });
+          state.metadata = metadata;
+
+          if (!state.columns.includes(state.sortKey)) {
+            state.sortKey = state.columns.includes("MOS_Bear_%") ? "MOS_Bear_%" : state.columns[0];
+          }
+
+          buildSortSelect();
+          render();
+          setStatus("Published data loaded", "Showing latest committed output and completion timestamp");
+        } catch (error) {
+          showError(String(error));
+        }
+      }
+
+      el("q").addEventListener("input", render);
+      el("mosFilter").addEventListener("change", render);
+      el("sortBy").addEventListener("change", (event) => {
+        state.sortKey = event.target.value;
+        state.sortDir = -1;
+        render();
+      });
+      el("reload").addEventListener("click", load);
+
+      load();
+    })();
+  </script>
 </body>
 </html>

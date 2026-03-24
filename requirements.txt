@@ -10,8 +10,5 @@ finvizfinance
 requests
 beautifulsoup4
 
-# Browser-based scraping fallback (GuruFocus MOS)
-playwright
-
 # Plotting (safe to keep even if optional)
 matplotlib

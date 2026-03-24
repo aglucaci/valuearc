@@ -3,67 +3,63 @@ name: ValueArc Screener - Hourly
 on:
   workflow_dispatch:
   schedule:
-    # Every hour at :30 during US market hours
-    # 9:30–15:30 ET (14:30–20:30 UTC)
     - cron: "30 14-20 * * 1-5"
 
 permissions:
   contents: write
 
 concurrency:
-  group: longarc-screener
+  group: valuearc-screener
   cancel-in-progress: false
 
 jobs:
   run-screener:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
+    defaults:
+      run:
+        shell: bash
+    env:
+      PYTHONUNBUFFERED: "1"
 
     steps:
-      # ==========================================================
-      # MARKET HOURS GUARD  (NEW)
-      # ==========================================================
       - name: Check if US market is open
-        shell: bash
+        id: market_hours
         run: |
           set -euo pipefail
 
           echo "UTC now: $(date -u)"
-          echo "NY  now: $(TZ="America/New_York" date)"
+          echo "NY now: $(TZ="America/New_York" date)"
 
-          NY_WEEKDAY="$(TZ="America/New_York" date +%u)"  # 1=Mon
-          NY_HOUR="$(TZ="America/New_York" date +%H)"
-          NY_MIN="$(TZ="America/New_York" date +%M)"
+          ny_weekday="$(TZ="America/New_York" date +%u)"
+          ny_hour="$(TZ="America/New_York" date +%H)"
+          ny_min="$(TZ="America/New_York" date +%M)"
 
-          # Weekend exit
-          if [[ "$NY_WEEKDAY" -gt 5 ]]; then
-            echo "Weekend — exiting."
+          if [[ "$ny_weekday" -gt 5 ]]; then
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
-          # Before 09:30
-          if [[ "$NY_HOUR" -lt 9 ]] || { [[ "$NY_HOUR" -eq 9 ]] && [[ "$NY_MIN" -lt 30 ]]; }; then
-            echo "Before market open — exiting."
+          if [[ "$ny_hour" -lt 9 ]] || { [[ "$ny_hour" -eq 9 ]] && [[ "$ny_min" -lt 30 ]]; }; then
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
-          # After 16:00
-          if [[ "$NY_HOUR" -ge 16 ]]; then
-            echo "After market close — exiting."
+          if [[ "$ny_hour" -ge 16 ]]; then
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
-          echo "Market open — continuing workflow."
+          echo "should_run=true" >> "$GITHUB_OUTPUT"
 
-      # ==========================================================
-      # CHECKOUT
-      # ==========================================================
       - name: Checkout repo
+        if: steps.market_hours.outputs.should_run == 'true'
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      # ==========================================================
-      # PYTHON ENV
-      # ==========================================================
       - name: Set up Python
+        if: steps.market_hours.outputs.should_run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -71,55 +67,78 @@ jobs:
           cache-dependency-path: requirements.txt
 
       - name: Install Python dependencies
+        if: steps.market_hours.outputs.should_run == 'true'
         run: |
+          set -euo pipefail
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install --retries 5 -r requirements.txt
 
-      # ==========================================================
-      # PLAYWRIGHT
-      # ==========================================================
-      - name: Install Playwright browsers
-        run: |
-          python -m playwright install --with-deps chromium
-
-      # ==========================================================
-      # OUTPUT DIR
-      # ==========================================================
       - name: Prepare output directory
+        if: steps.market_hours.outputs.should_run == 'true'
         run: |
+          set -euo pipefail
           mkdir -p outputs
 
-      # ==========================================================
-      # RUN LONGARC
-      # ==========================================================
-      - name: Run LONGARC screener
+      - name: Run ValueArc screener
+        if: steps.market_hours.outputs.should_run == 'true'
         run: |
-          python longarc_screener_mos_recommended.py
+          set -euo pipefail
+          python scripts/run_screener.py
 
-      # ==========================================================
-      # ARTIFACTS
-      # ==========================================================
+      - name: Validate published artifacts
+        if: steps.market_hours.outputs.should_run == 'true'
+        run: |
+          set -euo pipefail
+          test -f outputs/longarc_filtered_TODAY.csv
+          test -f outputs/latest_run.json
+          test -f docs/data/latest-run.json
+
       - name: Upload outputs as artifact
+        if: steps.market_hours.outputs.should_run == 'true'
         uses: actions/upload-artifact@v4
         with:
-          name: longarc-outputs
-          path: outputs/
+          name: valuearc-hourly-outputs
+          path: |
+            outputs/
+            docs/data/latest-run.json
           retention-days: 14
           if-no-files-found: error
 
-      # ==========================================================
-      # COMMIT BACK
-      # ==========================================================
       - name: Commit outputs back to repo
+        if: steps.market_hours.outputs.should_run == 'true'
         run: |
+          set -euo pipefail
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git add outputs/ || true
+          git add outputs/ docs/data/latest-run.json
 
           if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0
           fi
 
-          git commit -m "LONGARC screener run ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+          git commit -m "ValueArc screener run ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
           git push
+
+      - name: Write job summary
+        if: always()
+        run: |
+          {
+            echo "## ValueArc hourly run"
+            echo
+            echo "- Market window active: ${{ steps.market_hours.outputs.should_run || 'false' }}"
+            echo "- Workflow date: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            if [[ -f outputs/latest_run.json ]]; then
+              echo "- Metadata file: \`outputs/latest_run.json\`"
+              python - <<'PY'
+import json
+from pathlib import Path
+data = json.loads(Path("outputs/latest_run.json").read_text(encoding="utf-8"))
+print(f"- Last completed run: {data.get('completed_at_display', 'unknown')}")
+print(f"- Filtered rows: {data.get('filtered_rows', 'unknown')}")
+PY
+            else
+              echo "- Metadata file not generated in this run."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
