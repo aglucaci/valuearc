@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ValueArc Methodology</title>
+  <meta name="description" content="ValueArc methodology reference covering screening, valuation, and output generation." />
+  <link rel="icon" type="image/png" href="../logo/valuearc_logo_v1.png" />
+  <link rel="shortcut icon" href="../logo/valuearc_logo_v1.png" />
+  <style>
+    :root {
+      --bg: #08111f;
+      --panel: rgba(12, 24, 43, 0.84);
+      --panel-strong: rgba(10, 20, 37, 0.96);
+      --border: rgba(148, 163, 184, 0.16);
+      --text: #e5eef8;
+      --muted: #8ea2bb;
+      --accent: #7dd3fc;
+      --accent-warm: #f59e0b;
+      --good: #34d399;
+      --warn: #fbbf24;
+      --bad: #fb7185;
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.34);
+      --mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      --sans: "Segoe UI", "Inter", system-ui, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: var(--sans);
+      background:
+        radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), transparent 30%),
+        radial-gradient(circle at 90% 5%, rgba(245, 158, 11, 0.12), transparent 22%),
+        linear-gradient(180deg, #09111e 0%, #060c17 100%);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .shell {
+      width: min(1160px, calc(100vw - 32px));
+      margin: 24px auto 40px;
+    }
+
+    .hero,
+    .section {
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+    }
+
+    .hero {
+      padding: 28px;
+      margin-bottom: 18px;
+      background:
+        linear-gradient(135deg, rgba(19, 35, 61, 0.96), rgba(8, 17, 31, 0.94)),
+        linear-gradient(120deg, rgba(125, 211, 252, 0.08), transparent 55%);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 12px;
+      border: 1px solid rgba(125, 211, 252, 0.18);
+      border-radius: 999px;
+      background: rgba(125, 211, 252, 0.08);
+      color: #d5f1fb;
+      font: 600 12px/1 var(--mono);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .pulse {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--good);
+      box-shadow: 0 0 0 6px rgba(52, 211, 153, 0.12);
+    }
+
+    h1 {
+      margin: 16px 0 10px;
+      font-size: clamp(2rem, 4vw, 3.8rem);
+      line-height: 1;
+      letter-spacing: -0.04em;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.35rem;
+      letter-spacing: -0.02em;
+    }
+
+    p, li {
+      color: #d9e6f5;
+      line-height: 1.7;
+      font-size: 0.99rem;
+    }
+
+    .lede {
+      max-width: 74ch;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 15px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text);
+      font: 600 0.95rem/1 var(--sans);
+    }
+
+    .btn.primary {
+      border-color: rgba(125, 211, 252, 0.34);
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.18), rgba(14, 165, 233, 0.1));
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .section {
+      padding: 24px;
+    }
+
+    .callout {
+      margin-top: 14px;
+      padding: 16px;
+      border-radius: 18px;
+      border: 1px solid rgba(251, 191, 36, 0.22);
+      background: rgba(245, 158, 11, 0.08);
+    }
+
+    .callout.bad {
+      border-color: rgba(251, 113, 133, 0.22);
+      background: rgba(251, 113, 133, 0.08);
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .metric {
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .label {
+      color: var(--muted);
+      font: 600 12px/1 var(--mono);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .value {
+      margin-top: 10px;
+      font: 700 1.2rem/1.2 var(--sans);
+    }
+
+    code {
+      font-family: var(--mono);
+      color: #dff2ff;
+    }
+
+    pre {
+      margin: 16px 0 0;
+      padding: 16px;
+      overflow: auto;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: var(--panel-strong);
+      color: #dff2ff;
+      font: 500 0.92rem/1.6 var(--mono);
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    @media (max-width: 860px) {
+      .grid,
+      .metric-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <section class="hero">
+      <div class="eyebrow"><span class="pulse" aria-hidden="true"></span>Repository Methodology</div>
+      <h1>How ValueArc Works</h1>
+      <p class="lede">
+        This page documents the full pipeline: screening, growth filtering, valuation, margin of safety scoring,
+        published outputs, and the main reasons you can end up with a lot of negative MOS values.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="./index.html">Back To Dashboard</a>
+        <a class="btn" href="https://github.com/aglucaci/valuearc" target="_blank" rel="noreferrer">Repository</a>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="section">
+        <h2>Pipeline</h2>
+        <ul>
+          <li>The screener starts with a fixed Finviz filter set in <code>scripts/run_screener.py</code>.</li>
+          <li>Each ticker then gets a 10-year price CAGR, and only names above 15% are kept for the valuation pass.</li>
+          <li>The filtered set gets bear, base, and bull intrinsic values from a local earnings-power model.</li>
+          <li>The workflow writes timestamped CSV snapshots, a stable <code>valuearc_filtered_TODAY.csv</code>, and metadata for the dashboard.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Current MOS Formula</h2>
+        <p>The model uses:</p>
+        <pre>MOS = (Intrinsic Value - Price) / Intrinsic Value</pre>
+        <p>
+          Negative values mean the modeled intrinsic value is below the current market price. That is not a math error.
+          It is the expected output whenever the valuation assumptions are more conservative than the market.
+        </p>
+      </section>
+    </div>
+
+    <section class="section" style="margin-bottom: 18px;">
+      <h2>Valuation Mechanics</h2>
+      <div class="metric-grid">
+        <div class="metric">
+          <div class="label">Normalized EPS</div>
+          <div class="value">Median of annual EPS history</div>
+          <p>Uses the median of available annual EPS values, with trailing EPS only as fallback.</p>
+        </div>
+        <div class="metric">
+          <div class="label">Growth</div>
+          <div class="value">EPS CAGR capped at 10 / 20 / 30%</div>
+          <p>Bear uses 0.5x historical EPS CAGR, base uses 1.0x, bull uses 1.5x, each with hard caps.</p>
+        </div>
+        <div class="metric">
+          <div class="label">Discounting</div>
+          <div class="value">11% over 20 years</div>
+          <p>Ten years of stage-one growth plus ten years of terminal-stage growth at 4%, with no perpetuity.</p>
+        </div>
+      </div>
+      <div class="metric-grid">
+        <div class="metric">
+          <div class="label">Quality Haircut</div>
+          <div class="value">0.60 to 1.00 multiplier</div>
+          <p>Applies penalties for EPS volatility, negative EPS frequency, and leverage.</p>
+        </div>
+        <div class="metric">
+          <div class="label">Floor Value</div>
+          <div class="value">80% TBV or 80% net cash</div>
+          <p>Uses the higher of conservative tangible-book-per-share or net-cash-per-share values.</p>
+        </div>
+        <div class="metric">
+          <div class="label">Final Value</div>
+          <div class="value">max(earnings value, floor)</div>
+          <p>The floor only prevents collapse below asset value. It does not push weak earnings names into positive MOS.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="section">
+        <h2>Why So Many Negative MOS Values</h2>
+        <ul>
+          <li>The model uses a high discount rate at 11%, which compresses present value aggressively.</li>
+          <li>There is no perpetuity or terminal multiple, so value stops after year 20.</li>
+          <li>Growth assumptions are capped, which limits upside for high-quality compounders.</li>
+          <li>The quality multiplier only cuts value. It never rewards stability above 1.00.</li>
+          <li>The floor value is usually too low to offset a weak earnings valuation for most growth businesses.</li>
+          <li>Names are prefiltered on price CAGR, not valuation cheapness, so you are often evaluating winners at already-expensive prices.</li>
+        </ul>
+        <div class="callout bad">
+          <strong>Bottom line:</strong> the model is structurally conservative, so a broad field of negative MOS values is the normal output, not a sign that the arithmetic is broken.
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>More Efficient Alternatives</h2>
+        <ul>
+          <li>Use a shorter, clearer valuation horizon such as 5 to 10 years plus an exit multiple instead of 20 years of discounted EPS.</li>
+          <li>Rank on a relative score like <code>Price / Base Value</code> or <code>Value / Price</code> if the goal is ordering, not literal margin of safety interpretation.</li>
+          <li>Clip or winsorize extreme negative MOS values before ranking so the table remains readable.</li>
+          <li>Use owner earnings or free cash flow for mature firms instead of EPS when accounting noise is large.</li>
+          <li>Add sector-specific discount rates or quality-based discount rates instead of one global 11% hurdle.</li>
+          <li>Separate the scoring model from the reporting model: keep conservative value estimates, but rank by base-case discount to value instead of bear-case only.</li>
+        </ul>
+        <div class="callout">
+          <strong>Practical recommendation:</strong> if you want fewer negative values without making the model soft, the cleanest first move is to rank on <code>MOS_Base_%</code> and report bear/base/bull together, while keeping bear as a stress-test metric rather than the primary screen.
+        </div>
+      </section>
+    </div>
+
+    <section class="section">
+      <h2>Repository Structure</h2>
+      <ul>
+        <li><code>scripts/run_screener.py</code>: main batch pipeline used by GitHub Actions.</li>
+        <li><code>scripts/margin_of_safety.py</code>: standalone single- or multi-ticker MOS analysis helper.</li>
+        <li><code>docs/index.html</code>: static dashboard over the latest published CSV.</li>
+        <li><code>docs/data/latest-run.json</code>: metadata that gives the dashboard the last completed run timestamp.</li>
+        <li><code>outputs/</code>: timestamped CSV artifacts and the stable latest output file.</li>
+        <li><code>.github/workflows/</code>: daily and hourly automation for refresh and publishing.</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
