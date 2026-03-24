@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ValueArc Methodology</title>
   <meta name="description" content="ValueArc methodology reference covering screening, valuation, and output generation." />
-  <link rel="icon" type="image/png" href="../logo/valuearc_logo_v1.png" />
-  <link rel="shortcut icon" href="../logo/valuearc_logo_v1.png" />
+  <link rel="icon" type="image/png" href="./assets/valuearc_logo_v1.png" />
+  <link rel="shortcut icon" href="./assets/valuearc_logo_v1.png" />
   <style>
     :root {
       --bg: #08111f;
@@ -225,7 +225,6 @@
       </p>
       <div class="actions">
         <a class="btn primary" href="./index.html">Back To Dashboard</a>
-        <a class="btn" href="https://github.com/aglucaci/valuearc" target="_blank" rel="noreferrer">Repository</a>
       </div>
     </section>
 
@@ -266,8 +265,8 @@
         </div>
         <div class="metric">
           <div class="label">Discounting</div>
-          <div class="value">11% over 20 years</div>
-          <p>Ten years of stage-one growth plus ten years of terminal-stage growth at 4%, with no perpetuity.</p>
+          <div class="value">Sector base rate plus quality adjustment</div>
+          <p>Uses a sector-specific base hurdle and then shifts it modestly lower or higher based on the quality multiplier.</p>
         </div>
       </div>
       <div class="metric-grid">
@@ -287,13 +286,33 @@
           <p>The floor only prevents collapse below asset value. It does not push weak earnings names into positive MOS.</p>
         </div>
       </div>
+      <div class="callout">
+        <strong>Current base discount map:</strong> Utilities 8.0%, Consumer Defensive 8.5%, Healthcare 9.0%, Real Estate 9.5%, Financials 10.0%, Communication Services 10.0%, Industrials 10.0%, Technology 10.5%, and 11.0% for higher-cyclicality or fallback sectors.
+      </div>
+      <div class="metric-grid">
+        <div class="metric">
+          <div class="label">Lower-Rate Sectors</div>
+          <div class="value">8.0% to 9.5%</div>
+          <p>Utilities, consumer defensive, healthcare, and real estate get lower base rates because their cash flows are usually steadier, more regulated, or more defensive than the broad market.</p>
+        </div>
+        <div class="metric">
+          <div class="label">Mid-Rate Sectors</div>
+          <div class="value">10.0% to 10.5%</div>
+          <p>Financials, communication services, industrials, and technology sit in the middle because they can still be durable businesses, but usually carry more operating leverage, cyclicality, or disruption risk.</p>
+        </div>
+        <div class="metric">
+          <div class="label">Higher-Rate Sectors</div>
+          <div class="value">11.0% fallback</div>
+          <p>Consumer cyclical, basic materials, energy, and unknown sectors keep the highest base hurdle because earnings are often more commodity-sensitive, cyclical, or dependent on favorable market conditions.</p>
+        </div>
+      </div>
     </section>
 
     <div class="grid">
       <section class="section">
         <h2>Why So Many Negative MOS Values</h2>
         <ul>
-          <li>The model uses a high discount rate at 11%, which compresses present value aggressively.</li>
+          <li>The model still discounts aggressively, but it no longer forces every company through one global 11% hurdle.</li>
           <li>There is no perpetuity or terminal multiple, so value stops after year 20.</li>
           <li>Growth assumptions are capped, which limits upside for high-quality compounders.</li>
           <li>The quality multiplier only cuts value. It never rewards stability above 1.00.</li>
@@ -312,7 +331,7 @@
           <li>Rank on a relative score like <code>Price / Base Value</code> or <code>Value / Price</code> if the goal is ordering, not literal margin of safety interpretation.</li>
           <li>Clip or winsorize extreme negative MOS values before ranking so the table remains readable.</li>
           <li>Use owner earnings or free cash flow for mature firms instead of EPS when accounting noise is large.</li>
-          <li>Add sector-specific discount rates or quality-based discount rates instead of one global 11% hurdle.</li>
+          <li>This repo now applies sector-specific base discount rates and then adjusts them by quality, which should reduce some false negatives for stable sectors.</li>
           <li>Separate the scoring model from the reporting model: keep conservative value estimates, but rank by base-case discount to value instead of bear-case only.</li>
         </ul>
         <div class="callout">
@@ -321,17 +340,6 @@
       </section>
     </div>
 
-    <section class="section">
-      <h2>Repository Structure</h2>
-      <ul>
-        <li><code>scripts/run_screener.py</code>: main batch pipeline used by GitHub Actions.</li>
-        <li><code>scripts/margin_of_safety.py</code>: standalone single- or multi-ticker MOS analysis helper.</li>
-        <li><code>docs/index.html</code>: static dashboard over the latest published CSV.</li>
-        <li><code>docs/data/latest-run.json</code>: metadata that gives the dashboard the last completed run timestamp.</li>
-        <li><code>outputs/</code>: timestamped CSV artifacts and the stable latest output file.</li>
-        <li><code>.github/workflows/</code>: daily and hourly automation for refresh and publishing.</li>
-      </ul>
-    </section>
   </div>
 </body>
 </html>

@@ -18,6 +18,20 @@ ROOT = Path(__file__).resolve().parents[1]
 OUTPUTS_DIR = ROOT / "outputs"
 DOCS_DATA_DIR = ROOT / "docs" / "data"
 
+SECTOR_DISCOUNT_RATES = {
+    "utilities": 0.08,
+    "consumer defensive": 0.085,
+    "healthcare": 0.09,
+    "real estate": 0.095,
+    "financial": 0.10,
+    "communication services": 0.10,
+    "industrials": 0.10,
+    "technology": 0.105,
+    "consumer cyclical": 0.11,
+    "basic materials": 0.11,
+    "energy": 0.11,
+}
+
 
 filters_dict = {
     "Debt/Equity": "Under 1",
@@ -73,6 +87,26 @@ def _mos(price: Optional[float], value: Optional[float]) -> Optional[float]:
     if price is None or value is None or value == 0:
         return None
     return (value - price) / value
+
+
+def _sector_discount_rate(sector: Optional[str], default: float = 0.11) -> float:
+    if not sector:
+        return default
+    return SECTOR_DISCOUNT_RATES.get(str(sector).strip().lower(), default)
+
+
+def _quality_adjusted_discount_rate(base_rate: float, quality_multiplier: float) -> float:
+    if quality_multiplier >= 0.97:
+        adjustment = -0.01
+    elif quality_multiplier >= 0.92:
+        adjustment = -0.005
+    elif quality_multiplier >= 0.85:
+        adjustment = 0.0
+    elif quality_multiplier >= 0.75:
+        adjustment = 0.0075
+    else:
+        adjustment = 0.015
+    return float(min(0.14, max(0.075, base_rate + adjustment)))
 
 
 def _fetch_price(ticker: yf.Ticker) -> Tuple[Optional[float], str]:
@@ -290,6 +324,7 @@ def _floor_value(
 
 def compute_recommended_mos(
     ticker: str,
+    sector: Optional[str] = None,
     discount: float = 0.11,
     stage1_years: int = 10,
     stage2_years: int = 10,
@@ -314,6 +349,8 @@ def compute_recommended_mos(
         debt,
         market_cap,
     )
+    base_discount_rate = _sector_discount_rate(sector, default=discount)
+    applied_discount_rate = _quality_adjusted_discount_rate(base_discount_rate, quality_multiplier)
     floor_value = _floor_value(tbv_ps, net_cash_ps)
 
     result: Dict[str, Optional[float]] = {
@@ -321,6 +358,8 @@ def compute_recommended_mos(
         "EPS_Norm": eps_norm,
         "EPS_CAGR_Proxy": eps_cagr,
         "Quality_Mult": quality_multiplier,
+        "Base_Discount_Rate": round(base_discount_rate * 100, 2),
+        "Discount_Rate": round(applied_discount_rate * 100, 2),
         "Floor_Value": floor_value,
     }
 
@@ -340,7 +379,7 @@ def compute_recommended_mos(
     for scenario in ("bear", "base", "bull"):
         value_raw = _two_stage_eps_value(
             eps0=float(eps_norm),
-            discount=float(discount),
+            discount=float(applied_discount_rate),
             stage1_years=int(stage1_years),
             g1=float(growth[scenario]),
             stage2_years=int(stage2_years),
@@ -422,6 +461,8 @@ def main() -> int:
         "EPS_Norm",
         "EPS_CAGR_Proxy",
         "Quality_Mult",
+        "Base_Discount_Rate",
+        "Discount_Rate",
         "Floor_Value",
     ]:
         df_flt[col] = pd.NA
@@ -435,6 +476,7 @@ def main() -> int:
         try:
             result = compute_recommended_mos(
                 ticker=ticker,
+                sector=row.get("Sector"),
                 discount=0.11,
                 stage1_years=10,
                 stage2_years=10,

@@ -74,12 +74,48 @@ def clamp(x: float, lo: float, hi: float) -> float:
     return max(lo, min(hi, x))
 
 
+SECTOR_DISCOUNT_RATES = {
+    "utilities": 0.08,
+    "consumer defensive": 0.085,
+    "healthcare": 0.09,
+    "real estate": 0.095,
+    "financial": 0.10,
+    "communication services": 0.10,
+    "industrials": 0.10,
+    "technology": 0.105,
+    "consumer cyclical": 0.11,
+    "basic materials": 0.11,
+    "energy": 0.11,
+}
+
+
+def sector_discount_rate(sector: Optional[str], default: float = 0.11) -> float:
+    if not sector:
+        return default
+    return SECTOR_DISCOUNT_RATES.get(str(sector).strip().lower(), default)
+
+
+def quality_adjusted_discount_rate(base_rate: float, quality_multiplier: float) -> float:
+    if quality_multiplier >= 0.97:
+        adjustment = -0.01
+    elif quality_multiplier >= 0.92:
+        adjustment = -0.005
+    elif quality_multiplier >= 0.85:
+        adjustment = 0.0
+    elif quality_multiplier >= 0.75:
+        adjustment = 0.0075
+    else:
+        adjustment = 0.015
+    return float(clamp(base_rate + adjustment, 0.075, 0.14))
+
+
 # ----------------------------
 # Data snapshot
 # ----------------------------
 @dataclass
 class Snapshot:
     ticker: str
+    sector: Optional[str]
     price: Optional[float]
     shares: Optional[float]
     market_cap: Optional[float]
@@ -129,11 +165,12 @@ def fetch_price(t: yf.Ticker) -> Tuple[Optional[float], str]:
     return None, "NA"
 
 
-def fetch_shares_mcap_eps(t: yf.Ticker) -> Tuple[Optional[float], Optional[float], Optional[float], Dict[str, str]]:
+def fetch_shares_mcap_eps(t: yf.Ticker) -> Tuple[Optional[float], Optional[float], Optional[float], Optional[str], Dict[str, str]]:
     src = {}
     shares = None
     mcap = None
     trailing_eps = None
+    sector = None
 
     # fast_info first
     try:
@@ -160,6 +197,9 @@ def fetch_shares_mcap_eps(t: yf.Ticker) -> Tuple[Optional[float], Optional[float
             if mcap is not None:
                 src["market_cap"] = "info.marketCap"
         trailing_eps = safe_float(info.get("trailingEps"))
+        sector = info.get("sector")
+        if sector:
+            src["sector"] = "info.sector"
         if trailing_eps is not None:
             src["trailing_eps"] = "info.trailingEps"
         else:
@@ -167,7 +207,7 @@ def fetch_shares_mcap_eps(t: yf.Ticker) -> Tuple[Optional[float], Optional[float
     except Exception:
         src.setdefault("trailing_eps", "NA")
 
-    return shares, mcap, trailing_eps, src
+    return shares, mcap, trailing_eps, sector, src
 
 
 def fetch_eps_history_annual_diluted(t: yf.Ticker, years: int = 5) -> Tuple[List[float], str]:
@@ -271,7 +311,7 @@ def build_snapshot(ticker: str, eps_norm_years: int = 5) -> Snapshot:
     price, psrc = fetch_price(t)
     src["price"] = psrc
 
-    shares, mcap, trailing_eps, src2 = fetch_shares_mcap_eps(t)
+    shares, mcap, trailing_eps, sector, src2 = fetch_shares_mcap_eps(t)
     src.update(src2)
 
     # reconstruct mcap if missing
@@ -289,6 +329,7 @@ def build_snapshot(ticker: str, eps_norm_years: int = 5) -> Snapshot:
 
     return Snapshot(
         ticker=tk,
+        sector=sector,
         price=price,
         shares=shares,
         market_cap=mcap,
@@ -490,22 +531,26 @@ def analyze_one(
         debt=snap.debt,
         market_cap=snap.market_cap,
     )
+    base_discount = sector_discount_rate(snap.sector, default=discount)
+    applied_discount = quality_adjusted_discount_rate(base_discount, qual_mult)
 
     floor_v = floor_value_per_share(snap.tangible_book_ps, snap.net_cash_ps)
 
     out: Dict[str, object] = {
         "ticker": snap.ticker,
+        "sector": snap.sector,
         "price": snap.price,
         "eps_norm": eps_norm,
         "eps_norm_src": eps_norm_src,
         "eps_hist_cagr": hist_cagr,
         "quality_mult": qual_mult,
+        "base_discount_rate": base_discount,
+        "discount": applied_discount,
         "floor_value": floor_v,
         "tbv_ps": snap.tangible_book_ps,
         "net_cash_ps": snap.net_cash_ps,
         "shares": snap.shares,
         "market_cap": snap.market_cap,
-        "discount": discount,
         "stage1_years": stage1_years,
         "stage2_years": stage2_years,
         "terminal_rate": terminal_rate,
@@ -520,7 +565,7 @@ def analyze_one(
 
         gv, tv, v_raw = two_stage_eps_stream_value(
             eps0=float(eps_norm),
-            discount=float(discount),
+            discount=float(applied_discount),
             stage1_years=int(stage1_years),
             g1=float(g1),
             stage2_years=int(stage2_years),
@@ -545,7 +590,7 @@ def analyze_one(
 def main():
     ap = argparse.ArgumentParser(description="Recommended Margin of Safety screener (scenario + normalization + haircuts + floor).")
     ap.add_argument("tickers", nargs="+", help="One or more tickers")
-    ap.add_argument("--discount", type=float, default=0.11, help="Discount rate (default 0.11)")
+    ap.add_argument("--discount", type=float, default=0.11, help="Fallback base discount rate for unknown sectors (default 0.11)")
     ap.add_argument("--stage1_years", type=int, default=10, help="Growth stage years (default 10)")
     ap.add_argument("--stage2_years", type=int, default=10, help="Terminal stage years (default 10)")
     ap.add_argument("--terminal_rate", type=float, default=0.04, help="Terminal stage growth rate g2 (default 0.04)")
@@ -580,8 +625,9 @@ def main():
 
     # Pretty console view
     show_cols = [
-        "ticker", "price",
+        "ticker", "sector", "price",
         "eps_norm", "eps_norm_src",
+        "base_discount_rate", "discount",
         "quality_mult", "floor_value",
         "g1_bear", "value_bear", "mos_bear",
         "g1_base", "value_base", "mos_base",
@@ -591,9 +637,13 @@ def main():
     pretty = df[show_cols].copy()
 
     # Format a bit
-    for c in ["price", "eps_norm", "quality_mult", "floor_value", "value_bear", "value_base", "value_bull"]:
+    for c in ["price", "eps_norm", "base_discount_rate", "discount", "quality_mult", "floor_value", "value_bear", "value_base", "value_bull"]:
         if c in pretty.columns:
             pretty[c] = pretty[c].apply(lambda x: None if pd.isna(x) else float(x))
+
+    for c in ["base_discount_rate", "discount"]:
+        if c in pretty.columns:
+            pretty[c] = pretty[c].apply(lambda x: pct(None if pd.isna(x) else float(x)))
 
     for c in ["mos_bear", "mos_base", "mos_bull"]:
         if c in pretty.columns:
