@@ -131,13 +131,7 @@ jobs:
             echo "- Workflow date: $(date -u +'%Y-%m-%d %H:%M UTC')"
             if [[ -f outputs/latest_run.json ]]; then
               echo "- Metadata file: \`outputs/latest_run.json\`"
-              python - <<'PY'
-import json
-from pathlib import Path
-data = json.loads(Path("outputs/latest_run.json").read_text(encoding="utf-8"))
-print(f"- Last completed run: {data.get('completed_at_display', 'unknown')}")
-print(f"- Filtered rows: {data.get('filtered_rows', 'unknown')}")
-PY
+              python -c "import json, pathlib; data = json.loads(pathlib.Path('outputs/latest_run.json').read_text(encoding='utf-8')); print(f\"- Last completed run: {data.get('completed_at_display', 'unknown')}\"); print(f\"- Filtered rows: {data.get('filtered_rows', 'unknown')}\")"
             else
               echo "- Metadata file not generated in this run."
             fi
