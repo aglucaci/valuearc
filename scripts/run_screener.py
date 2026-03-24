@@ -452,9 +452,9 @@ def main() -> int:
 
     completed_at = datetime.now(timezone.utc)
     stamp = completed_at.astimezone(ZoneInfo("America/New_York")).strftime("%Y-%m-%d_%H-%M-%S")
-    full_path = OUTPUTS_DIR / f"longarc_full_{stamp}.csv"
-    filtered_path = OUTPUTS_DIR / f"longarc_filtered_{stamp}.csv"
-    filtered_today_path = OUTPUTS_DIR / "longarc_filtered_TODAY.csv"
+    full_path = OUTPUTS_DIR / f"valuearc_full_{stamp}.csv"
+    filtered_path = OUTPUTS_DIR / f"valuearc_filtered_{stamp}.csv"
+    filtered_today_path = OUTPUTS_DIR / "valuearc_filtered_TODAY.csv"
 
     df.to_csv(full_path, index=False)
     df_flt.to_csv(filtered_path, index=False)

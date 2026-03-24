@@ -22,12 +22,11 @@ The dashboard now reads a published metadata file and shows the timestamp of the
 |   |-- archive/                # older dashboard variants
 |   |-- data/latest-run.json    # published run metadata for the site
 |   `-- index.html              # GitHub Pages dashboard
-|-- logo/                       # brand assets
+|-- logo/                       # single shared logo asset
 |-- outputs/                    # generated CSVs and latest_run.json
 |-- scripts/
 |   |-- margin_of_safety.py     # standalone MOS analysis helper
 |   `-- run_screener.py         # main screener entrypoint
-|-- longarc_screener_mos_recommended.py  # compatibility wrapper
 `-- requirements.txt
 ```
 
@@ -41,7 +40,7 @@ The dashboard now reads a published metadata file and shows the timestamp of the
    - scenario growth assumptions
    - predictability haircuts
    - balance-sheet floor values
-5. Write timestamped outputs plus `longarc_filtered_TODAY.csv`.
+5. Write timestamped outputs plus `valuearc_filtered_TODAY.csv`.
 6. Write `latest_run.json` so the dashboard can display the last completed run timestamp.
 
 ## Local usage
@@ -58,12 +57,6 @@ Run the full screener:
 python scripts/run_screener.py
 ```
 
-The legacy wrapper still works:
-
-```bash
-python longarc_screener_mos_recommended.py
-```
-
 Run the standalone MOS helper for one or more tickers:
 
 ```bash
@@ -74,9 +67,9 @@ python scripts/margin_of_safety.py QLYS AAPL MSFT
 
 Each successful screener run writes:
 
-- `outputs/longarc_full_<timestamp>.csv`
-- `outputs/longarc_filtered_<timestamp>.csv`
-- `outputs/longarc_filtered_TODAY.csv`
+- `outputs/valuearc_full_<timestamp>.csv`
+- `outputs/valuearc_filtered_<timestamp>.csv`
+- `outputs/valuearc_filtered_TODAY.csv`
 - `outputs/latest_run.json`
 - `docs/data/latest-run.json`
 

@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ValueArc Dashboard</title>
   <meta name="description" content="ValueArc systematic equity dashboard with conservative margin-of-safety ranking." />
+  <link rel="icon" type="image/png" href="../logo/valuearc_logo_v1.png" />
+  <link rel="shortcut icon" href="../logo/valuearc_logo_v1.png" />
   <style>
     :root {
       --bg: #08111f;
@@ -149,6 +151,14 @@
       color: var(--text);
       font: 600 0.95rem/1 var(--sans);
       transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
+    }
+
+    .control,
+    .control option,
+    .control optgroup {
+      color-scheme: dark;
+      background-color: #0d1830;
+      color: #eef6ff;
     }
 
     .btn {
@@ -432,7 +442,7 @@
             scenario valuation, and downside floors rather than one-point fair values.
           </p>
           <div class="hero-actions">
-            <a class="btn primary" id="csvLink" href="https://raw.githubusercontent.com/aglucaci/valuearc/refs/heads/main/outputs/longarc_filtered_TODAY.csv" target="_blank" rel="noreferrer">Open Latest CSV</a>
+            <a class="btn primary" id="csvLink" href="https://raw.githubusercontent.com/aglucaci/valuearc/refs/heads/main/outputs/valuearc_filtered_TODAY.csv" target="_blank" rel="noreferrer">Open Latest CSV</a>
             <button class="btn" id="reload" type="button">Refresh Data</button>
           </div>
         </div>
@@ -511,14 +521,14 @@
 
   <script>
     (() => {
-      const csvUrl = "https://raw.githubusercontent.com/aglucaci/valuearc/refs/heads/main/outputs/longarc_filtered_TODAY.csv";
+      const csvUrl = "https://raw.githubusercontent.com/aglucaci/valuearc/refs/heads/main/outputs/valuearc_filtered_TODAY.csv";
       const metadataUrl = "./data/latest-run.json";
       const el = (id) => document.getElementById(id);
 
       const state = {
         raw: [],
         columns: [],
-        sortKey: "MOS_Bear_%",
+        sortKey: "MOS_Base_%",
         sortDir: -1,
         metadata: null,
       };
@@ -618,7 +628,7 @@
 
       function buildSortSelect() {
         const preferred = [
-          "MOS_Bear_%", "MOS_Base_%", "MOS_Bull_%",
+          "MOS_Base_%", "MOS_Bear_%", "MOS_Bull_%",
           "Value_Bear", "Value_Base", "Value_Bull",
           "10yr_CAGR", "Market Cap", "Price",
           "Sector", "Industry", "Ticker"
@@ -828,7 +838,9 @@
           state.metadata = metadata;
 
           if (!state.columns.includes(state.sortKey)) {
-            state.sortKey = state.columns.includes("MOS_Bear_%") ? "MOS_Bear_%" : state.columns[0];
+            state.sortKey = state.columns.includes("MOS_Base_%")
+              ? "MOS_Base_%"
+              : (state.columns.includes("MOS_Bear_%") ? "MOS_Bear_%" : state.columns[0]);
           }
 
           buildSortSelect();

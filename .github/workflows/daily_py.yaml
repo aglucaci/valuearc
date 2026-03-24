@@ -54,7 +54,7 @@ jobs:
       - name: Validate published artifacts
         run: |
           set -euo pipefail
-          test -f outputs/longarc_filtered_TODAY.csv
+          test -f outputs/valuearc_filtered_TODAY.csv
           test -f outputs/latest_run.json
           test -f docs/data/latest-run.json
 

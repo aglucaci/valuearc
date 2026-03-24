@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>LongArc — Quant Dashboard</title>
+  <title>ValueArc — Quant Dashboard</title>
   <style>
     :root {
       --bg: #0b0f14;
@@ -331,7 +331,7 @@
       <div class="brand">
         <div class="logo" aria-hidden="true"></div>
         <div class="title">
-          <h1>LongArc — Quant Dashboard</h1>
+          <h1>ValueArc — Quant Dashboard</h1>
           <div class="sub" id="subtitle">Loading…</div>
         </div>
       </div>
@@ -347,7 +347,7 @@
           <option value="0">MOS Bear ≥ 0%</option>
         </select>
         <button class="btn primary" id="reload">Reload</button>
-        <a class="btn" id="csvLink" href="https://raw.githubusercontent.com/aglucaci/longarc/refs/heads/main/outputs/longarc_filtered_TODAY.csv" target="_blank" rel="noreferrer">CSV</a>
+        <a class="btn" id="csvLink" href="https://raw.githubusercontent.com/aglucaci/valuearc/refs/heads/main/outputs/valuearc_filtered_TODAY.csv" target="_blank" rel="noreferrer">CSV</a>
       </div>
     </header>
 
@@ -425,7 +425,7 @@
 
 <script>
 (() => {
-  const csvUrl = "https://raw.githubusercontent.com/aglucaci/longarc/refs/heads/main/outputs/longarc_filtered_TODAY.csv";
+  const csvUrl = "https://raw.githubusercontent.com/aglucaci/valuearc/refs/heads/main/outputs/valuearc_filtered_TODAY.csv";
   const csvPath = csvUrl + "?t=" + Date.now(); // cache bust
   const el = (id) => document.getElementById(id);
 
