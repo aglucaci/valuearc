@@ -3,10 +3,8 @@ name: ValueArc Screener - Hourly
 on:
   workflow_dispatch:
   schedule:
-    # Run every 30 minutes on weekdays in a broad UTC window.
-    # The NY-time gate below ensures the job only runs at:
-    # 9:30, 10:30, 11:30, 12:30, 1:30, 2:30, 3:30 ET
-    - cron: "*/30 13-21 * * 1-5"
+    # Run every hour on weekdays (broad UTC window, gate handles NY time)
+    - cron: "0 13-21 * * 1-5"
 
 permissions:
   contents: write
@@ -26,7 +24,7 @@ jobs:
       PYTHONUNBUFFERED: "1"
 
     steps:
-      - name: Check if US market is open and this is an hourly run slot
+      - name: Check if US market is open
         id: market_hours
         run: |
           set -euo pipefail
@@ -36,11 +34,9 @@ jobs:
 
           ny_weekday="$(TZ="America/New_York" date +%u)"
           ny_hour="$(TZ="America/New_York" date +%H)"
-          ny_min="$(TZ="America/New_York" date +%M)"
 
           echo "ny_weekday=$ny_weekday"
           echo "ny_hour=$ny_hour"
-          echo "ny_min=$ny_min"
 
           # Monday=1 ... Sunday=7
           if [[ "$ny_weekday" -gt 5 ]]; then
@@ -49,24 +45,14 @@ jobs:
             exit 0
           fi
 
-          # Only run on the half hour
-          if [[ "$ny_min" != "30" ]]; then
+          # Allow 09:00 through 15:59 ET
+          if [[ "$ny_hour" -ge 9 && "$ny_hour" -lt 16 ]]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+            echo "reason=Within market hours" >> "$GITHUB_OUTPUT"
+          else
             echo "should_run=false" >> "$GITHUB_OUTPUT"
-            echo "reason=Not a :30 run" >> "$GITHUB_OUTPUT"
-            exit 0
+            echo "reason=Outside market hours" >> "$GITHUB_OUTPUT"
           fi
-
-          # Allow only 09:30 through 15:30 America/New_York
-          case "$ny_hour" in
-            09|10|11|12|13|14|15)
-              echo "should_run=true" >> "$GITHUB_OUTPUT"
-              echo "reason=Valid market-hours run slot" >> "$GITHUB_OUTPUT"
-              ;;
-            *)
-              echo "should_run=false" >> "$GITHUB_OUTPUT"
-              echo "reason=Outside market-hours run slots" >> "$GITHUB_OUTPUT"
-              ;;
-          esac
 
       - name: Checkout repo
         if: steps.market_hours.outputs.should_run == 'true'
