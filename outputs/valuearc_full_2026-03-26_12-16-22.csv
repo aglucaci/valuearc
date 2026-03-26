@@ -1,0 +1,21 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+CLMB,Climb Global Solutions Inc,Technology,Electronics & Computer Distribution,USA,372120000.0,17.39,20.17,-0.0315,72346.0,31.81
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,32290000000.0,21.03,33.52,0.013300000000000001,1962702.0,20.67
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4520000000.0,20.56,24.49,0.0128,426551.0,-7.55
+HLI,Houlihan Lokey Inc,Financial,Capital Markets,USA,9970000000.0,21.93,142.8,0.006500000000000001,246781.0,22.09
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5540000000.0,17.83,99.38,-0.0147,223561.0,20.86
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1200000000.0,14.66,47.69,0.0037,12403.0,17.57
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,7710000000.0,15.38,333.05,0.0178,43436.0,33.81
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,14250000000.0,6.99,75.01,0.0032,140376.0,-1.85
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,8000000000.0,37.1,133.66,0.024,96642.0,9.48
+MSFT,Microsoft Corporation,Technology,Software - Infrastructure,USA,2732190000000.0,23.02,367.94,-0.0084,15018763.0,22.92
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,124520000000.0,10.66,36.96,0.0173,11760250.0,5.14
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8570000000.0,7.95,36.08,0.018500000000000003,206671.0,6.71
+PTC,PTC Inc,Technology,Software - Application,USA,17320000000.0,21.26,145.55,0.0138,371013.0,16.18
+QLYS,Qualys Inc,Technology,Software - Infrastructure,USA,3270000000.0,16.83,91.65,0.0195,95598.0,13.8
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,57420000000.0,32.06,323.89,0.0053,194357.0,23.83
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5260000000.0,13.12,57.27,0.0053,71046.0,9.11
+ROL,"Rollins, Inc",Consumer Cyclical,Personal Services,USA,25580000000.0,48.88,53.17,-0.0058,432554.0,17.69
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,282120000.0,1.61,5.38,0.0014000000000000002,105108.0,4.35
+TGLS,Tecnoglass Inc,Basic Materials,Building Materials,Colombia,1930000000.0,12.62,43.06,0.028399999999999998,147633.0,15.28
+V,Visa Inc,Financial,Credit Services,USA,581490000000.0,28.91,305.08,0.0006,1793653.0,16.01
