@@ -1,0 +1,27 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4290000000.0,30.69,147.0,-0.0276,204632.0,17.37
+CALM,"Cal-Maine Foods, Inc",Consumer Defensive,Farm Products,USA,3680000000.0,3.27,77.29,-0.0179,501443.0,6.92
+CLMB,Climb Global Solutions Inc,Technology,Electronics & Computer Distribution,USA,364650000.0,17.04,19.76,-0.012,92685.0,31.09
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,31390000000.0,20.45,32.59,-0.013300000000000001,3924757.0,20.39
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4380000000.0,19.92,23.72,-0.0242,1396470.0,-7.5
+HLI,Houlihan Lokey Inc,Financial,Capital Markets,USA,9730000000.0,21.42,139.48,-0.0118,349641.0,21.52
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5300000000.0,17.06,95.07,-0.0252,258487.0,20.46
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1190000000.0,14.6,47.49,-0.0108,117598.0,17.05
+KINS,Kingstone Cos. Inc,Financial,Insurance - Property & Casualty,USA,206220000.0,5.04,14.24,-0.028300000000000002,59441.0,7.83
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,7630000000.0,15.22,329.7,-0.0166,142583.0,34.14
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13600000000.0,6.67,71.56,-0.035,403657.0,-1.93
+META,Meta Platforms Inc,Communication Services,Internet Content & Information,USA,1332660000000.0,22.43,526.84,-0.0378,24109965.0,16.86
+MSFT,Microsoft Corporation,Technology,Software - Infrastructure,USA,2655150000000.0,22.37,357.57,-0.023,27341023.0,22.49
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,121410000000.0,10.39,36.03,-0.01,11567322.0,4.99
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5720000000.0,24.98,106.17,-0.0438,344105.0,13.45
+PLMR,Palomar Holdings Inc,Financial,Insurance - Property & Casualty,USA,3150000000.0,16.45,118.12,-0.026099999999999998,74039.0,20.37
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8670000000.0,8.04,36.51,0.0105,812606.0,6.67
+PRI,Primerica Inc,Financial,Insurance - Life,USA,7840000000.0,10.79,247.48,-0.0245,64126.0,20.37
+PTC,PTC Inc,Technology,Software - Application,USA,16430000000.0,20.16,138.04,-0.0414,968082.0,15.91
+QLYS,Qualys Inc,Technology,Software - Infrastructure,USA,3040000000.0,15.66,85.28,-0.064,767125.0,13.73
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,56420000000.0,31.5,318.25,-0.0165,393649.0,23.76
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5210000000.0,12.98,56.66,-0.011200000000000002,226042.0,9.02
+ROL,"Rollins, Inc",Consumer Cyclical,Personal Services,USA,25320000000.0,48.38,52.62,-0.0034999999999999996,1179523.0,17.18
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,276470000.0,1.57,5.27,-0.018600000000000002,518419.0,4.12
+TGLS,Tecnoglass Inc,Basic Materials,Building Materials,Colombia,1910000000.0,12.54,42.78,0.013000000000000001,235117.0,15.78
+TXRH,Texas Roadhouse Inc,Consumer Cyclical,Restaurants,USA,10530000000.0,26.2,159.72,-0.039900000000000005,765617.0,16.23
