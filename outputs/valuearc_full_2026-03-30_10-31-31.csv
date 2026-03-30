@@ -1,0 +1,29 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4450000000.0,31.84,152.51,0.046,90588.0,16.98
+CALM,"Cal-Maine Foods, Inc",Consumer Defensive,Farm Products,USA,3720000000.0,3.3,78.13,0.0131,194925.0,6.99
+CLMB,Climb Global Solutions Inc,Technology,Electronics & Computer Distribution,USA,365390000.0,17.08,19.8,0.010700000000000001,13474.0,30.87
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,31350000000.0,20.42,32.54,0.0034999999999999996,890597.0,20.21
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,66720000000.0,35.29,167.35,0.009899999999999999,332646.0,23.36
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4470000000.0,20.3,24.18,0.0207,197658.0,-7.74
+HLI,Houlihan Lokey Inc,Financial,Capital Markets,USA,9760000000.0,21.49,139.91,0.006500000000000001,18022.0,21.33
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5380000000.0,17.3,96.44,0.0176,32797.0,20.11
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1190000000.0,14.6,47.48,0.0013,3267.0,16.7
+KINS,Kingstone Cos. Inc,Financial,Insurance - Property & Casualty,USA,207400000.0,5.07,14.33,0.008100000000000001,2296.0,7.48
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,7770000000.0,15.5,335.6,0.0254,25874.0,33.81
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,13640000000.0,6.69,71.77,0.0127,143687.0,-2.38
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,17860000000.0,11.13,147.98,0.0146,412361.0,7.82
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,7750000000.0,35.93,129.45,0.0161,23507.0,8.38
+MSFT,Microsoft Corporation,Technology,Software - Infrastructure,USA,2679170000000.0,22.57,360.8,0.0113,5524670.0,21.99
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5800000000.0,25.33,107.67,0.0216,34488.0,12.35
+PLMR,Palomar Holdings Inc,Financial,Insurance - Property & Casualty,USA,3140000000.0,16.39,117.68,0.0073,8726.0,19.92
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8840000000.0,8.2,37.21,0.0134,60344.0,6.36
+PRI,Primerica Inc,Financial,Insurance - Life,USA,7830000000.0,10.78,247.37,0.004699999999999999,14297.0,20.23
+PTC,PTC Inc,Technology,Software - Application,USA,16460000000.0,20.21,138.35,0.0054,95862.0,15.35
+QLYS,Qualys Inc,Technology,Software - Infrastructure,USA,3130000000.0,16.1,87.69,0.0241,61195.0,12.76
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,58220000000.0,32.5,328.38,0.0346,145846.0,23.66
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5210000000.0,12.98,56.67,0.0063,22479.0,8.86
+RMD,Resmed Inc,Healthcare,Medical Instruments & Supplies,USA,31910000000.0,21.65,219.05,-0.0064,52427.0,15.41
+ROL,"Rollins, Inc",Consumer Cyclical,Personal Services,USA,25300000000.0,48.34,52.58,0.0023,206572.0,17.22
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,278120000.0,1.58,5.3,0.0079,34573.0,3.68
+TXRH,Texas Roadhouse Inc,Consumer Cyclical,Restaurants,USA,10640000000.0,26.47,161.37,0.0074,90187.0,15.56
+V,Visa Inc,Financial,Credit Services,USA,567020000000.0,28.19,297.49,0.0067,1394237.0,15.11
