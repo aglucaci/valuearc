@@ -1,0 +1,28 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+AMP,Ameriprise Financial Inc,Financial,Asset Management,USA,39710000000.0,11.98,435.56,0.0037,28786.0,19.31
+CALM,"Cal-Maine Foods, Inc",Consumer Defensive,Farm Products,USA,3710000000.0,5.45,78.22,0.0016,140243.0,7.3
+CLMB,Climb Global Solutions Inc,Technology,Electronics & Computer Distribution,USA,379840000.0,17.75,20.58,-0.0037,2799.0,20.78
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,32220000000.0,20.98,33.45,0.0015,181119.0,20.75
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,69450000000.0,36.73,174.22,-0.0007000000000000001,68900.0,24.09
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4250000000.0,19.32,23.01,0.0105,65113.0,-8.1
+HLI,Houlihan Lokey Inc,Financial,Capital Markets,USA,9810000000.0,21.59,140.57,-0.0053,17415.0,21.67
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5210000000.0,16.77,93.5,-0.0073,17855.0,20.04
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1200000000.0,14.77,48.04,-0.0089,3134.0,17.58
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,7820000000.0,15.59,337.59,-0.0212,10522.0,34.52
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,14260000000.0,7.0,75.07,0.006999999999999999,45633.0,-1.88
+LULU,Lululemon Athletica inc,Consumer Cyclical,Apparel Retail,Canada,18700000000.0,11.65,154.9,-0.0053,132234.0,9.34
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,8090000000.0,37.5,135.1,0.004,19050.0,9.17
+MSFT,Microsoft Corporation,Technology,Software - Infrastructure,USA,2769910000000.0,23.34,373.02,-0.0012,2688945.0,22.8
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,125360000000.0,10.73,37.21,0.0062,1455473.0,5.21
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5730000000.0,25.04,106.42,0.0026,41967.0,12.16
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8770000000.0,8.14,36.93,-0.010700000000000001,28347.0,6.78
+PRI,Primerica Inc,Financial,Insurance - Life,USA,7960000000.0,10.97,251.56,-0.009000000000000001,9927.0,20.87
+PTC,PTC Inc,Technology,Software - Application,USA,17030000000.000002,20.9,143.08,0.003,18108.0,16.14
+QLYS,Qualys Inc,Technology,Software - Infrastructure,USA,3150000000.0,16.2,88.19,-0.0019,14432.0,13.47
+RACE,Ferrari N.V,Consumer Cyclical,Auto Manufacturers,Italy,60440000000.0,33.74,340.92,0.0027,17951.0,24.49
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5320000000.0,13.25,57.86,-0.0048,33751.0,9.72
+ROL,"Rollins, Inc",Consumer Cyclical,Personal Services,USA,26070000000.0,49.82,54.19,0.0048,126457.0,17.72
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,281690000.0,1.6,5.37,-0.005699999999999999,13674.0,4.17
+TGLS,Tecnoglass Inc,Basic Materials,Building Materials,Colombia,1930000000.0,12.65,43.15,-0.014499999999999999,13151.0,18.12
+TXRH,Texas Roadhouse Inc,Consumer Cyclical,Restaurants,USA,10710000000.0,26.66,162.51,-0.0029,52480.0,15.92
+V,Visa Inc,Financial,Credit Services,USA,576890000000.0,28.68,302.67,0.0062,279658.0,15.25
