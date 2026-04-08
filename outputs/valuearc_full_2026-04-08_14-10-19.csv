@@ -1,0 +1,19 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+AMP,Ameriprise Financial Inc,Financial,Asset Management,USA,41130000000.0,12.41,451.1,0.0441,421824.0,19.1
+CALM,"Cal-Maine Foods, Inc",Consumer Defensive,Farm Products,USA,3630000000.0,5.34,76.65,-0.0076,431271.0,7.14
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,32270000000.000004,21.02,33.5,0.011899999999999999,2907163.0,20.53
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,69200000000.0,36.63,173.59,0.0194,1170213.0,23.83
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4080000000.0,18.56,22.1,-0.0176,1711667.0,-8.21
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5410000000.0,17.39,96.92,0.0036,218974.0,20.34
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1240000000.0,15.23,49.54,0.0158,32256.0,17.73
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,8090000000.0,37.53,135.21,0.0014000000000000002,322753.0,9.29
+MSFT,Microsoft Corporation,Technology,Software - Infrastructure,USA,2790590000000.0,23.51,375.8,0.009399999999999999,18054232.0,22.79
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,126940000000.0,10.86,37.68,0.0208,8846912.0,5.22
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5630000000.0,24.6,104.55,-0.016399999999999998,438775.0,12.33
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8430000000.0,7.82,35.51,-0.0026,404686.0,6.35
+PTC,PTC Inc,Technology,Software - Application,USA,17129999999.999998,21.02,143.91,-0.0,424201.0,16.09
+QLYS,Qualys Inc,Technology,Software - Infrastructure,USA,3090000000.0,15.9,86.59,-0.0187,389836.0,13.66
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5390000000.0,13.43,58.65,0.0151,235987.0,9.74
+ROL,"Rollins, Inc",Consumer Cyclical,Personal Services,USA,26310000000.0,50.27,54.69,0.0184,774718.0,17.74
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,285140000.0,1.62,5.43,0.0028000000000000004,263537.0,4.21
+V,Visa Inc,Financial,Credit Services,USA,590560000000.0,29.36,309.84,0.0241,2806112.0,15.35
