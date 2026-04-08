@@ -1,0 +1,21 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+AMP,Ameriprise Financial Inc,Financial,Asset Management,USA,41190000000.0,12.43,451.74,0.0455,179953.0,19.1
+CALM,"Cal-Maine Foods, Inc",Consumer Defensive,Farm Products,USA,3680000000.0,5.41,77.65,0.0053,144600.0,7.14
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,32320000000.0,21.05,33.55,0.013300000000000001,927801.0,20.53
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,69890000000.0,36.96,175.31,0.0296,431686.0,23.83
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4099999999.9999995,18.62,22.17,-0.0144,928825.0,-8.21
+HLI,Houlihan Lokey Inc,Financial,Capital Markets,USA,10310000000.0,22.7,147.79,0.0344,99029.0,21.91
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5530000000.0,17.78,99.08,0.026000000000000002,73908.0,20.34
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1240000000.0,15.23,49.56,0.0161,10801.0,17.73
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8180000000.0,16.31,353.28,0.0232,28957.0,34.53
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,8270000000.0,38.36,138.23,0.023700000000000002,102089.0,9.29
+MSFT,Microsoft Corporation,Technology,Software - Infrastructure,USA,2814720000000.0,23.72,379.05,0.0182,8384906.0,22.79
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,127300000000.0,10.9,37.78,0.023700000000000002,4709302.0,5.22
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5720000000.0,24.96,106.12,-0.0016,94725.0,12.33
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8610000000.0,7.98,36.24,0.0178,141829.0,6.35
+PTC,PTC Inc,Technology,Software - Application,USA,17410000000.0,21.37,146.34,0.0168,65229.0,16.09
+QLYS,Qualys Inc,Technology,Software - Infrastructure,USA,3170000000.0,16.31,88.82,0.0066,69742.0,13.66
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5340000000.0,13.31,58.11,0.0058,77208.0,9.74
+ROL,"Rollins, Inc",Consumer Cyclical,Personal Services,USA,26250000000.0,50.15,54.56,0.0159,311543.0,17.74
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,286450000.0,1.63,5.46,0.0074,48901.0,4.21
+V,Visa Inc,Financial,Credit Services,USA,589630000000.0,29.31,309.36,0.0225,1318621.0,15.35
