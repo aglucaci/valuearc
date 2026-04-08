@@ -1,0 +1,20 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+AMP,Ameriprise Financial Inc,Financial,Asset Management,USA,41270000000.0,12.45,452.6,0.0475,572937.0,19.1
+BMI,Badger Meter Inc,Technology,Scientific & Technical Instruments,USA,4460000000.0,31.93,152.94,0.0067,154014.0,17.87
+CALM,"Cal-Maine Foods, Inc",Consumer Defensive,Farm Products,USA,3660000000.0,5.39,77.32,0.001,573733.0,7.14
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,31950000000.0,20.81,33.17,0.0018,4034883.0,20.53
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,69170000000.0,36.62,173.51,0.019,1520777.0,23.83
+HLI,Houlihan Lokey Inc,Financial,Capital Markets,USA,10290000000.0,22.65,147.45,0.0321,404767.0,21.91
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5420000000.0,17.43,97.15,0.006,344743.0,20.34
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1240000000.0,15.21,49.48,0.0146,52031.0,17.73
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,8010000000.0,37.15,133.85,-0.0087,462032.0,9.29
+MSFT,Microsoft Corporation,Technology,Software - Infrastructure,USA,2764040000000.0,23.29,372.23,-0.0002,24448728.0,22.79
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,126340000000.0,10.81,37.5,0.016,11549057.0,5.22
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5540000000.0,24.21,102.9,-0.0318,692034.0,12.33
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8470000000.000001,7.86,35.66,0.0017000000000000001,600074.0,6.35
+PTC,PTC Inc,Technology,Software - Application,USA,17180000000.0,21.08,144.37,0.0031,734701.0,16.09
+QLYS,Qualys Inc,Technology,Software - Infrastructure,USA,3110000000.0,16.0,87.12,-0.0127,605007.0,13.66
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5390000000.0,13.43,58.64,0.0149,385003.0,9.74
+ROL,"Rollins, Inc",Consumer Cyclical,Personal Services,USA,26240000000.0,50.14,54.54,0.015600000000000001,1296830.0,17.74
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,284090000.0,1.62,5.41,-0.0009,547976.0,4.21
+V,Visa Inc,Financial,Credit Services,USA,588440000000.0,29.26,308.73,0.0204,3607888.0,15.35
