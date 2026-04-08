@@ -1,0 +1,19 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+AMP,Ameriprise Financial Inc,Financial,Asset Management,USA,40980000000.0,12.36,449.48,0.0403,307101.0,19.1
+CALM,"Cal-Maine Foods, Inc",Consumer Defensive,Farm Products,USA,3660000000.0,5.39,77.33,0.0012,270955.0,7.14
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,32570000000.0,21.21,33.81,0.0213,1930225.0,20.53
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,69360000000.0,36.72,173.98,0.0218,873126.0,23.83
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4080000000.0,18.57,22.11,-0.0173,1368724.0,-8.21
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5450000000.0,17.54,97.77,0.0124,145576.0,20.34
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1250000000.0,15.3,49.76,0.0204,22414.0,17.73
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,8189999999.999999,37.98,136.85,0.013500000000000002,234361.0,9.29
+MSFT,Microsoft Corporation,Technology,Software - Infrastructure,USA,2813310000000.0,23.7,378.86,0.0177,13433830.0,22.79
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,127350000000.0,10.9,37.8,0.0241,6969712.0,5.22
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5680000000.0,24.81,105.48,-0.0076,239476.0,12.33
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8550000000.000001,7.93,35.98,0.010700000000000001,224618.0,6.35
+PTC,PTC Inc,Technology,Software - Application,USA,17340000000.0,21.29,145.76,0.0128,231698.0,16.09
+QLYS,Qualys Inc,Technology,Software - Infrastructure,USA,3150000000.0,16.23,88.38,0.0016,234741.0,13.66
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5390000000.0,13.44,58.65,0.0151,163665.0,9.74
+ROL,"Rollins, Inc",Consumer Cyclical,Personal Services,USA,26350000000.0,50.34,54.76,0.019799999999999998,573150.0,17.74
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,285920000.0,1.63,5.45,0.0055000000000000005,104992.0,4.21
+V,Visa Inc,Financial,Credit Services,USA,590100000000.0,29.34,309.6,0.0233,2121849.0,15.35
