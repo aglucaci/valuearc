@@ -1,0 +1,20 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+AMP,Ameriprise Financial Inc,Financial,Asset Management,USA,41260000000.0,12.45,452.54,-0.0012,229038.0,19.66
+CALM,"Cal-Maine Foods, Inc",Consumer Defensive,Farm Products,USA,3670000000.0,5.4,77.54,0.006,285006.0,7.12
+CLBT,Cellebrite DI Ltd,Technology,Software - Infrastructure,Israel,3130000000.0,40.23,12.53,-0.06709999999999999,691012.0,3.35
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,31800000000.0,20.71,33.01,-0.004699999999999999,1305598.0,20.56
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,69540000000.0,36.68,173.8,-0.0045000000000000005,386815.0,24.14
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5380000000.0,17.29,96.38,-0.0075,146631.0,20.4
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1240000000.0,15.23,49.53,0.0006,14487.0,17.91
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,14270000000.0,7.0,75.1,-0.017,165860.0,-1.64
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,7640000000.0,35.43,127.65,-0.0438,244595.0,9.17
+MSFT,Microsoft Corporation,Technology,Software - Infrastructure,USA,2755610000000.0,23.22,371.1,-0.0086,13110950.0,22.86
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,125770000000.0,10.76,37.33,-0.0074,5110272.0,5.42
+PAYC,Paycom Software Inc,Technology,Software - Application,USA,6220000000.0,14.18,114.67,-0.0269,241113.0,13.78
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8460000000.000001,7.84,35.6,-0.0095,201645.0,6.45
+PTC,PTC Inc,Technology,Software - Application,USA,16739999999.999998,20.55,140.68,-0.0252,248332.0,16.12
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5410000000.0,13.48,58.84,0.0034999999999999996,90390.0,9.9
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,284350000.0,1.62,5.42,0.0,162421.0,4.21
+SMID,Smith-Midland Corp,Basic Materials,Building Materials,USA,148790000.0,12.66,28.05,0.011899999999999999,3245.0,28.28
+TXRH,Texas Roadhouse Inc,Consumer Cyclical,Restaurants,USA,10880000000.0,27.06,164.97,-0.0109,184573.0,16.15
+V,Visa Inc,Financial,Credit Services,USA,586590000000.0,29.16,307.76,-0.0039000000000000003,1591402.0,15.59
