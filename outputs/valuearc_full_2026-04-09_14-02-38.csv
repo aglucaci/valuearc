@@ -1,0 +1,19 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+AMP,Ameriprise Financial Inc,Financial,Asset Management,USA,41350000000.0,12.47,453.46,0.0008,321586.0,19.66
+CALM,"Cal-Maine Foods, Inc",Consumer Defensive,Farm Products,USA,3690000000.0,5.43,77.94,0.0113,428203.0,7.12
+CLBT,Cellebrite DI Ltd,Technology,Software - Infrastructure,Israel,3070000000.0,39.47,12.29,-0.0849,1218327.0,3.35
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,31920000000.0,20.79,33.13,-0.0011,1985240.0,20.56
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,69480000000.0,36.65,173.67,-0.0053,601577.0,24.14
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5380000000.0,17.31,96.46,-0.0067,240151.0,20.4
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1250000000.0,15.28,49.69,0.0039000000000000003,21603.0,17.91
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,14330000000.0,7.03,75.4,-0.0131,184442.0,-1.64
+MSFT,Microsoft Corporation,Technology,Software - Infrastructure,USA,2764120000000.0,23.29,372.24,-0.005600000000000001,17667964.0,22.86
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,126800000000.0,10.85,37.63,0.0007000000000000001,6863998.0,5.42
+PAYC,Paycom Software Inc,Technology,Software - Application,USA,6170000000.0,14.06,113.75,-0.0346,365436.0,13.78
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8520000000.0,7.9,35.85,-0.0025,313481.0,6.45
+PTC,PTC Inc,Technology,Software - Application,USA,16629999999.999998,20.41,139.78,-0.0315,552230.0,16.12
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5450000000.0,13.58,59.27,0.010700000000000001,142578.0,9.9
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,284650000.0,1.62,5.43,0.0011,313741.0,4.21
+SMID,Smith-Midland Corp,Basic Materials,Building Materials,USA,149060000.0,12.68,28.1,0.0137,3496.0,28.28
+TXRH,Texas Roadhouse Inc,Consumer Cyclical,Restaurants,USA,10900000000.0,27.12,165.33,-0.0087,376725.0,16.15
+V,Visa Inc,Financial,Credit Services,USA,589370000000.0,29.3,309.22,0.0008,2309075.0,15.59
