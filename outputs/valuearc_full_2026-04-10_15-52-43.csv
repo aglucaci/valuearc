@@ -1,0 +1,24 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+AMP,Ameriprise Financial Inc,Financial,Asset Management,USA,40770000000.0,12.3,447.17,-0.0126,388190.0,19.45
+CALM,"Cal-Maine Foods, Inc",Consumer Defensive,Farm Products,USA,3600000000.0,5.3,76.07,-0.0213,402982.0,6.99
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,31550000000.0,20.55,32.75,-0.0073,3071417.0,20.29
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,69920000000.0,36.88,174.76,0.0034999999999999996,1456297.0,24.01
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,3880000000.0,17.66,21.03,-0.0062,2342977.0,-8.77
+EXLS,ExlService Holdings Inc,Technology,Information Technology Services,USA,4560000000.0,18.89,29.17,-0.0202,2496964.0,11.25
+HCI,HCI Group Inc,Financial,Insurance - Property & Casualty,USA,1940000000.0,6.58,149.35,-0.0384,159012.0,19.98
+HLNE,Hamilton Lane Inc,Financial,Asset Management,USA,5150000000.0,16.57,92.36,-0.0256,265810.0,20.11
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1240000000.0,15.26,49.64,-0.0073,38568.0,18.03
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8119999999.999999,16.2,350.92,-0.03,127765.0,35.16
+KSPI,Kaspi.kz JSC ADR,Technology,Software - Infrastructure,Kazakhstan,14260000000.0,6.99,75.06,-0.0064,197533.0,-1.75
+MSFT,Microsoft Corporation,Technology,Software - Infrastructure,USA,2757170000000.0,23.23,371.3,-0.004699999999999999,20267974.0,22.74
+NICE,NICE Ltd ADR,Technology,Software - Application,Israel,5880000000.0,9.98,97.36,-0.068,628570.0,5.46
+NVO,Novo Nordisk ADR,Healthcare,Drug Manufacturers - General,Denmark,126290000000.0,10.81,37.49,0.0012,9449240.0,5.36
+PAYC,Paycom Software Inc,Technology,Software - Application,USA,6140000000.0,13.99,113.19,-0.0144,609358.0,13.35
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5100000000.0,22.28,94.7,-0.0051,584077.0,11.0
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8410000000.0,7.8,35.4,-0.0163,329672.0,6.34
+QLYS,Qualys Inc,Technology,Software - Infrastructure,USA,2710000000.0,13.94,75.92,-0.009899999999999999,839540.0,12.25
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5330000000.0,13.28,57.98,-0.012199999999999999,326299.0,9.86
+ROL,"Rollins, Inc",Consumer Cyclical,Personal Services,USA,26110000000.0,49.89,54.27,-0.027200000000000002,1241078.0,18.16
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,280410000.0,1.6,5.34,-0.0009,388039.0,4.02
+TXRH,Texas Roadhouse Inc,Consumer Cyclical,Restaurants,USA,10770000000.0,26.81,163.4,-0.0072,395627.0,15.89
+V,Visa Inc,Financial,Credit Services,USA,580000000000.0,28.84,304.3,-0.0129,3149806.0,15.46
