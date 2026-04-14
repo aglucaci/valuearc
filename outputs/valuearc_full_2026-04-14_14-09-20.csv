@@ -1,0 +1,18 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+AMP,Ameriprise Financial Inc,Financial,Asset Management,USA,41850000000.0,12.7,461.49,0.0141,174932.0,19.21
+CALM,"Cal-Maine Foods, Inc",Consumer Defensive,Farm Products,USA,3570000000.0,5.25,75.29,-0.009000000000000001,344875.0,6.78
+CLBT,Cellebrite DI Ltd,Technology,Software - Infrastructure,Israel,2980000000.0,38.33,11.93,0.0118,949866.0,2.02
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,32259999999.999996,21.01,33.49,0.0070999999999999995,2744198.0,20.22
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,70120000000.0,36.98,175.25,-0.0024,887752.0,24.05
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4150000000.0000005,18.87,22.47,-0.008199999999999999,1129106.0,-8.15
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8170000000.0,16.3,353.0,-0.0125,86231.0,35.0
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,7640000000.0,35.43,127.65,0.0123,144824.0,7.98
+NICE,NICE Ltd ADR,Technology,Software - Application,Israel,6150000000.0,10.43,101.69,-0.011000000000000001,207262.0,4.81
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5320000000.0,23.23,98.74,-0.0075,221878.0,10.23
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8359999999.999999,7.76,35.21,-0.011899999999999999,297302.0,6.56
+PTC,PTC Inc,Technology,Software - Application,USA,15920000000.0,19.54,133.82,-0.0029,491929.0,14.93
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5340000000.0,13.3,58.07,-0.011699999999999999,125337.0,9.8
+ROL,"Rollins, Inc",Consumer Cyclical,Personal Services,USA,26470000000.0,50.48,54.91,0.0046,813369.0,17.81
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,278430000.0,1.59,5.31,0.009000000000000001,227286.0,3.66
+TXRH,Texas Roadhouse Inc,Consumer Cyclical,Restaurants,USA,10830000000.0,26.95,164.26,0.011000000000000001,266345.0,16.12
+V,Visa Inc,Financial,Credit Services,USA,593030000000.0,29.48,311.14,0.005600000000000001,2908015.0,15.08
