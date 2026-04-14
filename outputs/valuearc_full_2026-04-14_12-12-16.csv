@@ -1,0 +1,18 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+AMP,Ameriprise Financial Inc,Financial,Asset Management,USA,41780000000.0,12.67,460.72,0.0124,126327.0,19.21
+CALM,"Cal-Maine Foods, Inc",Consumer Defensive,Farm Products,USA,3560000000.0,5.24,75.16,-0.010700000000000001,250401.0,6.78
+CLBT,Cellebrite DI Ltd,Technology,Software - Infrastructure,Israel,3010000000.0,38.77,12.07,0.0235,741771.0,2.02
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,32170000000.0,20.95,33.4,0.0044,1268676.0,20.22
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,70100000000.0,36.98,175.22,-0.0026,679129.0,24.05
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4160000000.0,18.91,22.52,-0.006,795972.0,-8.15
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1260000000.0,15.45,50.26,0.0121,19606.0,17.17
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,7630000000.0,35.37,127.43,0.0104,84378.0,7.98
+NICE,NICE Ltd ADR,Technology,Software - Application,Israel,6160000000.0,10.45,101.95,-0.0085,151943.0,4.81
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5290000000.0,23.09,98.15,-0.013500000000000002,120835.0,10.23
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8400000000.0,7.79,35.38,-0.006999999999999999,165289.0,6.56
+PTC,PTC Inc,Technology,Software - Application,USA,15940000000.0,19.56,133.96,-0.0019,291132.0,14.93
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5360000000.0,13.36,58.31,-0.0077,70589.0,9.8
+ROL,"Rollins, Inc",Consumer Cyclical,Personal Services,USA,26520000000.0,50.58,55.03,0.0067,581002.0,17.81
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,279620000.0,1.59,5.33,0.013300000000000001,143330.0,3.66
+TXRH,Texas Roadhouse Inc,Consumer Cyclical,Restaurants,USA,10820000000.0,26.92,164.1,0.01,169253.0,16.12
+V,Visa Inc,Financial,Credit Services,USA,592440000000.0,29.45,310.83,0.004699999999999999,1981271.0,15.08
