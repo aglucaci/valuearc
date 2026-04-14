@@ -1,0 +1,17 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+AMP,Ameriprise Financial Inc,Financial,Asset Management,USA,41590000000.0,12.62,458.58,0.0077,58929.0,19.21
+CALM,"Cal-Maine Foods, Inc",Consumer Defensive,Farm Products,USA,3570000000.0,5.24,75.26,-0.009300000000000001,162911.0,6.78
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,32020000000.000004,20.85,33.24,-0.0005,726975.0,20.22
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,70320000000.0,37.09,175.76,0.0004,535042.0,24.05
+DOCS,Doximity Inc,Healthcare,Health Information Services,USA,4139999999.9999995,18.82,22.41,-0.011000000000000001,474590.0,-8.15
+IDT,IDT Corp,Communication Services,Telecom Services,USA,1260000000.0,15.43,50.18,0.0105,9104.0,17.17
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,7640000000.0,35.41,127.58,0.011699999999999999,45272.0,7.98
+NICE,NICE Ltd ADR,Technology,Software - Application,Israel,6200000000.0,10.52,102.57,-0.0024,93496.0,4.81
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5340000000.0,23.33,99.18,-0.0032,56809.0,10.23
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8430000000.0,7.82,35.5,-0.0037,90592.0,6.56
+PTC,PTC Inc,Technology,Software - Application,USA,15960000000.0,19.59,134.16,-0.0004,154219.0,14.93
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5370000000.0,13.37,58.39,-0.0063,37154.0,9.8
+ROL,"Rollins, Inc",Consumer Cyclical,Personal Services,USA,26600000000.0,50.73,55.19,0.0096,368093.0,17.81
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,279840000.0,1.59,5.33,0.0141,80671.0,3.66
+TXRH,Texas Roadhouse Inc,Consumer Cyclical,Restaurants,USA,10790000000.0,26.86,163.74,0.0078000000000000005,62687.0,16.12
+V,Visa Inc,Financial,Credit Services,USA,591780000000.0,29.42,310.48,0.0034999999999999996,1036855.0,15.08
