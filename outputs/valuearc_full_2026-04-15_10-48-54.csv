@@ -1,0 +1,15 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+CALM,"Cal-Maine Foods, Inc",Consumer Defensive,Farm Products,USA,3590000000.0,5.28,75.73,0.0022,62835.0,6.72
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,32049999999.999996,20.87,33.27,-0.0005,1119409.0,20.23
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,70200000000.0,37.03,175.47,-0.0038,215823.0,24.08
+KNSL,Kinsale Capital Group Inc,Financial,Insurance - Property & Casualty,USA,8160000000.0,16.28,352.57,0.0059,19221.0,34.73
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,7760000000.0,36.01,129.73,0.024700000000000003,80013.0,8.02
+NICE,NICE Ltd ADR,Technology,Software - Application,Israel,6110000000.0,10.36,101.05,-0.0014000000000000002,158263.0,4.64
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5370000000.0,23.43,99.61,0.0173,110741.0,10.05
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8189999999.999999,7.59,34.47,-0.0177,71676.0,6.4
+PTC,PTC Inc,Technology,Software - Application,USA,16120000000.000002,19.78,135.47,0.013600000000000001,179367.0,14.88
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5320000000.0,13.25,57.84,0.0002,23380.0,9.62
+ROL,"Rollins, Inc",Consumer Cyclical,Personal Services,USA,26180000000.0,49.93,54.31,-0.0089,390463.0,17.84
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,279960000.0,1.59,5.34,0.0066,64760.0,3.74
+TXRH,Texas Roadhouse Inc,Consumer Cyclical,Restaurants,USA,10790000000.0,26.85,163.65,-0.0039000000000000003,94533.0,16.25
+V,Visa Inc,Financial,Credit Services,USA,595930000000.0,29.63,312.66,0.0040999999999999995,1015821.0,15.16
