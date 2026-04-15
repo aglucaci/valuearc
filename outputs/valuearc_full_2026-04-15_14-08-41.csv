@@ -1,0 +1,14 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+CALM,"Cal-Maine Foods, Inc",Consumer Defensive,Farm Products,USA,3580000000.0,5.27,75.66,0.0014000000000000002,223354.0,6.72
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,32229999999.999996,20.99,33.46,0.005,2751770.0,20.23
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,70570000000.0,37.22,176.38,0.0014000000000000002,789903.0,24.08
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,7770000000.0,36.01,129.76,0.025,415563.0,8.02
+NICE,NICE Ltd ADR,Technology,Software - Application,Israel,6090000000.0,10.34,100.8,-0.0039000000000000003,444958.0,4.64
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5450000000.0,23.8,101.18,0.0332,311925.0,10.05
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,8170000000.0,7.58,34.4,-0.0197,338887.0,6.4
+PTC,PTC Inc,Technology,Software - Application,USA,16129999999.999998,19.8,135.57,0.0143,610730.0,14.88
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5400000000.0,13.45,58.71,0.0151,130117.0,9.62
+ROL,"Rollins, Inc",Consumer Cyclical,Personal Services,USA,26350000000.0,50.25,54.66,-0.0026,1078784.0,17.84
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,279430000.0,1.59,5.32,0.004699999999999999,225253.0,3.74
+TXRH,Texas Roadhouse Inc,Consumer Cyclical,Restaurants,USA,10810000000.0,26.9,163.95,-0.0021,373526.0,16.25
+V,Visa Inc,Financial,Credit Services,USA,601470000000.0,29.9,315.57,0.013500000000000002,2394312.0,15.16
