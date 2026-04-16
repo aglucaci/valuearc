@@ -1,0 +1,15 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+AMP,Ameriprise Financial Inc,Financial,Asset Management,USA,41920000000.0,12.71,462.19,-0.0127,205155.0,19.54
+CALM,"Cal-Maine Foods, Inc",Consumer Defensive,Farm Products,USA,3610000000.0,5.31,76.18,0.0155,338687.0,6.64
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,32220000000.0,20.98,33.45,0.0027,2752272.0,20.26
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,71150000000.0,37.53,177.84,0.0078000000000000005,533075.0,24.1
+MANH,"Manhattan Associates, Inc",Technology,Software - Application,USA,7750000000.0,35.94,129.5,0.0048,275478.0,8.22
+NICE,NICE Ltd ADR,Technology,Software - Application,Israel,6280000000.0,10.66,103.92,0.018799999999999997,396684.0,4.72
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5410000000.0,23.62,100.39,-0.0012,236729.0,10.34
+PTC,PTC Inc,Technology,Software - Application,USA,16300000000.0,20.01,137.02,0.0032,540734.0,15.13
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5390000000.0,13.44,58.67,0.005600000000000001,162464.0,9.72
+ROL,"Rollins, Inc",Consumer Cyclical,Personal Services,USA,26280000000.0,50.12,54.52,0.0026,908945.0,17.75
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,286780000.0,1.63,5.47,0.023399999999999997,226670.0,3.81
+TGLS,Tecnoglass Inc,Basic Materials,Building Materials,Colombia,1930000000.0,12.66,43.19,-0.0177,114282.0,18.03
+TXRH,Texas Roadhouse Inc,Consumer Cyclical,Restaurants,USA,10560000000.0,26.28,160.17,-0.0175,490206.0,16.16
+V,Visa Inc,Financial,Credit Services,USA,602550000000.0,29.96,316.13,0.0007000000000000001,1980612.0,15.32
