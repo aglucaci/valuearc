@@ -1,13 +1,13 @@
 {
   "status": "success",
-  "completed_at_utc": "2026-04-17T16:04:58.408264Z",
-  "completed_at_new_york": "2026-04-17T12:04:58.408264-04:00",
-  "completed_at_display": "Apr 17, 2026 12:04:58 PM EDT",
+  "completed_at_utc": "2026-04-17T17:53:19.563132Z",
+  "completed_at_new_york": "2026-04-17T13:53:19.563132-04:00",
+  "completed_at_display": "Apr 17, 2026 01:53:19 PM EDT",
   "full_rows": 12,
   "filtered_rows": 7,
   "artifacts": {
-    "full": "valuearc_full_2026-04-17_12-04-58.csv",
-    "filtered": "valuearc_filtered_2026-04-17_12-04-58.csv",
+    "full": "valuearc_full_2026-04-17_13-53-19.csv",
+    "filtered": "valuearc_filtered_2026-04-17_13-53-19.csv",
     "today": "valuearc_filtered_TODAY.csv"
   }
 }
