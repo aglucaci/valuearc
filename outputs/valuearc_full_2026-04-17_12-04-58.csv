@@ -1,0 +1,13 @@
+Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume,10yr_CAGR
+AMP,Ameriprise Financial Inc,Financial,Asset Management,USA,41920000000.0,12.72,462.24,0.0070999999999999995,287675.0,19.28
+CALM,"Cal-Maine Foods, Inc",Consumer Defensive,Farm Products,USA,3630000000.0,5.34,76.57,0.0034999999999999996,158673.0,6.98
+CPRT,"Copart, Inc",Industrials,Specialty Business Services,USA,32070000000.0,20.88,33.29,0.0006,5597309.0,20.15
+CTAS,Cintas Corporation,Industrials,Specialty Business Services,USA,71720000000.0,37.83,179.25,0.0097,345294.0,24.16
+PCTY,Paylocity Holding Corp,Technology,Software - Application,USA,5420000000.0,23.66,100.6,-0.0006,111985.0,10.34
+PPC,Pilgrim's Pride Corp,Consumer Defensive,Packaged Foods,USA,7990000000.0,7.4,33.58,-0.002,226637.0,6.18
+PTC,PTC Inc,Technology,Software - Application,USA,16680000000.0,20.47,140.17,0.0137,269128.0,15.17
+RLI,RLI Corp,Financial,Insurance - Property & Casualty,USA,5460000000.0,13.61,59.4,0.006999999999999999,77398.0,9.9
+ROL,"Rollins, Inc",Consumer Cyclical,Personal Services,USA,26680000000.0,50.88,55.35,0.015700000000000002,467180.0,17.81
+SITC,SITE Centers Corp,Real Estate,REIT - Retail,USA,291980000.0,1.66,5.56,0.021,88140.0,3.99
+TXRH,Texas Roadhouse Inc,Consumer Cyclical,Restaurants,USA,10930000000.0,27.2,165.8,0.0366,543843.0,16.09
+V,Visa Inc,Financial,Credit Services,USA,604610000000.0,30.06,317.21,0.0067,3228426.0,15.39
